@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Séries</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <style>
+    *{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    h2{
+        color: #e11e72;
+        text-shadow: 2px 2px 4px rgba(133, 133, 133, 0.5);
+    }
+    .mathematics-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .mathematics-card {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px #e11e72;
+      border-radius: 10px;
+      background-color: #e6e6e6;
+    }
+    .mathematics-card:hover{
+        background-color: #fdcbe1;
+        transition: background-color 0.3s; /* Adiciona uma transição suave */
+    }
+    .mathematics-card h2 {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .mathematics-card p {
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    @media (max-width: 768px) {
+      .mathematics-section {
+        flex-direction: column;
+      }
+      .mathematics-card {
+        width: 100%;
+      }
+    }
+    hr {
+      background-color: rgb(83, 7, 64); /* Defina a cor desejada */
+      height: 1px; /* Ajuste a espessura da linha */
+      border: none; /* Remova a borda padrão */
+    }
+    .tag-cloud {
+      align-items: center;
+      display: inline-block;
+      color: rgb(44, 43, 43);
+      padding: 8px 20px;
+      font-family: Arial;
+      border-radius: 25px;
+      background-color: #46dde2;
+      margin-top: 8px;
+    }
+    a {
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="mainpage.html">
+          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+
+        <nav >
+          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="aumentar fonte">
+          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="diminuir fonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+          <a href="#">
+            <img src="./images/cabecalho/lista.png" alt="lista" title="lista de exercícios">
+          </a>
+
+          <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" alt="noticias" title="notícias de matemática">
+          </a>
+
+          <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" alt="forum" title="fórum"></a>
+
+          <a href="#">
+            <img src="./images/cabecalho/perfil.png" alt="perfil" title="perfil">
+          </a>
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+<br> <hr><br>
+      <br><h1>Primeiro ano </h1><br>
+      <div class="mathematics-section">
+
+        <div class="mathematics-card">
+          <strong><h2>UNIDADE 1: Conjuntos</h2></strong>
+          <p>Nossa jornada começa explorando o fascinante mundo dos conjuntos matemáticos, onde os números se organizam e interagem de maneiras surpreendentes.</p>
+        </div>
+        <div class="mathematics-card">
+          <a href="sumarioFuncao.html"><h2>UNIDADE 2: Introdução às funções</h2></a>
+          <p>Nesta unidade, mergulharemos na teoria das funções, uma ferramenta fundamental da matemática que descreve como as coisas se relacionam e se transformam.</p>
+        </div>
+        <div class="mathematics-card">
+          <a href="funcaoAfim.html"><h2>UNIDADE 3: Função Afim</h2></a>
+          <p>A função afim é nossa próxima parada, uma função simples, mas poderosa, que modela relacionamentos lineares entre variáveis. Vamos entender como usá-la e interpretá-la.</p>
+        </div>
+        <div class="mathematics-card">
+          <a href="funcaoQuadratica.html"><h2>UNIDADE 4: Função Quadrática</h2></a>
+          <p>Prepare-se para uma curva suave! A unidade sobre funções quadráticas explora as parábolas e suas aplicações em várias áreas da matemática e da ciência.</p>
+        </div>
+
+        <div class="mathematics-card">
+          <h2>UNIDADE 5: Função Modular</h2>
+          <p>A função modular é nossa próxima aventura, revelando padrões repetitivos e simetrias ocultas em números e equações. Vamos descobrir como ela funciona.</p>
+        </div>
+      
+      <div class="mathematics-card">
+        <h2>UNIDADE 6: Função Exponencial</h2>
+        <p>Nesta unidade, mergulharemos nas funções exponenciais, que descrevem crescimento e decadência explosivos em diversos contextos, desde o mundo natural até as finanças.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 7: Função Logarítmica</h2>
+        <p>As funções logarítmicas são nossas guias na próxima etapa. Elas desvendam os segredos da inversão das funções exponenciais e têm aplicações vitais em resolução de problemas.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 8: Trigonometria</h2>
+        <p>A função afim é nossa próxima parada, uma função simples, mas poderosa, que modela relacionamentos lineares entre variáveis. Vamos entender como usá-la e interpretá-la.</p>
+      </div>
+    </div>
+
+    <br> <hr><br>
+    <h1>Segundo ano </h1><br>
+    <div class="mathematics-section">
+
+        <div class="mathematics-card">
+          <strong><h2>UNIDADE 1: Geometria Plana</h2></strong>
+          <p>Em nossa primeira unidade, mergulharemos na Geometria Plana, explorando formas, figuras e as relações entre pontos, linhas e ângulos.</p>
+        </div>
+        <div class="mathematics-card">
+          <h2>UNIDADE 2: Geometria Plana</h2>
+          <p>A Geometria Espacial é nossa próxima parada, onde entraremos no mundo tridimensional, estudando sólidos, volumes e os espaços em que vivemos.</p>
+        </div>
+        <div class="mathematics-card">
+          <h2>UNIDADE 3:Números Complexos</h2>
+          <p>Prepare-se para uma jornada fascinante no mundo dos números complexos, onde imaginários se tornam reais e abrimos portas para resolução de problemas mais complexos.</p>
+        </div>
+        <div class="mathematics-card">
+          <h2>UNIDADE 4: Progressões Aritmética e Geométrica</h2>
+          <p>Progressões Aritméticas e Geométricas são as estrelas desta unidade, revelando padrões de crescimento e sequências matemáticas que estão por toda parte.</p>
+        </div>
+        <div class="mathematics-card">
+          <h2>UNIDADE 5: Matemática Financeira</h2>
+          <p>Vamos adentrar o mundo da Matemática Financeira, onde aprenderemos como tomar decisões inteligentes sobre dinheiro, empréstimos e investimentos.</p>
+        </div>
+      
+      <div class="mathematics-card">
+        <h2>UNIDADE 6: Matrizes</h2>
+        <p>As matrizes estão à nossa frente na Unidade 6. Elas desempenham papéis essenciais na resolução de sistemas de equações e na transformação de dados.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 7:  Determinantes</h2>
+        <p>Nossa próxima etapa é a exploração dos determinantes, ferramentas matemáticas poderosas usadas para entender transformações e sistemas lineares.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 8: Sistemas Lineares</h2>
+        <p>Sistemas Lineares são o foco da Unidade 8, onde aprenderemos a resolver equações simultâneas e a aplicar esse conhecimento em diversos contextos.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 8: Noções de Cálculo para o Ensino Médio</h2>
+        <p>Finalizaremos nossa jornada com Noções de Cálculo para o Ensino Médio, abrindo portas para o mundo do cálculo e suas aplicações fascinantes.</p>
+      </div>
+    </div>
+
+</body>
+<script>
+    function increaseFontSize() {
+      var element = document.body;
+      var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+      var size = parseFloat(style);
+      element.style.fontSize = (size + 1) + 'px';
+    }
+    function decreaseFontSize() {
+      var element = document.body;
+      var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+      var size = parseFloat(style);
+      element.style.fontSize = (size - 1) + 'px';
+    }
+  </script>
+  <script src="./js/calculadora.js"></script>
+</html>

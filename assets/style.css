@@ -1,0 +1,314 @@
+/* Estilos para o cabeçalho */
+header {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px #b6b5b5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 5px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+}
+
+.nav-bar {
+display: flex;
+align-items: center;
+}
+
+.menu a {
+color: #d41d6d;
+text-decoration: none;
+margin: 0 20px;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+.login-button, .signup-button {
+background-color: #d41d6d;
+color: #fbfdff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+margin-left: 10px;
+cursor: pointer;
+font-family: Roboto;
+}
+
+/* Estilos para tornar o cabeçalho responsivo */
+@media (max-width: 780px) {
+.menu {
+    display: none;
+}
+
+.login-button, .signup-button {
+    margin-top: 10px;
+}
+}
+
+h2 {
+font-size: 6rem; 
+line-height: 1.2;/* Line-height */
+font-family: Roboto;
+padding: 5px;
+}
+
+h2 span{
+font-size: 4rem; 
+color: #e11e72;
+font-family: Roboto;
+}
+
+/* Estilos para tornar o texto responsivo em tamanhos menores de tela 
+@media (max-width: 768px) {
+h2 {
+    font-size: 2.1rem; /* Tamanho de fonte menor para telas menores /
+}
+span {
+  font-size: 3rem; /* Tamanho de fonte menor para telas menores /
+  padding: 0.25rem; /* Reduza o espaçamento interno para telas menores 
+}
+}*/
+
+/*Trecos do pequeno*/
+.container { 
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.right-column img {
+max-width: 100%;
+height: auto;
+}
+
+p{
+font-size: 20px;
+font-family:Roboto;
+line-height: 23px;
+margin-top: 90px;
+display: flex;
+justify-content: flex-start;
+text-align: justify;
+}
+
+@media (max-width: 768px) {
+.right-column img {
+    order: -1; /* Reordena a imagem para aparecer antes do texto */
+}
+}
+
+/*imagem*/
+.right-column img {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+}
+
+.left-column {
+width: 100%;
+height: 100%;
+margin-left: 5%;
+object-fit: cover; /* Ajusta a imagem para cobrir todo o espaço disponível */
+}
+
+.left-column {
+float: left;
+width: 50%;
+}
+.divisorias{
+  align-items: left;
+  width: auto;
+  height: 340px;
+  padding-top: 120px;
+  display: flex;
+}
+
+/*PAra imagens*/
+.div1{
+float: right;
+margin-right: 0.16px;
+width: 100px;
+max-width: 100%;
+margin-top: -0.01%;
+}
+main {
+padding: 25px;
+text-align: center;
+background-color: #ccdbff;
+}
+
+h1 {
+font-size: 2.25rem; /* 36px / 16px = 2.25 */
+margin-bottom: 20px;
+}
+
+/*p {
+font-size: 1.125rem; /* 18px / 16px = 1.125 /
+font-family: Roboto;
+/*	line-height: 3px;	tamanho	da	altura	de	cada	linha	/
+/*word-spacing: 5px;		tamanho	do	espaço	entre	cada	palavra	/
+/*text-indent: 30px;		tamanho	da	margem	da	primeira	linha	do	texto	/
+margin-left: 25px;
+text-align: justify;}
+
+/*@media (max-width: 768px) {
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}*/
+
+
+.right-column {
+float: right;
+width: 40%;
+}
+
+
+.button{
+  background-color: #e62478;
+  color: #ffe9e9;
+  cursor: pointer;
+  border-radius: 6px;
+  border-color: #e62478;
+  padding: 18px 180px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  height: 30px;
+  text-align: center;
+  line-height: 5px; /* Ajusta a altura do texto verticalmente */
+}
+
+@media (max-width: 668px) {
+  .button{
+    padding: 18px 80px;
+  }
+}
+
+/*.button1{
+background-color: #e11e72;
+color: #020202;
+border-radius: 5px;
+border: none;
+font-size: 20px;
+font: Roboto;
+padding: 5px 10px;
+text-decoration: none;
+display: inline-block;    /*Link aplicar na forma
+cursor: pointer;
+}*/
+.button:hover{
+ /* transform: translateY(-4px);
+  transition: 0.5s;*/
+  background-color: #cc1967;
+}
+
+/*footer*/
+footer{
+width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px;
+  background-color:   #8fb3ff;
+  display: block;
+  text-align: center;
+}
+
+footer span{
+font-size: 20px;
+font-family: Roboto;
+color: #000000;
+}
+
+/*--sMULÁRIO login/cadastro--*/
+
+.formulario{
+
+font-family:Roboto;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #0a0307;
+border: none;
+color: #fff;
+padding: 18px 120px; /* Largura do botão */
+font-size: 25px;
+font-family: Roboto, sans-serif;
+border-radius: 8px;
+cursor: pointer;
+text-align: center;
+line-height: 5px; /* Ajusta a altura do texto verticalmente */
+}
+
+
+
+input[type="submit"]:hover {
+background-color: rgb(28, 47, 78);
+}
+:-moz-ui-invalidinput[type="text"], input[type="password"], input[type="email"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+/* Estilos para a barra de pesquisa */
+.search-box {
+text-align: center;
+padding: 20px;
+}
+
+.search-box select,
+.search-box input,
+.search-box button {
+font-size: 16px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.search-box select {
+margin-right: 10px;
+}
+
+.search-box input {
+width: 250px;
+}
+
+.search-box button {
+background-color: #5fadec;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.search-box button:hover {
+background-color: #0056b3;
+}

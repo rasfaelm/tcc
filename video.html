@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vídeos</title>
+    <link rel="stylesheet" href="./assets/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="./assets/cabecalho.css">
+        <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+        <link rel="stylesheet" href="./assets/calculadora.css">
+        <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+        <style>
+            .container-fluid {
+                width: 100%;
+                display: block;
+                }
+                .container:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+            .tip {
+                width: calc(22.22% - 20px); /* Define a largura para caber 3 na mesma linha com margens */
+                margin: 5px; /* Espaço entre as dicas */
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                transition: transform 0.2s, box-shadow 0.2s;
+                cursor: pointer;
+                display: inline-block;
+                text-align: center; /* Centraliza o conteúdo horizontalmente */
+            }
+    
+            ul,
+            ol {
+                list-style-type: none;
+            }
+    
+            .tip:hover {
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+    
+            #study-tips {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            }
+
+            @media (max-width: 768px) {
+                .tip {
+                    width: 100%; /* 100% de largura em telas menores */
+                    margin: 10px 0; /* Espaço acima e abaixo em telas menores */
+                }
+            }
+
+            .tip p {
+                margin: 0;
+            }
+            .p {
+                color: #181717;
+                text-align: justify;
+                text-indent: 30px;
+            }
+        </style>
+    <link rel="stylesheet" href="./assets/videos.css">
+</head>
+
+<body>
+        <header>
+            <a href="mainpage.html">
+            <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+            </a>
+        
+            <nav >
+            <a href="series.html">Séries</a>
+            
+            <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+            <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+            <a href="#">
+            <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+            </a>
+
+            <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            </a>
+            <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+            <a href="">
+            <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+            </a>
+
+            <a href="video.html">
+            <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+            </a>
+
+            <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            </a>
+
+            <a href="#">
+            <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+            </a>
+            
+            <div id="main">
+                <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+            </div>
+            </nav>
+        </header>
+
+        <div class="calculator" id="calculator">
+            <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+            <input type="text" id="screen" maxlength="20">
+            <div class="calc-buttons">
+            <div class="functions-one">
+                <button class="button triggers">C</button>
+                <button class="button basic-stuff">(</button>
+                <button class="button basic-stuff">)</button>
+                <button class="button numbers">7</button>
+                <button class="button numbers">8</button>
+                <button class="button numbers">9</button>
+                <button class="button numbers">4</button>
+                <button class="button numbers">5</button>
+                <button class="button numbers">6</button>
+                <button class="button numbers">1</button>
+                <button class="button numbers">2</button>
+                <button class="button numbers">3</button>
+                <button class="button basic-stuff">±</button>
+                <button class="button numbers">0</button>
+                <button class="button basic-stuff">.</button>
+            </div>
+                <div class="functions-two">
+                    <button class="button triggers">&#60;=</button>
+                    <button class="button complex-stuff">%</button>
+                    <button class="button complex-stuff">x !</button>
+                    <button class="button complex-stuff">x^</button>
+                    <button class="button basic-stuff">*</button>
+                    <button class="button basic-stuff">/</button>
+                    <button class="button complex-stuff">ln</button>
+                    <button class="button complex-stuff">e</button>
+                    <button class="button basic-stuff">+</button>
+                    <button class="button complex-stuff">x ²</button>
+                    <button class="button complex-stuff">log</button>
+                    <button class="button complex-stuff">cos</button>
+                    <button class="button basic-stuff">-</button>
+                    <button class="button complex-stuff">√</button>
+                    <button class="button complex-stuff">sin</button>
+                    <button class="button complex-stuff">tan</button>
+                    <button class="button triggers">=</button>
+                    <button class="button complex-stuff">&#x003C0;</button>
+                    <button class="button complex-stuff">∘</button>
+                    <button class="button complex-stuff">rad</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding:128px 16px">
+            <div class="w3-row-padding">
+            <h1>Vídeos de Funções</h1>
+            <div class="video-category">
+                <div class="videos-container">
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/qbafCJrDCDw')">
+                        <img src="http://img.youtube.com/vi/qbafCJrDCDw/maxresdefault.jpg" alt="Vídeo 1">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/OkgwaatIDMU')">
+                        <img src="http://img.youtube.com/vi/OkgwaatIDMU/maxresdefault.jpg" alt="Vídeo 2">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/xpv-SWbDUr8')">
+                        <img src="http://img.youtube.com/vi/xpv-SWbDUr8/maxresdefault.jpg" alt="Vídeo 3">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/nysu0K-VXR8')">
+                        <img src="http://img.youtube.com/vi/nysu0K-VXR8/maxresdefault.jpg" alt="Vídeo 4">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/rcIsdrsvGxU')">
+                        <img src="http://img.youtube.com/vi/rcIsdrsvGxU/maxresdefault.jpg" alt="Vídeo 5">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/Sq1eKratRrc')">
+                        <img src="http://img.youtube.com/vi/Sq1eKratRrc/maxresdefault.jpg" alt="Vídeo 6">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/7Vo8N82r8Ac')">
+                        <img src="http://img.youtube.com/vi/7Vo8N82r8Ac/maxresdefault.jpg" alt="Vídeo 7">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/40qQvm3GCUw')">
+                        <img src="http://img.youtube.com/vi/40qQvm3GCUw/maxresdefault.jpg" alt="Vídeo 8">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/TompTKd75hw')">
+                        <img src="http://img.youtube.com/vi/TompTKd75hw/maxresdefault.jpg" alt="Vídeo 9">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/ATGxvPr_Ycs')">
+                        <img src="http://img.youtube.com/vi/ATGxvPr_Ycs/maxresdefault.jpg" alt="Vídeo 10">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/mzEGFoEenh8')">
+                        <img src="http://img.youtube.com/vi/mzEGFoEenh8/maxresdefault.jpg" alt="Vídeo 11">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/vS3KyC-dRIo')">
+                        <img src="http://img.youtube.com/vi/vS3KyC-dRIo/maxres1.jpg" alt="Vídeo 12">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/Ka1p09K03uM')">
+                        <img src="http://img.youtube.com/vi/Ka1p09K03uM/maxresdefault.jpg" alt="Vídeo 13">
+                    </div>
+                </div>
+            </div>
+            <h1>Vídeos de Matrizes</h1>
+            <div class="video-category">
+                <div class="videos-container">
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/T8n5A_OYvdk')">
+                        <img src="http://img.youtube.com/vi/T8n5A_OYvdk/maxresdefault.jpg" alt="Vídeo 1">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/qvSGa0uO7ds')">
+                        <img src="http://img.youtube.com/vi/qvSGa0uO7ds/maxresdefault.jpg" alt="Vídeo 2">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/Fa_vs3jPa0Q')">
+                        <img src="http://img.youtube.com/vi/Fa_vs3jPa0Q/maxresdefault.jpg" alt="Vídeo 3">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/3K9dbU375hM')">
+                        <img src="http://img.youtube.com/vi/3K9dbU375hM/maxresdefault.jpg" alt="Vídeo 4">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/NtFikKMpQb0')">
+                        <img src="http://img.youtube.com/vi/NtFikKMpQb0/maxresdefault.jpg" alt="Vídeo 5">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/mYBeVOI_-ug')">
+                        <img src="http://img.youtube.com/vi/mYBeVOI_-ug/maxresdefault.jpg" alt="Vídeo 6">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/D8VCjxbZdV0')">
+                        <img src="http://img.youtube.com/vi/D8VCjxbZdV0/maxresdefault.jpg" alt="Vídeo 7">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/MFLifLdkmkQ')">
+                        <img src="http://img.youtube.com/vi/MFLifLdkmkQ/maxresdefault.jpg" alt="Vídeo 8">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/A-pCOfRgNWo')">
+                        <img src="http://img.youtube.com/vi/A-pCOfRgNWo/maxresdefault.jpg" alt="Vídeo 9">
+                    </div>
+                </div>
+            </div>
+            <h1>Vídeos de Análise Combinatória</h1>
+            <div class="video-category">
+                <div class="videos-container">
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/BSko9hh4F24')">
+                        <img src="http://img.youtube.com/vi/BSko9hh4F24/maxresdefault.jpg" alt="Vídeo 1">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/f0OjyQhITv0')">
+                        <img src="http://img.youtube.com/vi/f0OjyQhITv0/maxresdefault.jpg" alt="Vídeo 2">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/IBf_KwwuCKs')">
+                        <img src="http://img.youtube.com/vi/IBf_KwwuCKs/maxresdefault.jpg" alt="Vídeo 3">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/soCMbVudDuE')">
+                        <img src="http://img.youtube.com/vi/soCMbVudDuE/maxresdefault.jpg" alt="Vídeo 4">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/064FUC0q3uU')">
+                        <img src="http://img.youtube.com/vi/064FUC0q3uU/maxres1.jpg" alt="Vídeo 5">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/0p-p0pD8RmM')">
+                        <img src="http://img.youtube.com/vi/0p-p0pD8RmM/maxresdefault.jpg" alt="Vídeo 6">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/m_1RxAZutR4')">
+                        <img src="http://img.youtube.com/vi/m_1RxAZutR4/maxresdefault.jpg" alt="Vídeo 7">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/ZTGskiPNJ6w')">
+                        <img src="http://img.youtube.com/vi/ZTGskiPNJ6w/maxresdefault.jpg" alt="Vídeo 8">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/rqd50wMUAP4')">
+                        <img src="http://img.youtube.com/vi/rqd50wMUAP4/maxresdefault.jpg" alt="Vídeo 9">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/SX8JwHAIfXQ')">
+                        <img src="http://img.youtube.com/vi/SX8JwHAIfXQ/maxres1.jpg" alt="Vídeo 10">
+                    </div>
+                    <div class="video" onclick="openModal('https://www.youtube.com/embed/T6H7Gj3CfwE')">
+                        <img src="http://img.youtube.com/vi/T6H7Gj3CfwE/maxresdefault.jpg" alt="Vídeo 11">
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="videoModal" onclick="closeModal()">
+                <iframe class="modal-video" width="800" height="600" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+
+    <script src="./js/videos.js"></script>
+    <script src="./js/+e-.js"></script>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>

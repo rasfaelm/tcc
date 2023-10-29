@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Feedback</title>
+    <style>
+        .post {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        .star-rating {
+            font-size: 24px;
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .star {
+            cursor: pointer;
+            color: rgb(196, 196, 196);
+            transition: color 0.2s;
+        }
+
+        .star:hover {
+            color: rgb(223, 50, 200);
+        }
+    </style>
+</head>
+<body>
+    <div class="post">
+        <h2 style="text-align: center;">Feedbacks</h2><br>
+        Você gostou da nossa página? Envie-nos uma mensagem e compartilhe suas sugestões para nos ajudar a melhorar ainda mais.
+        <br><br>
+        <div class="comment-form">
+            <form action="process_feedback.php" method="POST">
+            <textarea name="feedback" placeholder="Adicionar comentário..." style="width:100%; max-width: 35rem; height:10rem;"></textarea><br><br>
+            <button class="button" style="display: 0; margin: 0 auto; margin-left: 30%;">Enviar</button><br><br><br>
+            </form>
+        </div>
+        
+        <div class="feedback-section">
+            <h3>Avalie nossas seções com estrelas:</h3><br>
+            <div class="star-rating">
+            <span class="star" data-rating="1">&#9733;</span>
+            <span class="star" data-rating="2">&#9733;</span>
+            <span class="star" data-rating="3">&#9733;</span>
+            <span class="star" data-rating="4">&#9733;</span>
+            <span class="star" data-rating="5">&#9733;</span>
+            </div>
+            <input type="hidden" id="feedback" name="feedback" value="0">
+        </div>
+        
+        <script>
+            const stars = document.querySelectorAll('.star');
+            const feedback = document.querySelector('#feedback'); // Você pode usar um input hidden para armazenar a classificação.
+            stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.getAttribute('data-rating');
+                feedback.value = rating;
+                alert(`Você selecionou ${rating} estrela(s).`);
+                stars.forEach(star => {
+                if (star.getAttribute('data-rating') <= rating) {
+                    star.style.color = '#e11e72';
+                } else {
+                    star.style.color = 'rgb(196, 196, 196)';
+                }
+                });
+            });
+            });
+        </script>
+    </div>
+</body>
+</html>

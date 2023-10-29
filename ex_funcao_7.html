@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/ex.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <style>
+        .wrapper{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html">
+            <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+
+        <nav>
+            <a href="series.html">Séries</a>
+
+            <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+            <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+            <a href="#">
+            <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+            </a>
+
+            <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            </a>
+            <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+            <a href="">
+            <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+            </a>
+
+            <a href="video.html">
+            <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+            </a>
+
+            <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            </a>
+
+            <a href="#">
+            <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+            </a>
+            
+            <div id="main">
+                <span style="font-size:30px; cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 7 FAAP-SP</h1>
+                <p>Com relação ao gráfico da função f(x) = 2 (x – 1)² – 4 são feitas as seguintes afirmações:</p>
+                <li> É uma parábola com concavidade voltada para cima. </li>
+                <li> É uma parábola cujo vértice é o ponto (– 2, 4).</li>
+                <li> O ponto de intersecção com o eixo y é (0, – 2). </li>
+                <p>Nestas condições:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span>Somente a afirmação I é verdadeira.</span>
+                            </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span>Somente a afirmação III é verdadeira</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span>As afirmações I, II e III são verdadeiras</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span>As afirmações I e III são verdadeiras.</span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span>As afirmações I e III são verdadeiras.</span>
+                        </label>
+
+                        <p>Primeiramente, precisamos encontrar a forma padrão da função:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>f</mi>
+                            <mo stretchy="false">(</mo>
+                            <mi>x</mi>
+                            <mo stretchy="false">)</mo>
+                            <mo>=</mo>
+                            <mn>2</mn>
+                            <mo>&#x22C5;<!-- ⋅ --></mo>
+                            <mo stretchy="false">(</mo>
+                            <mi>x</mi>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>1</mn>
+                            <msup>
+                                <mo stretchy="false">)</mo>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>&#x2212;<!-- − --></mo>
+                            <mn>4</mn>
+                            </math>
+                        </p>
+
+                        <p>Usando o produto notável:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mi>x</mi>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mn>2</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mo stretchy="false">(</mo>
+                                <msup>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                                </msup>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>2</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mn>1</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>4</mn>
+                                <mo>=</mo>
+                                <mn>2</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <msup>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                                </msup>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>4</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mn>2</mn>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>4</mn>
+                                <mo>=</mo>
+                                <mn>2</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <msup>
+                                <mi>x</mi>
+                                <mn>2</mn>
+                                </msup>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>4</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mi>x</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>2</mn>
+                            </math>
+                        </p>
+                        
+                        <p>Como podemos observar o coeficiente a (valor que multiplica x²), concluímos que a concavidade da parábola é para cima. Portanto, a afirmação I é verdadeira. A afirmação III também é verdadeira, pois o coeficiente c é -2: f(0) = -2. Agora, para encontrar o valor do vértice, precisamos apenas substituir os valores:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                <mi>x</mi>
+                                <mi>v</mi>
+                                </msub>
+                                <mo>=</mo>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mfrac>
+                                <mi>b</mi>
+                                <mrow>
+                                    <mn>2</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mi>a</mi>
+                                </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mfrac>
+                                <mrow>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>4</mn>
+                                </mrow>
+                                <mrow>
+                                    <mn>2</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mn>2</mn>
+                                </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </math>
+                        </p>
+                        <p>Assim sendo, a afirmação II é falsa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./js/+e-.js"></script>
+    <script src="./js/ex.js"></script>
+    <script src="./js/calculadora.js"></script>
+</body>
+
+</html>

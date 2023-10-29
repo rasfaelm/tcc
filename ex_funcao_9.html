@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/ex.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <style>
+        .wrapper{
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html">
+            <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+
+        <nav>
+            <a href="series.html">Séries</a>
+
+            <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+            <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+            <a href="#">
+            <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+            </a>
+
+            <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            </a>
+            <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+            <a href="">
+            <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+            </a>
+
+            <a href="video.html">
+            <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+            </a>
+
+            <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            </a>
+
+            <a href="#">
+            <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+            </a>
+            
+            <div id="main">
+                <span style="font-size:30px; cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 9 UFSM</h1>
+                <p>A figura representa o gráfico de uma função do 1º grau que passa pelos pontos A e B, onde a <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mo>&#x2260;<!-- ≠ --></mo>
+                </math> 2.</p>
+                <img src="./images/ex9_Funcao.png" alt="grafico">
+                <p>O ponto de interseção da reta "<math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mover>
+                    <mrow>
+                        <mi>A</mi>
+                        <mi>B</mi>
+                    </mrow>
+                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
+                    </mover>
+                </math>" com o eixo x tem abscissa igual a:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span>1 - a</span>
+                            </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span>a - 2</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span>(3a - 12)/(a - 2)</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span>4a - a</span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span>4a - a</span>
+                        </label>
+
+                        <p> Várias perguntas dos vestibulares são feitas para confundir o candidato. Para evitar confusão, os coeficientes da função serão dados em letras maiúsculas: não confundir com os nomes dados aos pontos. Portanto, teremos uma função da seguinte forma:</p>
+    
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mo>{</mo>
+                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                                        <mtr>
+                                        <mtd>
+                                            <mn>3</mn>
+                                            <mo>=</mo>
+                                            <mi>A</mi>
+                                            <mo>&#x22C5;<!-- ⋅ --></mo>
+                                            <mn>2</mn>
+                                            <mo>+</mo>
+                                            <mi>B</mi>
+                                        </mtd>
+                                        </mtr>
+                                        <mtr>
+                                        <mtd>
+                                            <mn>6</mn>
+                                            <mo>=</mo>
+                                            <mi>A</mi>
+                                            <mo>&#x22C5;<!-- ⋅ --></mo>
+                                            <mi>a</mi>
+                                            <mo>+</mo>
+                                            <mi>B</mi>
+                                        </mtd>
+                                        </mtr>
+                                    </mtable>
+                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
+                                    </mrow>
+                                </math>
+                        </p>
+                        
+                        <p>Multiplicando a primeira equação por (-1) e resolvendo o sistema, temos:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>3</mn>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mi>a</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mi>A</mi>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mn>2</mn>
+                                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                                <mn>3</mn>
+                                <mo>=</mo>
+                                <mi>A</mi>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>a</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>2</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                                <mi>A</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mn>3</mn>
+                                <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                </mrow>
+                                </mfrac>
+                            </math>
+                        </p>
+                        
+                        <p>Como já temos o valor do coeficiente angular (A), agora podemos encontrar o valor de B apenas substituindo esse valor em qualquer uma das equações iniciais. Usaremos a primeira:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>3</mn>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mn>2</mn>
+                                <mo>+</mo>
+                                <mi>B</mi>
+                                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                                <mi>B</mi>
+                                <mo>=</mo>
+                                <mn>3</mn>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mfrac>
+                                    <mn>6</mn>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                </math>
+                        </p>
+                        
+                        <p>Como o exercício pede o ponto de intersecção da reta com o eixo x, ele quer o valor da raiz.</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                <mrow>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mi>B</mi>
+                                </mrow>
+                                <mi>A</mi>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mrow>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mrow>
+                                    <mo>(</mo>
+                                    <mn>3</mn>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mfrac>
+                                        <mn>6</mn>
+                                        <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>a</mi>
+                                        <mo>&#x2212;<!-- − --></mo>
+                                        <mn>2</mn>
+                                        <mo stretchy="false">)</mo>
+                                        </mrow>
+                                    </mfrac>
+                                    <mo>)</mo>
+                                    </mrow>
+                                </mrow>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mrow>
+                                    <mfrac>
+                                    <mn>6</mn>
+                                    <mrow>
+                                        <mo stretchy="false">(</mo>
+                                        <mi>a</mi>
+                                        <mo>&#x2212;<!-- − --></mo>
+                                        <mn>2</mn>
+                                        <mo stretchy="false">)</mo>
+                                    </mrow>
+                                    </mfrac>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>3</mn>
+                                </mrow>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mfrac>
+                                    <mrow>
+                                    <mn>6</mn>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>3</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mrow>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    </mrow>
+                                </mfrac>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mrow>
+                                    <mo stretchy="false">[</mo>
+                                    <mn>6</mn>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>3</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                    <mo stretchy="false">]</mo>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mrow>
+                                    <mn>3</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                <mrow>
+                                    <mn>6</mn>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>3</mn>
+                                    <mo>&#x22C5;<!-- ⋅ --></mo>
+                                    <mo stretchy="false">(</mo>
+                                    <mi>a</mi>
+                                    <mo>&#x2212;<!-- − --></mo>
+                                    <mn>2</mn>
+                                    <mo stretchy="false">)</mo>
+                                </mrow>
+                                <mn>3</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>2</mn>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mo stretchy="false">(</mo>
+                                <mi>a</mi>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mn>2</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mn>4</mn>
+                                <mo>&#x2212;<!-- − --></mo>
+                                <mi>a</mi>
+                            </math>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./js/+e-.js"></script>
+    <script src="./js/ex.js"></script>
+    <script src="./js/calculadora.js"></script>
+</body>
+
+</html>

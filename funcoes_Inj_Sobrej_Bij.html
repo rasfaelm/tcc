@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdos de Matemática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
+  <div class="content">
+    <h1>Função injetora, sobrejetora e bijetora</h1>
+
+<hr>
+  <p>As palavras "injetora", "sobrejetora" e "bijetora" são termos usados na teoria
+    das funções para descrever diferentes tipos de relações entre os elementos do
+    domínio e da imagem de uma função. Esses termos são frequentemente usados em
+    contextos de matemática discreta e análise funcional. Vamos entender o significado
+    de cada um deles: </p>
+
+    <p><b>Função Injetora (injetividade): </b> Uma função é considerada injetora (ou injetiva) 
+        se cada elemento distinto do domínio é mapeado para um elemento distinto na imagem. Em outras palavras, a
+        função não associa dois elementos diferentes do domínio ao mesmo elemento da imagem. Isso significa que não
+        há "colisões" ou sobreposições entre os elementos do domínio e da imagem. Graficamente, uma função injetora não tem linhas
+        horizontais que cruzam o gráfico mais de uma vez. </p>
+    <p>Matematicamente, uma função f é injetora se, para quaisquer dois
+        elementos diferentes x1 ≠ x2 no domínio, f(x1) ≠ f(x2).</p>
+    <img src="./images/injetora.PNG" alt="função injetiva " width="300">
+
+    <p><b>Função Sobrejetora (sobretividade): </b> Uma função é considerada sobrejetora (ou sobrejetiva) se cada elemento no
+        contradomínio (conjunto de possíveis valores de saída) é atingido por pelo menos um elemento do domínio.
+        Em outras palavras, a função "cobre" todos os elementos do contradomínio. </p>
+    <p>Matematicamente, uma função f é sobrejetora se, para cada elemento y no contradomínio
+        existe pelo menos um elemento x no domínio tal que f(x) = y.</p>
+    <img src="./images/sobrejetora.PNG" alt="função sobrejetora " width="250">
+
+    <p><b>Função Bijetora (bijetividade): </b> Uma função é considerada bijetora (ou bijetiva) se ela é tanto injetora quanto
+        sobrejetora. Isso significa que cada elemento único do domínio é mapeado para um
+        único elemento na imagem, sem colisões, e que cada elemento no contradomínio é
+        alcançado por pelo menos um elemento do domínio. Graficamente, uma função
+        bijetora é uma correspondência um-a-um entre o domínio e o contradomínio. </p>
+    <p>Matematicamente, uma função f é bijetora se ela é injetora e sobrejetora ao mesmo tempo.</p>
+    <img src="./images/bijetora.png" alt="função bijetora " width="300">
+
+    <p><b>   Em resumo:  </b> </p>
+    <ul>
+        <p><li><b>Injetora:</b> Nenhum par de elementos diferentes do domínio é mapeado para o mesmo elemento da imagem.</li></p>
+        <p><li><b>Sobrejetora:</b> A função "cobre" todos os elementos da imagem.</li></p>
+        <p><li><b>Bijetora:</b> Cada elemento único do domínio é mapeado para um único elemento na imagem, 
+        e cada elemento na imagem é alcançado por pelo menos um elemento do domínio.</b></li></p>
+    </ul>
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+            <span>Siga o CEFET MAT</span>
+            <a href="#"> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
+        </div>   
+      </footer>
+</body>
+</html>

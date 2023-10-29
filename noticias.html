@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notícias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fafafa;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            position:relative; /* Adicione esta linha */
+
+        }
+    
+        h1 {
+            margin: 0;
+        }
+
+        .noticia {
+            
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px #888888;
+            display: flex;        
+        }
+
+        .noticia:first-child {
+            margin-top: 60px; /* Adicione este valor apenas à primeira notícia */
+        }
+
+        .noticia h2 a {
+            margin: 0;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .noticia p {
+            margin: 5px 0;
+        }
+
+        .noticia img {
+            max-width: 100px; /* Largura máxima da imagem */
+            height: auto;
+            margin-right: 10px; /* Espaço à direita da imagem */
+        }
+
+        footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <a href="mainpage.html">
+        <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT" title="Página principal">
+        </a>
+    
+        <nav >
+        
+        <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte" >
+        <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="Diminuir fonte">
+
+        <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+        <a href="#">
+        <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+        </a>
+
+        <a href="noticias.html">
+        <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+        </a>
+        <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+        <a href="">
+        <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+        </a>
+
+        <a href="video.html">
+        <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+        </a>
+
+        <a href="forum.html">
+        <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+        </a>
+
+        <a href="#">
+        <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+        </a>
+        
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+    <div class="noticia">
+        <img src="./images/cefet.png" alt="Imagem da Notícia 1">
+        <div>
+            <h2><a href="https://brasilescola.uol.com.br/tire-duvidas/gostaria-de-saber-tudo-oque-cai-no-cefet-mg-em-matematica-e/317638.html"> Gostaria de saber tudo oque cai no cefet-mg em matemática</a></h2>
+            <p>Gostaria de saber tudo oque cai no cefet-mg em matemática e em outros vestibulinhos?</p>
+            <p> - Veja as respostas da comunidade ou ajude a responder.</p>
+            <small>9 de out. de 2023</small>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <img src="./images/enem.png" alt="Imagem da Notícia 1">
+        <div>
+            <h2><a href="https://radios.ebc.com.br/nacional-jovem/2023/10/curso-gratuito-ajuda-estudantes-se-preparem-para-prova-de-matematica-do-enem">Curso gratuito ajuda estudantes a se preparem para a prova de Matemática do Enem</a></h2>
+            <p>A prova de Matemática do Enem costuma ser uma das mais desafiadoras, muitas vezes por falta de experiência em...</p>
+            <small> 9 de out. de 2023</small>
+        </div>
+    </div> 
+
+    <div class="noticia">
+        <img src="./images/obmep.png" alt="Imagem da Notícia 1">
+        <div>
+            <h2><a href="https://agenciabrasil.ebc.com.br/educacao/noticia/2023-07/olimpiada-tera-imersao-em-matematica-para-160-estudantes">Olimpíada terá imersão em matemática para 160 estudantes</a></h2>
+            <p>A 8ª edição do Encontro do Hotel de Hilbert vai reunir este ano, em Natal, 160 estudantes de todo o Brasil para..</p>
+            <small>23 de jul. de 2023</small>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <img src="./images/mat.png" alt="Imagem da Notícia 2">
+        <div>
+            <h2><a href="https://g1.globo.com/ce/ceara/educacao/noticia/2023/07/14/brasileiros-levam-ouro-prata-e-bronze-na-maior-olimpiada-de-matematica-do-mundo.ghtml">Brasileiros levam ouro, prata e bronze na maior olimpíada de matemática do mundo</a></h2>
+            <p>Seis estudantes representaram o Brasil na competição internacional que aconteceu no Japão. Cearense Matheus Alencar, de 16 anos,...</p>
+            <small>14 de jul. de 2023</small>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <img src="./images/mat.png" alt="Imagem da Notícia 3">
+        <div>
+            <h2><a href="https://www.icmc.usp.br/noticias/6113-dia-nacional-da-matematica-como-os-cientistas-buscam-padroes-em-um-mundo-aleatorio">Dia Nacional da Matemática: como os cientistas buscam padrões em um mundo aleatório</a></h2>
+            <p>ICMC - Instituto de Ciências Matemáticas e de Computação. Ensino, Graduação, Pós-Graduação, Pesquisa, Cultura e Extensão.</p>
+            <small>5 de mai. de 2023</small>
+        </div>
+    </div>
+
+    <div class="noticia">
+        <img src="./images/mano.jpg" alt="Imagem da Notícia 4">
+        <div>
+            <h2><a href="https://economia.uol.com.br/noticias/redacao/2022/10/19/quem-e-alexandr-wang-o-mais-novo-bilionario-self-made-de-apenas-25-anos.htm">Alexandr Wang, bilionário mais jovem do mundo, é gênio da matemática</a></h2>
+            <p>Prodígio em matemática criou com 19 anos sistema de inteligência artificial usado pelo Departamento de Defesa dos EUA.</p>
+            <small>19 de out. de 2022</small>
+        </div>
+
+    </div>
+
+    <script src="./js/calculadora.js"></script>
+    <!-- Adiciono mais noticias se acharem melhor-->
+    <script src="./js/+e-.js"></script>
+    <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+            <span>Siga o CEFET MAT</span>
+            <a href="https://instagram.com/cefetmat?igshid=MzRlODBiNWFlZA=="> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
+        </div>
+    </footer>
+</body>
+</html>

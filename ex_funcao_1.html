@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/ex.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html">
+            <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+
+        <nav>
+            <a href="series.html">Séries</a>
+
+            <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+            <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+            
+            <a href="#">
+            <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+            </a>
+
+            <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            </a>
+            <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+            <a href="">
+            <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+            </a>
+
+            <a href="video.html">
+            <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+            </a>
+
+            <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            </a>
+
+            <a href="#">
+            <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+            </a>
+            <div id="main">
+                <span style="font-size:30px; cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 1 UFSM</h1>
+                <p>Sabe-se que o preço a ser pago por uma corrida de táxi inclui uma parcela fixa, que é denominada bandeirada, e uma parcela variável, que é função da distância percorrida. Se o preço da bandeirada é de R$ 4,60 e o quilômetro rodado é R$ 0,96, a distância percorrida pelo passageiro que pagou R$ 19 para ir de sua casa ao shopping é de:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span> 5 km</span>
+                            </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span> 10 km</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span> 15 km</span>
+                        </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span> 20 km</span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span> 15 km</span>
+                        </label>
+
+                        <p>Seja d a distância percorrida em quilômetros, sabemos que:</p>
+                        
+                        <p>Isolando a incógnita, temos que:</p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>19</mn>
+                                <mo>=</mo>
+                                <mn>0.96</mn>
+                                <mi>d</mi>
+                                <mo>+</mo>
+                                <mn>4.6</mn>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>19</mn>
+                                <mo>−</mo>
+                                <mn>4.6</mn>
+                                <mo>=</mo>
+                                <mn>0.96</mn>
+                                <mi>d</mi>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>14.4</mn>
+                                <mo>=</mo>
+                                <mn>0.96</mn>
+                                <mi>d</mi>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>d</mi>
+                                <mo>=</mo>
+                                <mfrac linethickness="1">
+                                <mn>14.4</mn>
+                                <mn>0.96</mn>
+                                </mfrac>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>d</mi>
+                                <mo>=</mo>
+                                <mn>15</mn>
+                            </math>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./JS/+e-.js"></script>
+    <script src="./JS/ex.js"></script>
+    <script src="./js/calculadora.js"></script>
+</body>
+
+</html>

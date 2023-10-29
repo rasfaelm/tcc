@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title><link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <style>
+        .container-fluid {
+            width: 100%;
+            display: block;
+            }
+            .container:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+        .tip {
+            width: calc(22.22% - 20px); /* Define a largura para caber 3 na mesma linha com margens */
+            margin: 5px; /* Espaço entre as dicas */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
+
+        ul,
+        ol {
+            list-style-type: none;
+        }
+
+        .tip:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #study-tips {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .tip {
+                width: 100%; /* 100% de largura em telas menores */
+                margin: 10px 0; /* Espaço acima e abaixo em telas menores */
+            }
+        }
+        .tip p {
+            margin: 0;
+        }
+        .p {
+            color: #181717;
+            text-align: justify;
+            text-indent: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/perfil.css">
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html">
+        <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+    
+        <nav >
+        <a href="series.html">Séries</a>
+        
+        <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+        <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+        <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+        <a href="#">
+        <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+        </a>
+
+        <a href="noticias.html">
+        <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+        </a>
+        <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+        <a href="">
+        <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+        </a>
+
+        <a href="video.html">
+        <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+        </a>
+
+        <a href="forum.html">
+        <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+        </a>
+
+        <a href="#">
+        <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+        </a>
+        
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+        </div>
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+        <div class="profile-container">
+        <div class="profile-background"></div>
+        <img id="profile-image" src="./images/user-profile.jpg" alt="Foto de Perfil" class="profile-image">
+        <input type="file" id="profile-file" style="display: none;">
+        <div class="profile-info">
+            <div class="profile-text">
+                <span class="profile-username" id="username" >@usuario</span>
+                <h1 class="profile-name" id="name" oninput="limitText(this, 20)">Nome do Usuário</h1>
+                <p class="profile-message" id="message" oninput="limitText(this, 40)">Mensagem do usuário aqui...</p>
+            </div>
+            <div class="profile-buttons">
+                <button class="custom-button" id="edit-button" onclick="enableEdit()">Editar</button>
+                <button class="custom-button" id="save-button" onclick="saveChanges()">Salvar</button>
+                <button class="custom-button" id="logout-button" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+    </footer>
+    <script src="./js/perfil.js"></script>
+    <script src="./js/+e-.js"></script>
+    <script src="./js/calculadora.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+.hidden-header {
+    display: none;
+}
+
+.videos-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.video {
+    font-size: 0;
+    cursor: pointer;
+    margin-right: 10px; /* Espaçamento entre os vídeos */
+}
+
+.video img {
+    width: 320px;
+    height: 180px;
+}
+
+.video-category {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Adicione isso para permitir rolagem horizontal se houver muitos vídeos */
+}
+
+.video-category div {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    /* Espaçamento entre os vídeos */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Estilize o vídeo no modal */
+.modal-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,45 @@
+ .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+            max-width: 350px;
+            margin: 120px;
+            background-color: #f54b94;
+            padding: 30px;
+            border-radius: 10px;
+            font-family: Roboto;
+        }
+
+        img {
+            max-width: 70%;
+            height: auto;
+            margin: 80px; 
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            img {
+                display: none;
+            }
+            svg{
+                display: none;
+            }
+        }
+        label {
+          text-align: left; /* Define o alinhamento do texto do rótulo para a esquerda */
+          display: block; /* Torna os rótulos elementos de bloco para que apareçam em uma linha separada */
+        }
+        #buttonDiv {
+          margin: 0 auto; /* Define margem esquerda e direita como "auto" para centralizar horizontalmente */
+          width: 266px;   /* Defina uma largura para o #buttonDiv (ajuste conforme necessário) */
+          background-color: #050505; /* Adicione uma cor de fundo para visualização */
+          border-radius: 5px;
+      }

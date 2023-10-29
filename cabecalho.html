@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabeçalho</title>
+  <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/cabecalho.css">
+  <link rel="stylesheet" href="./assets/calculadora.css">
+  <style>
+      /* Estilos padrão (claro) */
+      body {
+          background-color: #e1f0e9;
+            color: #000000;
+        }
+
+        /* Estilos de alto contraste (escuro) */
+        body.dark-mode {
+            background-color: #000000;
+            color: hsl(0, 0%, 100%);
+        }
+
+  </style>
+
+  <header id="header-container" class="dark-mode">
+
+  <a href="mainpage.html">
+    <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+  </a>
+
+  <nav >
+    <a href="sumarioSerie.html">Series</a>
+
+    <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+    <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+    <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+    <a href="#">
+      <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+    </a>
+
+    <a href="noticias.html">
+      <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+    </a>
+    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+    <a href="">
+      <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+    </a>
+
+    <a href="video.html">
+      <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+    </a>
+
+    <a href="forum.html">
+      <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+    </a>
+
+    <a href="#">
+      <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+    </a>
+
+  </nav>
+</header>
+<div class="calculator" id="calculator">
+  <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+  <input type="text" id="screen" maxlength="20">
+  <div class="calc-buttons">
+  <div class="functions-one">
+      <button class="button triggers">C</button>
+      <button class="button basic-stuff">(</button>
+      <button class="button basic-stuff">)</button>
+      <button class="button numbers">7</button>
+      <button class="button numbers">8</button>
+      <button class="button numbers">9</button>
+      <button class="button numbers">4</button>
+      <button class="button numbers">5</button>
+      <button class="button numbers">6</button>
+      <button class="button numbers">1</button>
+      <button class="button numbers">2</button>
+      <button class="button numbers">3</button>
+      <button class="button basic-stuff">±</button>
+      <button class="button numbers">0</button>
+      <button class="button basic-stuff">.</button>
+  </div>
+      <div class="functions-two">
+          <button class="button triggers">&#60;=</button>
+          <button class="button complex-stuff">%</button>
+          <button class="button complex-stuff">x !</button>
+          <button class="button complex-stuff">x^</button>
+          <button class="button basic-stuff">*</button>
+          <button class="button basic-stuff">/</button>
+          <button class="button complex-stuff">ln</button>
+          <button class="button complex-stuff">e</button>
+          <button class="button basic-stuff">+</button>
+          <button class="button complex-stuff">x ²</button>
+          <button class="button complex-stuff">log</button>
+          <button class="button complex-stuff">cos</button>
+          <button class="button basic-stuff">-</button>
+          <button class="button complex-stuff">√</button>
+          <button class="button complex-stuff">sin</button>
+          <button class="button complex-stuff">tan</button>
+          <button class="button triggers">=</button>
+          <button class="button complex-stuff">&#x003C0;</button>
+          <button class="button complex-stuff">∘</button>
+          <button class="button complex-stuff">rad</button>
+      </div>
+  </div>
+</div>
+<body>
+    <script>
+      function increaseFontSize() {
+        var element = document.body;
+        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var size = parseFloat(style);
+        element.style.fontSize = (size + 1) + 'px';
+      }
+      function decreaseFontSize() {
+        var element = document.body;
+        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var size = parseFloat(style);
+        element.style.fontSize = (size - 1) + 'px';
+      }
+    </script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            const toggleContrastButton = document.getElementById('toggle-contrast');
+            let darkMode = false;
+
+            toggleContrastButton.addEventListener('click', function() {
+              // Alterne entre os modos escuro e claro
+              darkMode = !darkMode;
+
+              // Aplicar a classe dark-mode ao corpo para ativar o estilo escuro
+              document.body.classList.toggle('dark-mode', darkMode);
+
+              // Aplicar a classe dark-mode ao contêiner do cabeçalho
+    const headerContainer = document.getElementById('header-container');
+    headerContainer.classList.toggle('dark-mode', darkMode);
+            });
+          });
+      </script>
+      <script src="./js/calculadora.js"></script>
+</body>
+</html>

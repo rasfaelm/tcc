@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/ex.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <style>
+        .wrapper{
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="mainpage.html">
+            <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+
+        <nav>
+            <a href="series.html">Séries</a>
+
+            <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+            <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+            <a href="#">
+            <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+            </a>
+
+            <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            </a>
+            <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+            <a href="">
+            <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+            </a>
+
+            <a href="video.html">
+            <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+            </a>
+
+            <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            </a>
+
+            <a href="#">
+            <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+            </a>
+            
+            <div id="main">
+                <span style="font-size:30px; cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 6 Encceja</h1>
+                <p>Uma prestadora de serviços cobra pela visita à residência do cliente e pelo tempo necessário para realizar o serviço na residência.</p>
+                <p>O valor da visita é R$ 40 e o valor da hora para realização do serviço é R$ 20.</p>
+                <p>Uma expressão que indica o valor a ser pago (P) em função das horas (h) necessárias à execução do serviço é:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span> P = 40h</span>
+                            </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span> P = 60h</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span>P = 20 + 40h</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span>P = 40 + 20h</span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span>P = 40 + 20h</span>
+                        </label>
+
+                        <p>A função é descrita por P = ah + b, em que b é a taxa fixa, que, no caso, é o valor da visita, que é R$ 40. Já o coeficiente a é a taxa que depende do número de horas, no caso, R$ 20. Substituindo, temos que:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>=</mo>
+                                <mn>20</mn>
+                                <mi>h</mi>
+                                <mo>+</mo>
+                                <mn>40</mn>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>P</mi>
+                                <mo>=</mo>
+                                <mn>40</mn>
+                                <mo>+</mo>
+                                <mn>20</mn>
+                                <mi>h</mi>
+                            </math>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./js/+e-.js"></script>
+    <script src="./js/ex.js"></script>
+    <script src="./js/calculadora.js"></script>
+</body>
+
+</html>

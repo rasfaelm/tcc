@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdos de Matemática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
+  <div class="content">
+    <h1>Introdução às funções</h1>
+<hr>
+<h2 id="secao1">Definição de funções:</h2>
+  <p>Em matemática, uma função é uma relação entre um conjunto de entrada
+    (domínio) e um conjunto de saída (contradomínio) que associa cada elemento do
+    domínio a um único elemento do contradomínio. Em outras palavras, uma função é
+    uma correspondência que atribui a cada valor de entrada exatamente um valor de
+    saída.
+    Formalmente, uma função f de um conjunto A para um conjunto B é denotada por:
+    f:A → B
+    Isso significa que para cada elemento x pertencente ao conjunto A, a função f
+    associa um único elemento y no conjunto B, geralmente escrito como f(x)=y. O valor
+    Y é chamado de imagem de x sob a função f.                                      </p>
+      <img src="./images/funcao.jpg" alt="Função Ilustrativa" width="400">
+<h2 id="secao2">Relação entre variáveis:</h2>
+  <p>Define-se uma relação entre dois conjuntos como uma correspondência
+    entre seus elementos. O conjunto de partida de uma relação é o grupo de elementos
+    aos quais um elemento do conjunto de chegada está associado. Em outras palavras, é 
+    o grupo de elementos que correspondem a um elemento na ordem dada.
+    Eventualmente, o mesmo conjunto pode ser utilizado tanto como conjunto de
+    partida quanto de chegada. </p>
+  <p>Uma relação pode envolver todos os elementos dos dois conjuntos, ou
+    apenas uma parte deles. A regra de associação entre os elementos (também
+    chamada de lei) pode ser uma expressão matemática, uma lógica qualquer, ou
+    mesmo uma correspondência arbitrária sem nenhum tipo de padrão. A formação
+    dos conjuntos também não possui restrição: podem ser conjuntos finitos ou
+    infinitos, numéricos ou não, limitados ou ilimitados.
+
+<h2 id="secao3">Representações:</h2>
+  <p>Existem diversas maneiras de se representarem as relações, dentre as quais Destacamos os
+  diagramas de setas e as expressões algébricas.</p>
+  <p><b>Diagramas de setas:</b> Nesta representação, cada conjunto da relação tem seus elementos
+    enumerados em uma região limitada, e setas (que começam no conjunto de partida e terminam no
+    conjunto de chegada) associam elementos correspondentes.</p>
+  <p><b>Exemplo 1:</b> Dados os conjuntos A = {1, 2, 3, 4, 5} e B = {1, 2, 3, 4, 5, 6 7 8}, e a lei
+    que associa cada número de A à sua metade em B, o diagrama que representa tal situação é:</p>
+    <img src="./images/ExemploFuncao.PNG" alt="Exemplo de Função" width="200">
+  <p><b>Exemplo 2:</b> Dados os conjuntos N e N e a lei que associa cada elemento de N ao
+    seu quadrado, pode-se representar a relação pelo diagrama:</p>
+    <img src="./images/Exemplo2Funcao.PNG" alt="Exemplo2 de Função" width="200">
+
+    <h2 id="secao 4">Expressões algébricas:</h2>
+    <p>Utilizando os mesmos conjuntos dos exemplos 1 e 2, é possível expressar as respectivas
+      relações por meio de expressões matemáticas que associam os valores dos conjuntos.
+      Considerando que, em ambos os casos, será o valor do elemento extraído do conjunto de
+      partida e y será o elemento extraído do conjunto de chegada, então as fórmulas são:</p>
+    <p><b>Exemplo1: </b> y = x/2</p>
+    <p><b>Exemplo2: </b> y = x²</p>
+    <img src="./images/expressaoalbebrica.jpg" alt="Exemplo de Função" width="300">
+
+
+    <h2 id="secao5">Domínio e imagem de uma função: </h2>
+    <p>O domínio e a imagem são dois conceitos fundamentais quando se estuda
+      uma função na matemática. Eles descrevem as partes essenciais da relação que
+      uma função estabelece entre os valores de entrada e os valores de saída. Vamos
+      entender melhor cada um deles:</p>
+    <p><b>Domínio:</b> O domínio de uma função é o conjunto de todos os valores de entrada (ou
+      valores da variável independente) para os quais a função está definida. Em outras
+      palavras, são os valores que você pode inserir na função para obter um resultado
+      significativo. Por exemplo, se você tem uma função f(x), o domínio são os valores
+      x que fazem sentido dentro do contexto da função.</p>
+    <p>O domínio pode ser resttrito por váias razões, como raízes quadradas de n[umeros negativos, 
+      divisões por zero, valores negativos par o logaritmando ou qualquer outra condição que limite 
+      os valores x para os quais a função tem sentido.</p>
+    <p><b>Imagem:</b> A imagem de uma função é o conjunto de todos os valores de saída (ou
+      valores da variável dependente) que a função pode produzir quando seus
+      respectivos valores de entrada são escolhidos a partir do domínio. Em outras
+      palavras, a imagem é composta por todos os resultados possíveis da função.</p>
+      <p>A imagem é frequentemente determinada pelo comportamento da função.
+      Por exemplo, uma função linear (reta) que aumenta indefinidamente terá uma
+      imagem que também se estende infinitamente. No entanto, nem todos os valores
+      possíveis do contradomínio precisam estar na imagem. Alguns valores do
+      contradomínio podem não ser alcançados pela função, dependendo de sua natureza.</p>
+      <p>Em resumo, o domínio e a imagem de uma função <b>fornecem informações sobre os valores 
+        para os quais a função é definida e os resultados que ela pode produzir.</b> Entender esses conceitos 
+        é fundamental para compreender o comportamento geral e as propriedades de uma função</p>
+      <img src="./images/dominioEimagem.png" alt="Funcao de dominio" width="300">
+      
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+            <span>Siga o CEFET MAT</span>
+            <a href="#"> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
+        </div>   
+      </footer>
+</body>
+</html>
+ 

@@ -1,0 +1,99 @@
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-background {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px #b6b5b5;
+    border: 5px rgba(0, 0, 0, 0.2);
+    margin-top: -75px;
+}
+
+.profile-info {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 10px #b6b5b5;
+    border: 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Borda arredondada */
+    margin-top: 20px; /* Aumenta a distância entre a caixa e a foto de perfil */
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 150px;
+    max-width: 150px;
+}
+
+.profile-text {
+    text-align: left; /* Alinha o texto à extremidade esquerda */
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Permite que o texto quebre para outra linha */
+    max-width: 100%; /* Limita o tamanho do texto à largura da caixa */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    text-overflow: ellipsis; /* Exibe "..." para o texto que ultrapassar a caixa */
+}
+
+.profile-message {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    width: calc(40ch * 1ch); /* Largura baseada em 40 caracteres (1ch é aproximadamente o tamanho de um caractere) */
+    max-width: 100%; /* Limita a largura máxima à largura da caixa pai (profile-text) */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde o texto que ultrapassar a caixa */
+    text-overflow: ellipsis; /* Exibe "..." para o texto que ultrapassar a caixa */
+}
+
+.profile-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.custom-button {
+    background-color: #e11e72;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile-username {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px; /* Adiciona espaço entre a foto e o nome de usuário */
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.profile-message {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+#save-button {
+    display: none;
+}

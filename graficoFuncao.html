@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdos de Matemática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
+  <div class="content">
+    <h1>Gráfico de funções</h1>
+
+<hr>
+  <p>O gráfico de uma função é uma representação visual que ilustra a relação entre os
+    valores de entrada (domínio) e os valores de saída (imagem) da função. Ele é uma
+    ferramenta poderosa para entender o comportamento e as características de uma
+    função. Vamos explorar os principais aspectos do gráfico de uma função: </p>
+    <img src="./images/lapisGrafico.PNG" alt="eixo x" width="300">
+
+    <p><b>Eixo X (Horizontal): </b> O eixo horizontal do gráfico representa os valores de entrada, 
+        também conhecidos como valores da variável independente (geralmente representados como x). 
+        Cada ponto ao longo desse eixo corresponde a um valor específico de x. </p>
+
+    <p><b>Eixo Y (Vertical): </b> O eixo vertical do gráfico representa os valores de saída,
+        também conhecidos como valores da variável dependente (geralmente representados como y ou f(x)). 
+        Cada ponto ao longo desse eixo corresponde ao valor calculado da função para o valor correspondente de x.</p>
+
+    <p><b>Pontos no gráfico: </b> Os pontos no gráfico são os resultados da função para diferentes valores de x. 
+        Ao traçar vários pontos, você começa a formar um padrão que representa o comportamento geral da função.</p>
+        <img src="./images/pontoGrafico.PNG" alt="ponto no gráfico" width="300">
+
+    <p><b>Linha ou Curva da função: </b> A forma da linha ou curva que conecta os pontos no gráfico é o que 
+        realmente representa a função. A maneira como essa linha ou curva se comporta em relação aos eixos x e y 
+        fornece informações sobre a natureza da função.</p>
+
+    <p><b>Interseções com eixos: </b> Os pontos onde o gráfico da função cruza o eixo x são os zeros da função, 
+        ou seja, os valores de x para os quais f(x) = 0. As interseções com o eixo y mostram o valor da função quando x = 0.</p>
+
+    <p><b>Inclinação e curvatura: </b> A inclinação da linha ou curva em diferentes partes do gráfico indica o comportamento da função. 
+        Uma inclinação crescente indica que a função está aumentando à medida que x aumenta, enquanto uma inclinação decrescente indica o contrário. 
+        A curvatura da linha ou curva pode mostrar mudanças na taxa de crescimento ou a presença de pontos de inflexão.</p>
+        <img src="./images/curva.png" alt="inclinação e curvatura" width="200">
+
+    <p><b>Máximos e mínimos: </b>Pontos onde a inclinação muda de positiva para negativa
+        (ou vice-versa) podem indicar pontos de máximo ou mínimo da função.</p>
+
+    <p><b>Comportamento assintótico: </b> Em alguns casos, o gráfico pode se aproximar de linhas chamadas assíntotas, 
+        que são retas horizontais, verticais ou oblíquas que o gráfico se aproxima, mas não cruza. </p>
+
+    <p><b>Variações de amplitude e período: </b> Para funções trigonométricas, como seno e cosseno, o gráfico mostra oscilações 
+        em um padrão regular, com variações de amplitude e período. </p>
+
+    <p><b>Aplicações e significados: </b> Além de visualizar a função, o gráfico pode ter significado prático em contextos do mundo real. 
+        Ele pode representar relações entre quantidades, movimentos, crescimento, decaimento, entre outras interpretações. </p>
+        <img src="./images/MuitosGraficos.PNG" alt="Aplicações e significados " width="400">
+
+    <p>O gráfico de uma função é uma ferramenta <b>essencial para entender como a função se comporta em relação às suas variáveis</b>. Ele permite que você veja
+        padrões, tendências e propriedades de uma forma muito mais intuitiva e visual do que apenas observando fórmulas e valores numéricos. </p>
+
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+            <span>Siga o CEFET MAT</span>
+            <a href="#"> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
+        </div>   
+      </footer>
+</body>
+</html>

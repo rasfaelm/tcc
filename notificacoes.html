@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Notificaçoes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+        <link rel="stylesheet" href="./assets/cabecalho.css">
+        <link rel="stylesheet" href="./assets/calculadora.css">
+        <style>
+            /*NOTIFICAÇÕES*/
+
+    .notification {
+      position: relative;
+      width: 900px;
+      height: 250px;
+      max-width: 900px;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 10px;
+      background-color: #f7f7f7;
+      box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+      border-left: 6px solid #e11e72;
+      display: flex;
+      align-items: center;
+      font-family: Roboto;
+    }
+    .notification:hover{
+        box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+        transition: ease;
+    }
+  
+    .notification .actions {
+        position: absolute; /* Posicionamento absoluto */
+        right: 0; /* Coloca a div no canto direito */
+        bottom: 0; /* Coloca a div no canto inferior */
+    }
+
+  .notification img:hover{
+    transform: translateY(-2px);
+    transition: 0.5s;
+    pointer-events: bounding-box;
+  }
+  
+  .notification h2{
+    font-size: 22px;
+    font-family: Roboto;
+  }
+
+  .container {
+    width: var(--containerSize);
+    display: block;
+    margin: 0 auto;
+    padding: var(--gutter);
+  }
+  .container-fluid {
+    width: 100%;
+    display: block;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+        </style>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        #notification-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #close-notification {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f4f4f4;
+            border: none;
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+    <body>
+        <!-- Importa o cabeçalho  <iframe src="header.html" frameborder="0" width="100%" height="100px"></iframe>-->
+
+        <header>
+            <a href="mainpage.html">
+              <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+            </a>
+          
+            <nav >
+              <a href="series.html">Séries</a>
+              
+              <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+              <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+              
+          
+              <a href="calculadora.html">
+                <img src="./images/cabecalho/calcular.png" alt="calculadora">
+              </a>
+          
+              <a href="#">
+                <img src="./images/cabecalho/lista.png" alt="lista">
+              </a>
+          
+              <a href="noticias.html">
+                <img src="./images/cabecalho/noticias.png" alt="noticias">
+              </a>
+          
+              <a href="forum.html">
+                <img src="./images/cabecalho/forum.png"></a>
+            
+              <a href="#">
+                <img src="./images/cabecalho/perfil.png" alt="perfil">
+              </a>
+              <div id="main">
+                <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+              </div>
+            </nav>
+          </header> 
+    
+          <div class="calculator" id="calculator">
+            <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+            <input type="text" id="screen" maxlength="20">
+            <div class="calc-buttons">
+            <div class="functions-one">
+                <button class="button triggers">C</button>
+                <button class="button basic-stuff">(</button>
+                <button class="button basic-stuff">)</button>
+                <button class="button numbers">7</button>
+                <button class="button numbers">8</button>
+                <button class="button numbers">9</button>
+                <button class="button numbers">4</button>
+                <button class="button numbers">5</button>
+                <button class="button numbers">6</button>
+                <button class="button numbers">1</button>
+                <button class="button numbers">2</button>
+                <button class="button numbers">3</button>
+                <button class="button basic-stuff">±</button>
+                <button class="button numbers">0</button>
+                <button class="button basic-stuff">.</button>
+            </div>
+                <div class="functions-two">
+                    <button class="button triggers">&#60;=</button>
+                    <button class="button complex-stuff">%</button>
+                    <button class="button complex-stuff">x !</button>
+                    <button class="button complex-stuff">x^</button>
+                    <button class="button basic-stuff">*</button>
+                    <button class="button basic-stuff">/</button>
+                    <button class="button complex-stuff">ln</button>
+                    <button class="button complex-stuff">e</button>
+                    <button class="button basic-stuff">+</button>
+                    <button class="button complex-stuff">x ²</button>
+                    <button class="button complex-stuff">log</button>
+                    <button class="button complex-stuff">cos</button>
+                    <button class="button basic-stuff">-</button>
+                    <button class="button complex-stuff">√</button>
+                    <button class="button complex-stuff">sin</button>
+                    <button class="button complex-stuff">tan</button>
+                    <button class="button triggers">=</button>
+                    <button class="button complex-stuff">&#x003C0;</button>
+                    <button class="button complex-stuff">∘</button>
+                    <button class="button complex-stuff">rad</button>
+                </div>
+            </div>
+          </div>
+
+        <div class="container" style="align-items: center; width: auto; height: 2px; padding-top: 120px;">
+            <h2><span>Notificações</span></h2> 
+            <p> Nessa seção você encontrará suas notificações, atualizações dentre outros.</p> <!----><br>
+
+            <div id="notification-container" class="hidden">
+                <div id="notification">
+                  <p id="notification-message"></p>
+                  <button id="close-notification">Close</button>
+                </div>
+              </div>
+              <!--  <div class="notification">
+                    <img src="./images/perfil.png" alt="User" height="100">
+
+                    <h2>@User_teste</h2> <br><br>  
+                    <p>Seja Bem-vindo(a) ao CefetMAT, esperamos que encontre o conteúdo que procura e 
+                        aprenda bastante.</p><br>
+                    <div class="actions">
+                        <img src="./images/lixo.png" alt="lixo" height="45">
+                        <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                        <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>
+                </div>
+
+                <div class="notification" >
+                    <img src="./images/perfil.png" alt="User" height="100">
+                    <h2>@User_teste1</h2>
+                    <p> Olá, sua resposta do fórum está correta, parabens!! </p>
+                    <div class="actions">
+                            <a href="#"><img src="./images/lixo.png" alt="lixo" height="45"></a>
+                            <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                            <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>     
+                </div>
+
+                <div class="notification">
+                    <a href="#"><img src="./images/perfil.png" alt="User" height="100"></a>
+                    <h2>@User_teste2</h2> <br><br>
+                    <p>In amet unde et amet cumque ut corrupti accusamus eos libero aliquid et pariatur fugiat ea beatae exercitationem. </p> <br>
+                    <div  class="actions">
+                        <a href="#"><img src="./images/lixo.png" alt="lixo" height="45"></a>
+                        <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                        <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <a href="#"><img src="./images/perfil.png" alt="User" height="100"></a>
+                    <h2>@User_teste3</h2> <br><br>
+                    <p> Est necessitatibus alias est suscipit perspiciatis sit maxime sunt et aliquam quia id accusamus reiciendis.</p> <br>
+                    <div  class="actions">
+                        <a href="#"><img src="./images/lixo.png" alt="lixo" height="45"></a>
+                        <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                        <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <a href="#"><img src="./images/perfil.png" alt="perfil" height="100"></a>
+                    <h2>@User_teste4</h2> <br><br>
+                    <p> Et neque error aut iste quaerat et quia nostrum 33 adipisci voluptatem aut libero</p> <br>
+                    <div  class="actions">
+                        <a href="#"><img src="./images/lixo.png" alt="lixo" height="45"></a>
+                        <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                        <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <a href="#"><img src="./images/perfil.png" alt="perfil" height="100"></a>
+                    <h2>@User_teste2</h2> <br><br>
+                    <p> Cum beatae quisquam et delectus harum vel suscipit ratione et ratione odit id impedit ducimus et omnis repudiandae.</p> <br>
+                    <div  class="actions">
+                        <a href="#"><img src="./images/lixo.png" alt="lixo" height="45"></a>
+                        <a href="#"><img src="./images/estrela.png" alt="estrela" height="60"></a>
+                        <a href="#"><img src="./images/enviar.png" alt="enviar" height="50"></a>
+                    </div>
+                </div>-->
+
+                <script>
+                    const eventSource = new EventSource('/sse');
+                
+                    eventSource.onmessage = function (event) {
+                        const data = event.data;
+                        // Lide com os eventos recebidos, como atualizações de notícias ou conteúdo
+                        console.log(data);
+                    };
+                </script>
+                <script src="./js/calculadora.js"></script>
+                
+        </div>
+    </body>
+</html>

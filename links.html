@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcessoRapido</title>
+</head>
+<body>
+    <a href="sobrenos.html">SOBRE NOS</a><br><br>
+    <a href="notificacoes.html">Notificacoes</a><br><br>
+    <a href="mainpage.html">Mainpage</a><br><br>
+    <a href="cabeçalho.html">Cabeçalho</a><br><br>
+    <a href="AumentDimin.html">AumentDimin</a><br><br>
+    <a href="responsividade.html">responsividade</a><br><br>
+    <a href="teste.html">nadaainda</a><br><br>
+    <a href="pageConteudo.html">pageConteudo</a>
+    <a href=""></a>
+    <a href="testeForum.html">testeForum</a><br><br>
+    <a href="index.html">Voltar</a><br><br>
+</body>
+</html>
+<!--
+   <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal de Matemática</title>
+    <style>
+        /* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos da barra de navegação */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilos do conteúdo e notícias */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content, .news {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+       /* Seções adicionais */
+.banner img {
+    width: 100%;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+/* Melhorias estilísticas */
+form {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos do feed de notícias recentes */
+.recent-news {
+    list-style: none;
+}
+
+.recent-news li {
+    margin-bottom: 10px;
+}
+
+/* Personalize os estilos conforme necessário */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Site de Matemática</div>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Conteúdos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="banner.jpg" alt="Banner Matemática">
+        </section>
+
+        <section class="content">
+            <h1>Conteúdos</h1>
+            <p>Explore nossos recursos educacionais de matemática para aprimorar suas habilidades.</p>
+            <-- Inserir conteúdo matemático, links, vídeos, etc. 
+        </section>
+
+        <section class="news">
+            <h1>Notícias</h1>
+            <article class="news-item">
+                <h2>Título da Notícia 1</h2>
+                <p>Descrição da notícia 1.</p>
+                <a href="#">Leia Mais</a>
+            </article>
+            <article class="news-item">
+                <h2>Título da Notícia 2</h2>
+                <p>Descrição da notícia 2.</p>
+                <a href="#">Leia Mais</a>
+            </article>
+            <-- Adicionar mais notícias conforme necessário --
+        </section>
+
+        <section class="search">
+            <h1>Pesquisar Conteúdo</h1>
+            <form>
+                <input type="text" placeholder="Digite sua pesquisa">
+                <button type="submit">Pesquisar</button>
+            </form>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <div class="sidebar-item">
+            <h2>Notícias Recentes</h2>
+            <ul class="recent-news">
+                <-- Inserir notícias recentes dinamicamente usando JavaScript 
+            </ul>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2023 Meu Site de Matemática</p>
+    </footer>
+
+    <script>
+        // Simule notícias recentes usando JavaScript
+const recentNews = document.querySelector(".recent-news");
+
+const newsData = [
+    { title: "Nova Descoberta Matemática", link: "noticia1.html" },
+    { title: "Conferência de Matemática em 2023", link: "noticia2.html" },
+    // Adicione mais notícias conforme necessário
+];
+
+newsData.forEach((news) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = news.link;
+    a.textContent = news.title;
+    li.appendChild(a);
+    recentNews.appendChild(li);
+});//site: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_example_website
+
+    </script>
+</body></html>
+-->

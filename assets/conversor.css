@@ -1,0 +1,33 @@
+input[type="number"] {
+    width: 315px;
+    height: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px #b6b5b5;
+    border: 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+#convert-button {
+    background-color: #e11e72;
+    color: white;
+    padding: 10px 10px;
+    border: 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.conversor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.convert-button {
+    text-align: left;
+}
+
+
+p{
+    margin-top: 20px;
+}

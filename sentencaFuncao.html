@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conteúdos de Matemática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+  <div class="content">
+    <h1>Funções definidas por mais de uma sentença</h1>
+
+<hr>
+  <p>Em matemática, o conceito de "funções definidas por mais de uma sentença"
+    refere-se a uma função que tem diferentes expressões ou regras que se aplicam a
+    diferentes partes do domínio da função. <b>Em outras palavras, a função é definida por
+    diferentes fórmulas ou regras em diferentes intervalos ou conjuntos de valores do
+    domínio</b>.</p>
+    <p>Essas funções são frequentemente chamadas de "funções definidas por partes" ou
+        "funções 'piecewise'" em inglês. Elas são usadas quando a relação entre as variáveis
+        não pode ser expressa por uma única fórmula em todo o domínio da função, mas
+        pode ser dividida em diferentes regras ou fórmulas para diferentes intervalos ou
+        condições. </p>
+    <p><b>Exemplo desses conceitos:</b></p>
+    <p><li><b>Função valor absoluto:</b> A função valor absoluto é um exemplo clássico de uma função definida por
+        mais de uma sentença. Ela é definida por duas regras, uma para valores
+        positivos ou iguais a zero e outra para valores negativos.</li></p>
+        <img src="./images/absoluto.PNG" alt="valor absoluto" width="300">
+
+    <p><li><b>Função piso:</b> A função piso (⌊x⌋) é outra função definida por partes. Ela arredonda um
+        número real para o maior inteiro não superior.</li></p>
+        <img src="./images/piso.PNG" alt="piso" width="300">
+
+
+    <p>Esses são apenas alguns exemplos de funções definidas por mais de uma
+        sentença na matemática. Elas são úteis para modelar situações em que o
+        comportamento da função varia dependendo das condições ou dos valores da
+        variável de entrada. Cada "parte" da função é uma regra que se aplica a uma parte
+        específica do domínio da função. </p>
+
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+            <span>Siga o CEFET MAT</span>
+            <a href="#"> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
+        </div>
+      </footer>
+</body>
+</html>

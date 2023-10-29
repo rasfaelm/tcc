@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Sobre Nós</title>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    <style>
+      *{
+        margin:0;
+        margin-left:0;
+        margin-right:0;
+      }
+      .content {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      html {
+        box-sizing: border-box;
+      }
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+      /*footer*/
+      footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <a href="mainpage.html">
+      <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+    </a>
+  
+    <nav >
+      <a href="series.html">Séries</a>
+      
+      <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+      <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+      <a href="calculadora.html">
+      <img src="./images/cabecalho/calcular.png" title="calculadoira" alt="calculadora">
+      </a>
+
+      <a href="#">
+      <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+      </a>
+
+      <a href="noticias.html">
+      <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+      </a>
+      <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+      <a href="">
+      <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+      </a>
+
+      <a href="video.html">
+      <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+      </a>
+
+      <a href="forum.html">
+      <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+      </a>
+
+      <a href="#">
+      <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+      </a>
+    </nav>
+  </header>
+
+  <div class="calculator" id="calculator">
+    <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+    <input type="text" id="screen" maxlength="20">
+    <div class="calc-buttons">
+    <div class="functions-one">
+        <button class="button triggers">C</button>
+        <button class="button basic-stuff">(</button>
+        <button class="button basic-stuff">)</button>
+        <button class="button numbers">7</button>
+        <button class="button numbers">8</button>
+        <button class="button numbers">9</button>
+        <button class="button numbers">4</button>
+        <button class="button numbers">5</button>
+        <button class="button numbers">6</button>
+        <button class="button numbers">1</button>
+        <button class="button numbers">2</button>
+        <button class="button numbers">3</button>
+        <button class="button basic-stuff">±</button>
+        <button class="button numbers">0</button>
+        <button class="button basic-stuff">.</button>
+    </div>
+        <div class="functions-two">
+            <button class="button triggers">&#60;=</button>
+            <button class="button complex-stuff">%</button>
+            <button class="button complex-stuff">x !</button>
+            <button class="button complex-stuff">x^</button>
+            <button class="button basic-stuff">*</button>
+            <button class="button basic-stuff">/</button>
+            <button class="button complex-stuff">ln</button>
+            <button class="button complex-stuff">e</button>
+            <button class="button basic-stuff">+</button>
+            <button class="button complex-stuff">x ²</button>
+            <button class="button complex-stuff">log</button>
+            <button class="button complex-stuff">cos</button>
+            <button class="button basic-stuff">-</button>
+            <button class="button complex-stuff">√</button>
+            <button class="button complex-stuff">sin</button>
+            <button class="button complex-stuff">tan</button>
+            <button class="button triggers">=</button>
+            <button class="button complex-stuff">&#x003C0;</button>
+            <button class="button complex-stuff">∘</button>
+            <button class="button complex-stuff">rad</button>
+        </div>
+    </div>
+</div>
+
+  <div class="content">
+    <h2>Sobre nós</h2>
+    <p>A página "Sobre Nós" do nosso site de matemática foi elaborada com paixão e dedicação por três mentes
+      brilhantes do Cefet-MG: Emily, Hilary e Rafael. Como entusiastas da matemática e estudantes desta prestigiosa
+        instituição, nossa equipe está empenhada em compartilhar nosso amor pela disciplina e torná-la mais acessível
+        a estudantes de todos os níveis. Convidamos você a nos conhecer melhor e explorar nosso site para descobrir o
+          emocionante mundo da matemática por meio de nossa experiência e entusiasmo coletivos. Bem-vindo à nossa jornada
+          matemática!</p>
+    <br><br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./images/Emily.PNG" alt="Emily" style="width:40%">
+          <div class="container">
+            <h2>Emily Soares</h2>
+            <p class="title">Front-end</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>soaresemily003@gmail.com</p>
+            <p><button class="button">Entrar em contato</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./images/perfil.png" alt="Hilary" style="width:50%; display: block; margin: 0 auto">
+          <div class="container">
+            <h2>Hilary Mustafá</h2>
+            <p class="title">Front & back-end</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>hilarymustafabrandao@gmail.com</p>
+            <p><button class="button">Entrar em contato</button></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card">
+          <img src="./images/perfil.png" alt="Rafael" style="width:50%">
+          <div class="container">
+            <h2>Rafael de Matos</h2>
+            <p class="title">Back-end</p>
+            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <p>rasfaelmatos@gmail.com</p>
+            <p><button class="button">Entrar em contato</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/+e-.js"></script>
+  <script src="./js/calculadora.js"></script>
+  <footer>
+    <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+  </footer>
+</body>
+</html>

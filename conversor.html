@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./assets/cabecalho.css" />
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico" />
+    <link rel="stylesheet" href="./assets/conversor.css"/>
+    <link rel="stylesheet" href="./assets/calculadora.css">
+  </head>
+
+  <body>
+      <header>
+        <a href="mainpage.html">
+          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+      
+        <nav >
+          <a href="series.html">Séries</a>
+          
+          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+          
+      
+          <a href="calculadora.html">
+      <img src="./images/cabecalho/calcular.png" title="calculadoira" alt="calculadora">
+    </a>
+
+    <a href="#">
+      <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+    </a>
+
+    <a href="noticias.html">
+      <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+    </a>
+    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+    <a href="">
+      <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+    </a>
+
+    <a href="video.html">
+      <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+    </a>
+
+    <a href="forum.html">
+      <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+    </a>
+
+    <a href="#">
+      <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+    </a>
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+      </div>
+
+      <div style="padding:128px 16px">
+        <div class="w3-row-padding">
+          <section>
+            <div style="text-align: center;" class="conversor">
+              <!-- Comprimento/ Distância -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Comprimento/ Distância</h1></div>
+                <label for="comprimento">Digite um valor:</label>
+                <input type="number" id="comprimento" />
+                <select id="unidadeDeEntrada">
+                  <option value="metros">Metros</option>
+                  <option value="quilometros">Quilômetros</option>
+                  <option value="milhas">Milhas</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoComprimento">Resultado:</label>
+                <input type="number" id="resultadoComprimento" disabled />
+                <select id="unidadeDeSaida">
+                  <option value="metros">Metros</option>
+                  <option value="quilometros">Quilômetros</option>
+                  <option value="milhas">Milhas</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterComprimento()">Converter</button>
+
+                <p id="explicacaoComprimento"></p>
+              </div>
+
+              <!-- Peso/ Massa -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Peso/ Massa</h1></div>
+                <label for="peso">Digite um valor:</label>
+                <input type="number" id="peso" />
+                <select id="unidadeDeEntradaPeso">
+                  <option value="quilogramas">Quilogramas</option>
+                  <option value="gramas">Gramas</option>
+                  <option value="libras">Libras</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoPeso">Resultado:</label>
+                <input type="number" id="resultadoPeso" disabled />
+                <select id="unidadeDeSaidaPeso">
+                  <option value="quilogramas">Quilogramas</option>
+                  <option value="gramas">Gramas</option>
+                  <option value="libras">Libras</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterPeso()">Converter</button>
+
+                <p id="explicacaoPeso"></p>
+              </div>
+
+              <!-- Velocidade -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Velocidade</h1></div>
+                <label for="velocidade">Digite um valor:</label>
+                <input type="number" id="velocidade" />
+                <select id="unidadeDeEntradaVelocidade">
+                  <option value="metrosPorSegundo">Metros por segundo</option>
+                  <option value="quilometrosPorHora">Quilômetros por hora</option>
+                  <option value="milhasPorHora">Milhas por hora</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoVelocidade">Resultado:</label>
+                <input type="number" id="resultadoVelocidade" disabled />
+                <select id="unidadeDeSaidaVelocidade">
+                  <option value="metrosPorSegundo">Metros por segundo</option>
+                  <option value="quilometrosPorHora">Quilômetros por hora</option>
+                  <option value="milhasPorHora">Milhas por hora</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterVelocidade()">Converter</button>
+
+                <p id="explicacaoVelocidade"></p>
+              </div>
+
+              <!-- Área -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Área</h1></div>
+                <label for="area">Digite um valor:</label>
+                <input type="number" id="area" />
+                <select id="unidadeDeEntradaArea">
+                  <option value="metrosQuadrados">Metros Quadrados</option>
+                  <option value="quilometrosQuadrados">
+                    Quilômetros Quadrados
+                  </option>
+                  <option value="acres">Acres</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoArea">Resultado:</label>
+                <input type="number" id="resultadoArea" disabled />
+                <select id="unidadeDeSaidaArea">
+                  <option value="metrosQuadrados">Metros Quadrados</option>
+                  <option value="quilometrosQuadrados">
+                    Quilômetros Quadrados
+                  </option>
+                  <option value="acres">Acres</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterArea()">Converter</button>
+
+                <p id="explicacaoArea"></p>
+              </div>
+
+              <!-- Temperatura -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Temperatura</h1></div>
+                <label for="temperatura">Digite um valor:</label>
+                <input type="number" id="temperatura" />
+                <select id="unidadeDeEntradaTemperatura">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                  <option value="kelvin">Kelvin</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoTemperatura">Resultado:</label>
+                <input type="number" id="resultadoTemperatura" disabled />
+                <select id="unidadeDeSaidaTemperatura">
+                  <option value="celsius">Celsius</option>
+                  <option value="fahrenheit">Fahrenheit</option>
+                  <option value="kelvin">Kelvin</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" nclick="converterTemperatura()">Converter</button>
+
+                <p id="explicacaoTemperatura"></p>
+              </div>
+
+              <!-- Tempo -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Tempo</h1></div>
+                <label for="tempo">Digite um valor:</label>
+                <input type="number" id="tempo" />
+                <select id="unidadeDeEntradaTempo">
+                  <option value="segundos">Segundos</option>
+                  <option value="minutos">Minutos</option>
+                  <option value="horas">Horas</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoTempo">Resultado:</label>
+                <input type="number" id="resultadoTempo" disabled />
+                <select id="unidadeDeSaidaTempo">
+                  <option value="segundos">Segundos</option>
+                  <option value="minutos">Minutos</option>
+                  <option value="horas">Horas</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterTempo()">Converter</button>
+
+                <p id="explicacaoTempo"></p>
+              </div>
+
+              <!-- Densidade -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Densidade</h1></div>
+                <label for="densidade">Digite um valor:</label>
+                <input type="number" id="densidade" />
+                <select id="unidadeDeEntradaDensidade">
+                  <option value="quilogramasPorMetroCubico">
+                    Quilogramas por Metro Cúbico
+                  </option>
+                  <option value="gramasPorCentimetroCubico">
+                    Gramas por Centímetro Cúbico
+                  </option>
+                </select>
+
+                <br>
+
+                <label for="resultadoDensidade">Resultado:</label>
+                <input type="number" id="resultadoDensidade" disabled />
+                <select id="unidadeDeSaidaDensidade">
+                  <option value="quilogramasPorMetroCubico">
+                    Quilogramas por Metro Cúbico
+                  </option>
+                  <option value="gramasPorCentimetroCubico">
+                    Gramas por Centímetro Cúbico
+                  </option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterDensidade()">Converter</button>
+
+                <p id="explicacaoDensidade"></p>
+              </div>
+
+              <!-- Energia -->
+              <div class="conversor-item">
+                <div class="funcoes"><h1>Energia</h1></div>
+                <label for="energia">Digite um valor:</label>
+                <input type="number" id="energia" />
+                <select id="unidadeDeEntradaEnergia">
+                  <option value="joules">Joules</option>
+                  <option value="calorias">Calorias</option>
+                  <option value="quilowattshora">Quilowatts-hora</option>
+                </select>
+
+                <br>
+
+                <label for="resultadoEnergia">Resultado:</label>
+                <input type="number" id="resultadoEnergia" disabled />
+                <select id="unidadeDeSaidaEnergia">
+                  <option value="joules">Joules</option>
+                  <option value="calorias">Calorias</option>
+                  <option value="quilowattshora">Quilowatts-hora</option>
+                </select>
+
+                <br>
+
+                <button class="convert-button" id="convert-button" onclick="converterEnergia()">Converter</button>
+
+                <p id="explicacaoEnergiaq"></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    <footer>
+      <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+
+    <script src="./js/conversor.js"></script>
+    <script src="./js/+e-.js"></script>
+  <script src="./js/calculadora.js"></script>
+  </body>
+</html>

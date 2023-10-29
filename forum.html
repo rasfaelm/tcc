@@ -1,0 +1,183 @@
+<!--HOW TO DEVELOP DISCUSSION FORUM OR COMMENT MANAGEMENT SYSTEM USING PHP MYSQL
+https://youtu.be/TRYdsaxUvzA-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fórum</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/calculadora.css">
+    
+</head>
+<header>
+    <a href="mainpage.html">
+    <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+    </a>
+
+    <nav >
+    <a href="#">Séries</a>
+    
+    <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+    <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+
+    <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
+
+    <a href="#">
+    <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+    </a>
+
+    <a href="noticias.html">
+    <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+    </a>
+    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
+
+    <a href="">
+    <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
+    </a>
+
+    <a href="video.html">
+    <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
+    </a>
+
+    <a href="forum.html">
+    <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+    </a>
+
+    <a href="#">
+    <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
+    </a>
+    
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+    </div>
+    </nav>
+</header>
+
+<div class="calculator" id="calculator">
+    <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+    <input type="text" id="screen" maxlength="20">
+    <div class="calc-buttons">
+    <div class="functions-one">
+        <button class="button triggers">C</button>
+        <button class="button basic-stuff">(</button>
+        <button class="button basic-stuff">)</button>
+        <button class="button numbers">7</button>
+        <button class="button numbers">8</button>
+        <button class="button numbers">9</button>
+        <button class="button numbers">4</button>
+        <button class="button numbers">5</button>
+        <button class="button numbers">6</button>
+        <button class="button numbers">1</button>
+        <button class="button numbers">2</button>
+        <button class="button numbers">3</button>
+        <button class="button basic-stuff">±</button>
+        <button class="button numbers">0</button>
+        <button class="button basic-stuff">.</button>
+    </div>
+        <div class="functions-two">
+            <button class="button triggers">&#60;=</button>
+            <button class="button complex-stuff">%</button>
+            <button class="button complex-stuff">x !</button>
+            <button class="button complex-stuff">x^</button>
+            <button class="button basic-stuff">*</button>
+            <button class="button basic-stuff">/</button>
+            <button class="button complex-stuff">ln</button>
+            <button class="button complex-stuff">e</button>
+            <button class="button basic-stuff">+</button>
+            <button class="button complex-stuff">x ²</button>
+            <button class="button complex-stuff">log</button>
+            <button class="button complex-stuff">cos</button>
+            <button class="button basic-stuff">-</button>
+            <button class="button complex-stuff">√</button>
+            <button class="button complex-stuff">sin</button>
+            <button class="button complex-stuff">tan</button>
+            <button class="button triggers">=</button>
+            <button class="button complex-stuff">&#x003C0;</button>
+            <button class="button complex-stuff">∘</button>
+            <button class="button complex-stuff">rad</button>
+        </div>
+    </div>
+  </div>
+
+<script src="./js/+e-"></script>
+<script src="./JS/calculadora.js"></script>
+<body>
+    <div class="container">
+        <div class="subforum">
+            <h2 style="text-align: center">Bem vindo(a) a seção Fórum!</h2>
+            <img src="./images/estudando.png" style="display: block; margin: 0 auto; height: 400px; border-radius: 5px;">
+                <div >
+                    <p>Neste espaço, você encontrará um ambiente dedicado a discutir
+                        e explorar o fascinante mundo da Matemática.
+                        Este é o lugar perfeito para compartilhar conhecimentos,
+                        fazer perguntas e aprender juntos.</p><br><br>
+                </div>
+        </div>
+<!-- Modal -->
+    <div id="ReplyModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Responder</h4>
+            </div>
+            <div class="modal-body">
+                <form name="frm1" method="post">
+                    <input type="hidden" id="commentid" name="Rcommentid">
+                    <div class="form-group">
+                        <label for="usr">Resposta:</label>
+                        <input type="text" class="form-control" name="Rname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Justificativa:</label>
+                        <textarea class="form-control" rows="5" name="Rmsg" required></textarea>
+                    </div>
+                    <input type="button" id="btnreply" name="btnreply" class="btn btn-primary" value="Responder">
+            </form>
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default" style="margin-top:50px">
+            <div class="panel-body">
+                <h3>FORUM</h3>
+                <hr>
+                <form name="frm" method="post">
+                    <input type="hidden" id="commentid" name="Pcommentid" value="0">
+                    <div class="form-group">
+                        <label for="usr">NOME:</label>
+                        <input type="text" class="form-control" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">QUESTÃO:</label>
+                        <textarea class="form-control" rows="5" name="msg" required></textarea>
+                    </div>
+                    <input type="button" id="butsave" name="save" class="btn btn-primary" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h4>Questões recentes</h4>
+                <table class="table" id="MyTable" style="background-color: #edfafa; border:0px;border-radius:10px">
+                    <tbody id="record"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/calculadora.js"></script>
+</body>
+</html>

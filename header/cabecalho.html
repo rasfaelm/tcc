@@ -1,0 +1,163 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabeçalho</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <style>
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #fafafa;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header nav a {
+      display: inline-block;
+      text-align: center;
+      margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+    }
+
+    header nav img {
+      width: 40px; /* Tamanho dos ícones */
+      height: 40px; /* Tamanho dos ícones */
+    }
+    header a{
+      text-decoration: none; color: black;
+    }
+
+    body {
+      height: 100vh; /* Para ocupar toda a altura da janela */
+      margin: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0; /* Mudança na posição para a direita */
+  background-color: #111111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px; /* Mudança na posição para a esquerda */
+  font-size: 36px;
+  margin-right: 50px; /* Mudança na margem direita */
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 400px) {
+      header nav img {
+        display: none;
+      }
+    }
+    </style>
+</head>
+<header>
+  <a href="mainpage.html">
+    <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+  </a>
+
+  <nav >
+    <a href="#">Séries</a>
+    
+    <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
+    <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+    
+
+    <a href="calculadora.html">
+      <img src="./images/cabecalho/calcular.png" alt="calculadora">
+    </a>
+
+    <a href="#">
+      <img src="./images/cabecalho/lista.png" alt="lista">
+    </a>
+
+    <a href="noticias.html">
+      <img src="./images/cabecalho/noticias.png" alt="noticias">
+    </a>
+
+    <a href="forum.html">
+      <img src="./images/cabecalho/forum.png"></a>
+   
+    <a href="#">
+      <img src="./images/cabecalho/perfil.png" alt="perfil">
+    </a>
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+    </div>
+  </nav>
+</header>  
+  <body>
+    <script>
+      function increaseFontSize() {
+        var element = document.body;
+        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var size = parseFloat(style);
+        element.style.fontSize = (size + 1) + 'px';
+      }
+      function decreaseFontSize() {
+        var element = document.body;
+        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+        var size = parseFloat(style);
+        element.style.fontSize = (size - 1) + 'px';
+      }
+    </script>
+ 
+    
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Listas</a>
+        <a href="forum.html">Fórum</a>
+        <a href="#">Notícias</a>
+        <a href="#">Perfil</a>
+        <a href="index.html">LogOut</a>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>
+         
+
+</body>
+
+</html>
