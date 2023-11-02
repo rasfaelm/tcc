@@ -24,17 +24,18 @@
       justify-content: space-around;
     }
     .mathematics-card {
-      width: 300px;
-      margin: 10px;
-      padding: 10px;
-      border: 1px #e11e72;
-      border-radius: 10px;
-      background-color: #e6e6e6;
+      width: calc(22.22% - 20px); /* Define a largura para caber 3 na mesma linha com margens */
+      margin: 5px; /* Espaço entre as dicas */
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center; /* Centraliza o conteúdo horizontalmente */
     }
     .mathematics-card:hover{
-        background-color: #fdcbe1;
-        transition: background-color 0.3s; /* Adiciona uma transição suave */
-
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
     .mathematics-card h2 {
       font-size: 20px;
@@ -57,7 +58,7 @@
         background-color: rgb(83, 7, 64); /* Defina a cor desejada */
         height: 1px; /* Ajuste a espessura da linha */
         border: none; /* Remova a borda padrão */
-       
+      
         }
         .tag-cloud {
             align-items: center;
