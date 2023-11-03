@@ -23,17 +23,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($conn->connect_error) {
             die("Erro na conexão com o banco de dados: " . $conn->connect_error);
-        } else {
-            echo "Conexão bem-sucedida com o banco de dados.";
         }
 
-        // SQL para inserir os dados na tabela de usuários
-        $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+        // Verifique se o email já está cadastrado
+        $checkEmailSql = "SELECT email FROM usuarios WHERE email = '$email'";
+        $result = $conn->query($checkEmailSql);
 
-        if ($conn->query($sql) === TRUE) {
-            $aviso = "Cadastro realizado com sucesso!";
+        if ($result->num_rows > 0) {
+            $aviso = "Este email já está cadastrado.";
         } else {
-            $aviso = "Erro no cadastro: " . $conn->error;
+            // Email não cadastrado, prossiga com a inserção
+            $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+            
+            if ($conn->query($sql) === TRUE) {
+                $aviso = "Cadastro realizado com sucesso!";
+                header("Location: Login.html");
+            } else {
+                $aviso = "Erro no cadastro: " . $conn->error;
+            }
         }
 
         $conn->close();
