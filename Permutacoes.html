@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Análise Combinatória</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+    }
+    footer{
+    width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    padding: 20px;
+    background-color:   #8fb3ff;
+    display: block;
+    text-align: center;
+    }
+    footer span{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #000000;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Permutações</h1>
+
+<hr>
+  <p>Permutação é um conceito importante na teoria de combinatória, que lida com a
+    contagem de objetos. Uma permutação é uma disposição específica dos elementos de um
+    conjunto em uma ordem particular </p>
+
+    <p>Em termos simples, uma permutação de um conjunto de elementos é uma
+        reorganização dos elementos desse conjunto em uma ordem específica. Por exemplo,
+        considere o conjunto {A, B, C}.</p>
+        <ul>As permutações desse conjunto seriam: ABC, ACB, BAC, BCA, CAB, CBA. 
+        Cada uma dessas permutações é uma ordem diferente dos elementos do conjunto original.</ul>
+
+    <p>A fórmula para calcular o número de permutações de um conjunto de "n" elementos
+        é dada por "n!", que representa o fatorial de "n". O fatorial de um número é o produto de
+        todos os números inteiros positivos de 1 até aquele número. Matematicamente: </p>
+            <ul><b>n! = n × (n - 1) × (n - 2) × ... × 3 × 2 × 1</b></ul>
+
+        <p>Por exemplo, para um conjunto de 3 elementos, como {A, B, C}, o número de permutações possíveis é 3! = 3 × 2 × 1 = 6. </p>
+
+    <p>É importante observar que, em permutações, a ordem dos elementos importa. Ou
+        seja, a permutação "ABC" é diferente da permutação "ACB" porque a ordem dos elementos é distinta. </p>
+   
+
+    <p>Além disso, existem casos em que nem todos os elementos são diferentes, ou seja,
+        quando há elementos repetidos. Nesses casos, a fórmula do fatorial precisa ser ajustada
+        para lidar com as repetições, utilizando o conceito de permutações com repetição. Existem
+        dois tipos principais de permutação: permutação sem repetição e permutações com repetição. </p>
+        <img src="./images/permutacao.png" alt="permutação" width="800">
+  </div>
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+        </div>
+      </footer>
+
+</body>
+</html>

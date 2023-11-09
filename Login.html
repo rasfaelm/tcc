@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <title>Login</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/login.css">
+    <link rel="stylesheet" href="./assets/form.css">
     <script src="https://accounts.google.com/gsi/client" async></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/dist/jwt-decode.min.js"></script>
   </head>
 <body>
 
@@ -19,9 +18,8 @@
       <div><img src="./images/login.gif"></div>
     
     <div id="login">
-      <form method="POST" action="login.php">
-
-        <h1 style="text-align: center">Login</h1> <br>
+      <form method="POST" action="./PHP/login.php">
+        <h1>Login</h1> <br>
           <label for="email_login">E-mail</label><br>
           <input id="email_login" name="email_login" required="required" type="text" placeholder="user@gmail.com"/><br>
           
@@ -38,10 +36,12 @@
       </form>
     </div>
 </div>
+
   </body>
+
 </html>
   <!--
-        PARA APRESENTAR INFORMAÇÕES
+        PARA APRESENTAR INFORMAÇÕES do login com Google
         <p id="fullName"></p>
         <p id="sub"></p>
         <p id="given_name"></p>

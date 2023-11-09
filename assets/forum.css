@@ -1,91 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 .container {
-    margin: 3%;
-    padding: 2%;
-    left: 5%;
-    max-width: 100%;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+  margin: 3%;
+  padding: 2%;
+  left: 5%;
+  max-width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
+body.dark-mode .container{
+background:#575757;
+}
 .subforum {
-    margin-top: 3%;
-    padding: 2%;
-    background-color: #f1f6ff;
-    border-radius: 5px;
+  margin-top: 3%;
+  padding: 2%;
+  background-color: #f1f6ff;
+  border-radius: 5px;
 }
 
 .subforum-title {
-    background-color: #a2c0ff;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
+  background-color: #a2c0ff;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
 
 .subforum-row {
-    display: grid;
-    grid-template-columns: 7% 60% 13% 20%;
-    gap: 1%;
+  display: grid;
+  grid-template-columns: 7% 60% 13% 20%;
+  gap: 1%;
 }
 
 .subforum-column {
-    padding: 1%;
-    border-radius: 5px;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 .subforum-description * {
-    margin-block: 0;
+  margin-block: 0;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .subforum-devider {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 460px) {
-    .container, .subforum {
-        margin: 2%;
-        padding: 2%;
-    }
+  .container, .subforum {
+      margin: 2%;
+      padding: 2%;
+  }
 
-    .subforum-row {
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 65% 35%;
-    }
+  .subforum-row {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      grid-template-rows: 65% 35%;
+  }
 
-    .subforum-devider {
-        display: block;
-    }
+  .subforum-devider {
+      display: block;
+  }
 }
 
 @media screen and (min-width: 460px) and (max-width: 1024px) {
-    .container, .subforum {
-        margin: 3%;
-        padding: 3%;
-    }
+  .container, .subforum {
+      margin: 3%;
+      padding: 3%;
+  }
 
-    .subforum-row {
-        display: grid;
-        grid-template-columns: 10% 60% 10% 20%;
-        gap: 1%;
-    }
+  .subforum-row {
+      display: grid;
+      grid-template-columns: 10% 60% 10% 20%;
+      gap: 1%;
+  }
 
-    .subforum-icon i {
-        font-size: 2em;
-    }
+  .subforum-icon i {
+      font-size: 2em;
+  }
 
-    html {
-        font-size: 0.875em; /* 14px for 16px base font size */
-    }
+  html {
+      font-size: 0.875em; /* 14px for 16px base font size */
+  }
 
-    h1 {
-        font-size: 1em; /* 16px for 16px base font size */
-    }
+  h1 {
+      font-size: 1em; /* 16px for 16px base font size */
+  }
 }
 
 *{
@@ -96,26 +100,10 @@
   
   body{
     background: #fbfbfb;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
     -webkit-font-smoothing: antialiased !important;
   }
-  li{
-    list-style:none;
-  }
-  
-  header{
-    width: 100%;
-    height: 50px;
-  
-    background: #23a0ff;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    box-shadow: 1px 0 3px rgba(0,0,0,0.4);
-  }
-  
+
   .main{
     max-width: 900px;
     margin: 0 auto;
@@ -135,7 +123,10 @@
     border-radius: 10px;
     box-shadow: 1px 2px 2px rgba(0,0,0,0.05);
   }
-  
+  body.dark-mode div.newPost{
+    background:#575757;
+  }
+
   div.newPost div.infoUser{
     display: flex;
     align-items: center;
@@ -150,7 +141,7 @@
   
   div.newPost div.infoUser strong{
     font-size: 16px;
-    color:#23a0ff;
+    color:#ff2323;
     margin-left: 10px;
   }
   
@@ -172,12 +163,10 @@
   
     font-weight: bold;
     color:#727272;
-    font-family: 'Roboto', sans-serif;
     border:2px solid #fff;
   }
   div.newPost form.formPost textarea:focus{
     border:2px solid #23a0ff;
-  
   }
   div.newPost form.formPost div.iconsAndButton{
     display: flex;
@@ -196,25 +185,26 @@
     border:0;
     background: #fff;
     cursor: pointer;
-  
     display: flex;
     align-items: center;
     justify-content: center;
   }
+  body.dark-mode div.newPost form.formPost div.iconsAndButton div.icons button{
+    background:#575757;
+  }
   
   div.newPost form.formPost div.iconsAndButton button.btnSubmitForm{
-    background: #23a0ff;
+    background: #2f353a;
     padding: 10px 50px;
     color:#fff;
     font-weight: bold;
     cursor: pointer;
-  
     border: 0;
     border-radius: 10px;
     transition: background 0.2s;
   }
   div.newPost form.formPost div.iconsAndButton button.btnSubmitForm:hover{
-    background: rgb(8,138,236);
+    background: rgb(236, 8, 236);
   }
   
   ul.posts li.post{

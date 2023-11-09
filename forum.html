@@ -9,55 +9,13 @@ https://youtu.be/TRYdsaxUvzA-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./JS/main.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
     <link rel="stylesheet" href="./assets/cabecalho.css">
     <link rel="stylesheet" href="./assets/calculadora.css">
-    
 </head>
-<header>
-    <a href="mainpage.html">
-    <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-    </a>
-
-    <nav >
-    <a href="#">Séries</a>
-    
-    <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
-    <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
-
-    <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
-
-    <a href="#">
-    <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
-    </a>
-
-    <a href="noticias.html">
-    <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
-    </a>
-    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-    <a href="">
-    <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-    </a>
-
-    <a href="video.html">
-    <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-    </a>
-
-    <a href="forum.html">
-    <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
-    </a>
-
-    <a href="#">
-    <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-    </a>
-    
-    <div id="main">
-        <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
-    </div>
-    </nav>
-</header>
+<script src="./JS/incluiCabecalho.js"></script>
+ <script src=".\JS\controladorDeFonte.js"></script>
 
 <div class="calculator" id="calculator">
     <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
@@ -104,22 +62,20 @@ https://youtu.be/TRYdsaxUvzA-->
         </div>
     </div>
   </div>
-
-<script src="./js/+e-"></script>
 <script src="./JS/calculadora.js"></script>
+
 <body>
     <div class="container">
         <div class="subforum">
             <h2 style="text-align: center">Bem vindo(a) a seção Fórum!</h2>
-            <img src="./images/estudando.png" style="display: block; margin: 0 auto; height: 400px; border-radius: 5px;">
+            <img src="./images/duvida.svg" style="display: block; margin: 0 auto; height: 400px; border-radius: 5px;">
                 <div >
-                    <p>Neste espaço, você encontrará um ambiente dedicado a discutir
-                        e explorar o fascinante mundo da Matemática.
-                        Este é o lugar perfeito para compartilhar conhecimentos,
-                        fazer perguntas e aprender juntos.</p><br><br>
+                    <p>Neste espaço, você encontrará um ambiente dedicado a discutir e explorar o fascinante mundo da Matemática.
+                        Este é o lugar perfeito para compartilhar conhecimentos, fazer perguntas e aprender juntos.</p><br><br>
                 </div>
         </div>
 <!-- Modal -->
+
     <div id="ReplyModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
@@ -178,5 +134,8 @@ https://youtu.be/TRYdsaxUvzA-->
         </div>
     </div>
 </div>
+<footer>
+  <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+</footer>
 </body>
 </html>

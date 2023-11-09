@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="post">
+        <p>Content goes here.</p>
+        <div class="actions">
+            <button class="like-button">Like</button>
+            <span class="like-count">0</span>
+            <button class="dislike-button">Dislike</button>
+            <span class="dislike-count">0</span>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const likeButtons = document.querySelectorAll(".like-button");
+    const dislikeButtons = document.querySelectorAll(".dislike-button");
+    
+    likeButtons.forEach(function(likeButton) {
+        likeButton.addEventListener("click", function() {
+            const likeCount = likeButton.nextElementSibling;
+            const currentLikeCount = parseInt(likeCount.textContent);
+            likeCount.textContent = currentLikeCount + 1;
+        });
+    });
+    
+    dislikeButtons.forEach(function(dislikeButton) {
+        dislikeButton.addEventListener("click", function() {
+            const dislikeCount = dislikeButton.nextElementSibling;
+            const currentDislikeCount = parseInt(dislikeCount.textContent);
+            dislikeCount.textContent = currentDislikeCount + 1;
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

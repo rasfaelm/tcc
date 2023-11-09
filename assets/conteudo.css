@@ -1,0 +1,77 @@
+h2{
+    color: #e11e72;
+    text-shadow: 2px 2px 4px rgba(133, 133, 133, 0.5);
+}
+.mathematics-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mathematics-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px #e11e72;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+}
+.mathematics-card:hover{
+    background-color: #fdcbe1;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+
+}
+body.dark-mode .mathematics-card {
+  border: 1px #6d6d6d;
+  border-radius: 10px;
+  background-color: #4d4d4d;
+}
+body.mathematics-card:hover{
+    background-color: #fdcbe1;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+
+}
+.h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .mathematics-section {
+    flex-direction: column;
+  }
+  .mathematics-card {
+    width: 92%;
+  }
+}
+
+hr {
+    background-color: rgb(252, 17, 193); /* Defina a cor desejada */
+    height: 1px; /* Ajuste a espessura da linha */
+    border: none; /* Remova a borda padrão */
+  
+}
+a {
+    text-decoration: none;
+  }
+h1{
+    margin-left: 50px;
+  }
+
+  footer{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+    background-color:#8fb3ff;
+    display: block;
+    text-align: center;
+  }
+  footer span{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #000000;
+  }

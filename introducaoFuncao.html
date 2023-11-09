@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Conteúdos de Matemática</title>
+    <title>Introdução às funções</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
@@ -109,19 +109,19 @@
 </head>
 <body>
 
-    <div class="header">
-        <script>
-        // Carregue o cabeçalho
+  <div class="header">
+    <script>
         fetch('cabecalho.html')
             .then(response => response.text())
             .then(data => {
-                document.querySelector('cabecalho').innerHTML = data;
+                document.querySelector('.header').innerHTML = data;
             });
     </script>
     <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>  
-      </div>
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</div>
+
   <div class="content">
     <h1>Introdução às funções</h1>
 <hr>
@@ -137,12 +137,11 @@
     associa um único elemento y no conjunto B, geralmente escrito como f(x)=y. O valor
     Y é chamado de imagem de x sob a função f.                                      </p>
       <img src="./images/funcao.jpg" alt="Função Ilustrativa" width="400">
+
 <h2 id="secao2">Relação entre variáveis:</h2>
   <p>Define-se uma relação entre dois conjuntos como uma correspondência
     entre seus elementos. O conjunto de partida de uma relação é o grupo de elementos
-    aos quais um elemento do conjunto de chegada está associado. Em outras palavras, é 
-    o grupo de elementos que correspondem a um elemento na ordem dada.
-    Eventualmente, o mesmo conjunto pode ser utilizado tanto como conjunto de
+    aos quais os elementos do conjunto de chegada estão associados. Eventualmente, o mesmo conjunto pode ser utilizado tanto como conjunto de
     partida quanto de chegada. </p>
   <p>Uma relação pode envolver todos os elementos dos dois conjuntos, ou
     apenas uma parte deles. A regra de associação entre os elementos (também
@@ -167,7 +166,7 @@
     <h2 id="secao 4">Expressões algébricas:</h2>
     <p>Utilizando os mesmos conjuntos dos exemplos 1 e 2, é possível expressar as respectivas
       relações por meio de expressões matemáticas que associam os valores dos conjuntos.
-      Considerando que, em ambos os casos, será o valor do elemento extraído do conjunto de
+      Considerando que, em ambos os casos, x será o valor do elemento extraído do conjunto de
       partida e y será o elemento extraído do conjunto de chegada, então as fórmulas são:</p>
     <p><b>Exemplo1: </b> y = x/2</p>
     <p><b>Exemplo2: </b> y = x²</p>
@@ -179,6 +178,7 @@
       uma função na matemática. Eles descrevem as partes essenciais da relação que
       uma função estabelece entre os valores de entrada e os valores de saída. Vamos
       entender melhor cada um deles:</p>
+
     <p><b>Domínio:</b> O domínio de uma função é o conjunto de todos os valores de entrada (ou
       valores da variável independente) para os quais a função está definida. Em outras
       palavras, são os valores que você pode inserir na função para obter um resultado
@@ -187,6 +187,7 @@
     <p>O domínio pode ser resttrito por váias razões, como raízes quadradas de n[umeros negativos, 
       divisões por zero, valores negativos par o logaritmando ou qualquer outra condição que limite 
       os valores x para os quais a função tem sentido.</p>
+
     <p><b>Imagem:</b> A imagem de uma função é o conjunto de todos os valores de saída (ou
       valores da variável dependente) que a função pode produzir quando seus
       respectivos valores de entrada são escolhidos a partir do domínio. Em outras
@@ -200,13 +201,14 @@
         para os quais a função é definida e os resultados que ela pode produzir.</b> Entender esses conceitos 
         é fundamental para compreender o comportamento geral e as propriedades de uma função</p>
       <img src="./images/dominioEimagem.png" alt="Funcao de dominio" width="300">
-      
+  </div>
+
+
+  
       <footer>
         <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
         <div style="align-items: right">
-            <span>Siga o CEFET MAT</span>
-            <a href="#"> <img src="./images/instagram.png" style= "width: 1%;"alt="insta"></a>
-        </div>   
+            </div>
       </footer>
 </body>
 </html>

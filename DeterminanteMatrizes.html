@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matrizes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+    }
+    footer{
+    width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    padding: 20px;
+    background-color:   #8fb3ff;
+    display: block;
+    text-align: center;
+    }
+    footer span{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #000000;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Determinante de Matrizes </h1>
+
+<hr>
+  <p>O determinante é um valor escalar associado a uma matriz quadrada. Ele é
+    calculado com base nos elementos da matriz e é usado para determinar várias
+    propriedades e características da matriz, incluindo sua invertibilidade e independência das colunas ou linhas, etc.</p>
+    <p>O determinante é geralmente denotado por "det(A)" ou, às vezes, "|A|". Para calcular
+        o determinante de uma matriz, existem diferentes métodos, como o método de Sarrus
+        (aplicável apenas a matrizes 3x3), expansão por cofatores e a regra de Laplace (também
+        conhecida como expansão de cofatores), e decomposição LU, entre outros, para matrizes de tamanhos maiores.</p>
+    <p>Para uma matriz A, o determinante é calculado da seguinte forma:</p>
+    <img src="./images/determinanteModo.jpeg" alt="Determinante de matriz" width="300">
+        <p>Abaixo está um exemplo de como essa fórmula funciona na prática: </p>
+    <img src="./images/determinanteFormula.jpeg" alt="Determinante de matriz" width="520">
+    <img src="./images/determinanteFormula2.jpeg" alt="Determinante de matriz" width="600">
+
+    <p>O Determinante tem várias propriedades úteis:</p>
+        <ul>
+        <p><li><b>invertibilidade:</b> Se o determinante de uma matriz for diferente de zero, então a matriz é invertível, ou seja, tem uma matriz inversa.</li></p>
+        <p><li><b>Linearmente Independente:</b> As colunas (ou linhas) de uma matriz são linearmente independentes se e somente se o determinante é diferente de zero. </li></p>
+        <p><li><b>Sistemas de Equações Lineares:</b>  O determinante pode ser usado para determinar se um sistema de equações lineares.</li></p>
+        <p><li><b>Propriedade de Matrizes Multiplicadas:</b>  O determinante do produto de duas matrizes é o produto dos determinantes individuais, ou seja, det(AB) = det(A) * det(B).</li></p>
+    </ul>
+</div>
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+        </div>
+      </footer>
+
+</body>
+</html>

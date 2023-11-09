@@ -1,89 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
+}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem;
-      background-color: #fafafa;
-    }
-    header nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    header nav a {
-      display: inline-block;
-      text-align: center;
-      margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+header {
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 3px 10px #999898;
+}
+    /* Estilos para o modo de alto contraste */
+    body.dark-mode {
+        color: #dad9d9; 
+        background-color: rgb(12, 12, 12)/* #080808*/; 
     }
 
-    header nav img {
-      width: 40px; /* Tamanho dos ícones */
-      height: 40px; /* Tamanho dos ícones */
-    }
-    header a{
-      text-decoration: none; color: black;
-    }
-    
-    .logo {
-      width:100px;
-      height: 100px;
-      margin-left: 30px;
-    }    
-    body {
-      height: 100vh; /* Para ocupar toda a altura da janela */
-      margin: 0;
+    body.dark-mode header {
+        background-color: #f0f0f0; 
+        box-shadow: 0px 3px 10px #000000;
     }
 
-    .sidenav {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0; /* Mudança na posição para a direita */
-      background-color: #111111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
+.nav-bar { 
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
 
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
+.logo {
+    display: flex;
+}
 
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    transition: border-color 0.8s, transform 0.6s; /* Efeito */
+}
 
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      left: 25px; /* Mudança na posição para a esquerda */
-      font-size: 36px;
-      margin-right: 50px; /* Mudança na margem direita */
-    }
+.nav-list ul :hover {
+    border-color: #9e8888; /* Altera a cor da borda */
+    transform: translateY(-1px); /* Adiciona a "subidinha" */
+}
+.nav-item {
+    margin: 0 8px;
+}
 
-    #main {
-      transition: margin-right .5s;
-      padding: 16px;
-    }
-    @media screen and (max-height: 400px) {
-          header nav img {
-            display: none;
-          }
-        }
-    @media (max-width: 768px) {
-      .logo {
-        width: 70px;
-        height: 70px;
-      }
-    }
+.nav-link {
+    text-decoration: none; 
+    font-size: 1.15rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+}
 
-    
+.nav-link h3 {
+    display: inline-block; 
+    font-size: 1.15rem; 
+    font-weight: 400; 
+    color: #000000; 
+    vertical-align: middle; 
+    margin: 17px ;
+  }
+  
+  /* Ajuste o alinhamento vertical conforme necessário */
+  .nav-list ul {
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    transition: border-color 0.8s, transform 0.6s; /* Efeito */
+  }
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: #000000;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .open {
+        display: block;
+    }
+}
+header nav img {
+    width: 40px; 
+    height: 40px; 
+  }

@@ -1,146 +1,64 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cabeçalho</title>
-  <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
-  <link rel="stylesheet" href="./assets/style.css">
-  <link rel="stylesheet" href="./assets/cabecalho.css">
-  <link rel="stylesheet" href="./assets/calculadora.css">
-  <style>
-      /* Estilos padrão (claro) */
-      body {
-          background-color: #e1f0e9;
-            color: #000000;
-        }
-
-        /* Estilos de alto contraste (escuro) */
-        body.dark-mode {
-            background-color: #000000;
-            color: hsl(0, 0%, 100%);
-        }
-
-  </style>
-
-  <header id="header-container" class="dark-mode">
-
-  <a href="mainpage.html">
-    <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-  </a>
-
-  <nav >
-    <a href="sumarioSerie.html">Series</a>
-
-    <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
-    <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
-
-    <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
-
-    <a href="#">
-      <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
-    </a>
-
-    <a href="noticias.html">
-      <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
-    </a>
-    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-    <a href="">
-      <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-    </a>
-
-    <a href="video.html">
-      <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-    </a>
-
-    <a href="forum.html">
-      <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
-    </a>
-
-    <a href="#">
-      <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-    </a>
-
-  </nav>
-</header>
-<div class="calculator" id="calculator">
-  <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
-  <input type="text" id="screen" maxlength="20">
-  <div class="calc-buttons">
-  <div class="functions-one">
-      <button class="button triggers">C</button>
-      <button class="button basic-stuff">(</button>
-      <button class="button basic-stuff">)</button>
-      <button class="button numbers">7</button>
-      <button class="button numbers">8</button>
-      <button class="button numbers">9</button>
-      <button class="button numbers">4</button>
-      <button class="button numbers">5</button>
-      <button class="button numbers">6</button>
-      <button class="button numbers">1</button>
-      <button class="button numbers">2</button>
-      <button class="button numbers">3</button>
-      <button class="button basic-stuff">±</button>
-      <button class="button numbers">0</button>
-      <button class="button basic-stuff">.</button>
-  </div>
-      <div class="functions-two">
-          <button class="button triggers">&#60;=</button>
-          <button class="button complex-stuff">%</button>
-          <button class="button complex-stuff">x !</button>
-          <button class="button complex-stuff">x^</button>
-          <button class="button basic-stuff">*</button>
-          <button class="button basic-stuff">/</button>
-          <button class="button complex-stuff">ln</button>
-          <button class="button complex-stuff">e</button>
-          <button class="button basic-stuff">+</button>
-          <button class="button complex-stuff">x ²</button>
-          <button class="button complex-stuff">log</button>
-          <button class="button complex-stuff">cos</button>
-          <button class="button basic-stuff">-</button>
-          <button class="button complex-stuff">√</button>
-          <button class="button complex-stuff">sin</button>
-          <button class="button complex-stuff">tan</button>
-          <button class="button triggers">=</button>
-          <button class="button complex-stuff">&#x003C0;</button>
-          <button class="button complex-stuff">∘</button>
-          <button class="button complex-stuff">rad</button>
-      </div>
-  </div>
-</div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <link rel="stylesheet" href="./assets/conteudo.css">
+    <title>Cabeçalho</title>
+</head>
 <body>
-    <script>
-      function increaseFontSize() {
-        var element = document.body;
-        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-        var size = parseFloat(style);
-        element.style.fontSize = (size + 1) + 'px';
-      }
-      function decreaseFontSize() {
-        var element = document.body;
-        var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-        var size = parseFloat(style);
-        element.style.fontSize = (size - 1) + 'px';
-      }
-    </script>
-      <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            const toggleContrastButton = document.getElementById('toggle-contrast');
-            let darkMode = false;
+    <header id="cabecalho">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="./images/cabecalho/logo.png" alt="CefetMAT"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="conteudo.html" class="nav-link"><h3>Conteúdos</h3></a></li>
+                    <li><img src="./images/cabecalho/diminuirFonte.png" onclick="decreaseFontSize()" alt="diminuifonte" title="Diminui fonte"></li>
+                    <li><img src="./images/cabecalho/aumentarFonte.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte"></li>
+                    <li><img src="./images/cabecalho/autocontraste.png" id="autocontraste"  title="Dark Mode"></li>
+                    <!-- mudar nome do arquivo--->
+                    <li class="nav-item"><a href="teste_calculadora.html"><img src="./images/cabecalho/calculadora.png" title="Calculadora"></a></li>
+                    <li class="nav-item"><a href="video.html"><img src="./images/cabecalho/videos.png" title="VideoAulas"></a></li>
+                    <!-- pagina de todos exercicios-->
+                    <li class="nav-item"><a href="#"><img src="./images/cabecalho/exercicios.png"  title="Exercícios"></a></li>
+                    <li class="nav-item"><a href="noticias.html"><img src="./images/cabecalho/noticias.png"  title="Notícias"></a></li>
+                    <li class="nav-item"><a href="conversor.html"><img src="./images/cabecalho/converte.png" title=""Conversor></a></li>
+                    <li class="nav-item"><a href="forum.html"><img src="./images/cabecalho/forum.png" title="Fórum"></a></li>
+                    <li class="nav-item"><a href="perfil.html"><img src="./images/cabecalho/perfill.png" title="Perfil"></a></li>
+                    <li class="nav-item"><img src="./images/cabecalho/menu.png"  title="Menu"></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="./images/cabecalho/menu.png" ></button>
+            </div>
+        </nav>
 
-            toggleContrastButton.addEventListener('click', function() {
-              // Alterne entre os modos escuro e claro
-              darkMode = !darkMode;
+        <!-- mesmas informações para mobile -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Conteúdos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Calculadora</a></li>
+                <div class="title" data-tooltip="Este é um tooltip personalizado"> </div>
+                <li class="nav-item"><a href="#" class="nav-link">Vídeos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Listas</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Converter</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Fórum</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+            </ul>
+        </div>
+    </header>
+    
 
-              // Aplicar a classe dark-mode ao corpo para ativar o estilo escuro
-              document.body.classList.toggle('dark-mode', darkMode);
-
-              // Aplicar a classe dark-mode ao contêiner do cabeçalho
-    const headerContainer = document.getElementById('header-container');
-    headerContainer.classList.toggle('dark-mode', darkMode);
-            });
-          });
-      </script>
-      <script src="./js/calculadora.js"></script>
-</body>
+aaaaaaaaaaaaaa
+<b><b><b><b>b</b></b></b></b>
+    <!-- Importando js de cada funcionalidade-->
+        <script src=".\JS\cabecalho.js"></script>
+       <script src=".\JS\controladorDeFonte.js"></script>
+       <script src=".\JS\autoContraste.js"></script>
+    </body>
 </html>
+

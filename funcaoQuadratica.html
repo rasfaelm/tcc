@@ -1,1 +1,197 @@
-<a>falta fazer</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Função Quadrática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+    </div>  
+    </div>
+      <div class="content">
+        <h1>Função Quadrática</h1>
+    
+    <hr>
+      <p>A função quadrática, também chamada de função do segundo grau, é expressa
+        como f(x) = ax² + bx + c ou y = ax² + bx + c, sendo que os coeficientes "a, b e c" números
+        reais e "a" diferente de 0 (zero).</p>
+    
+        <p>De modo geral, as funções possuem dois elementos básicos: </p>
+            <p>1) Domínio: Corresponde ao conjunto dos valores possíveis das abscissas (x);</p>
+            <p>2) Imagem: Conjunto de valores das ordenadas (y), estabelecida pela aplicação de f(x).</p>
+
+        <p>Já o grau da função é determinado de acordo com o maior expoente da variável x.
+            No caso da função quadrática, dois é o maior expoente de x. 
+        <p><b>Mas atenção! Se em uma função não houver nenhum expoente na variável x significa que ela é do primeiro grau.</b></p>
+    
+        <li><b>Função afim ou função primeiro grau:</b> expressa como f(x) = ax + b. </li>
+            <p>Exemplo: f(x) = x + 1;</p>
+        <li><b>Função quadrática ou função de segundo grau:</b> expressa como f(x) = ax² + bx+ c.</li>
+            <p>Exemplo: f(x)= 2x² – 2x;</p>
+        <li><b>Função cúbica ou função de terceiro grau:</b> expressa como f(x) = ax³ + bx² + cx + d.</li>
+            <p>Exemplo: f(x) = 4x³ + x² + 2x + 4;</p>
+    
+
+        <h2>Função quadrática completa e incompleta</h2>
+        <p>Você percebeu que no exemplo y = 3x² – 4x, o coeficiente c é igual a zero? Isso
+            indica que esta é uma função incompleta, o mesmo vale quando o coeficiente b é igual a
+            zero. Confira outros exemplos:</p>
+           <ul> <p>f(x) = 2x² + 5, onde a = 2, b = 0 e c = 5</p>
+            <p>f(x) = 3x² , onde a = 3, b = 0 e c = 0</p>
+           </ul>
+        <p>Existe também a função completa, a qual todos os coeficientes (a, b e c) são diferentes de zero. Confira alguns exemplos:</p>
+           <ul>
+            <p>f(x) = 5x² + 2y+ 1, onde a = 5, b = 2 e c = 1</p>
+            <p>f(x) = x² + 4y+ 11, onde a = 1, b = 4 e c = 11</p>
+           </ul>
+        <h2>Gráfico da função quadrática </h2>
+        <p>O gráfico da função quadrática é uma parábola, cuja concavidade é determinada de
+            acordo com o valor de a. Se a > 0, a concavidade da parábola estará voltada para cima e se
+            a < 0, a concavidade da parábola estará voltada para baixo</p>
+            <img src="./images/graficoFuncaoQuadratica.jpg" alt="função quádrática " width="500">
+
+            
+        <h2>Raízes e Vértice</h2>
+            <p>Dois conceitos estão relacionados à concavidade da parábola: as raízes (pontos onde o gráfico intercepta o eixo x) e o vértice (ponto de máximo ou mínimo a função). As
+                raízes podem ser calculadas pela fórmula de Bháskara ou outros métodos. Lembrando que, as funções quadráticas possuem , no máximo, duas raízes reais. </p>
+    
+            <p>Em relação ao vértice, na função de primeiro grau é possível traçar o gráfico a partir
+                de dois pontos. Contudo, isso não acontece na função de segundo grau, pois é necessário conhecer mais que dois pontos. A partir do valor de delta = b² - 4ac, sabemos que: </p>    
+                <li>Se Δ > 0, a função possui duas raízes reais distintas e a parábola intercepta o eixo x em dois pontos diferentes;</li>
+                <li>Se Δ = 0, a função possui duas raízes reais iguais e a parábola é tangente ao eixo x;</li>
+                <li>Se Δ < 0, a função não possui raízes reais e a parábola não intercepta o eixo x: </li> 
+            
+            <p>Exemplo: Dada a função y = 4x² – 4x – 24, vamos resolvê-la seguindo algumas etapas:</p>
+            <ul>
+                <p>O 1º passo é escrever o valor dos coeficientes, sabemos que a = 4, b = – 4 e c = - 24.</p>
+                <p>O 2º passo consiste em calcular o valor da discriminante delta, logo:</p>
+            </ul>
+
+            <img src="./images/calculaDelta.jpg" alt="função quádrática " width="300">
+            <ul>
+                <p>O 3º passo é substituir os valores da discriminante e nos coeficientes na fórmula de Bháskara. Assim temos:</p>
+            </ul>
+            <img src="./images/calculaDelta2.jpg" alt="função quádrática " width="300">
+         
+    </div>
+    <footer>
+      <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+      <div style="align-items: right">
+      </div>
+    </footer>
+</body>
+</html>

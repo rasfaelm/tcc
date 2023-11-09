@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-dropdown li {
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="menu-dropdown">
+        <ul>
+          <li><a href="pagina1.html">Página 1</a></li>
+          <li><a href="pagina2.html">Página 2</a></li>
+          <li><a href="pagina3.html">Página 3</a></li>
+        </ul>
+      </div>
+      <script>
+        const menuIcon = document.querySelector('.mobile-menu-icon button');
+const menuDropdown = document.querySelector('.menu-dropdown');
+
+menuIcon.addEventListener('click', () => {
+  if (menuDropdown.style.display === 'block') {
+    menuDropdown.style.display = 'none';
+  } else {
+    menuDropdown.style.display = 'block';
+  }
+});
+
+      </script>
+</body>
+</html>

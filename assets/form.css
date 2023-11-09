@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+ *{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
+ }
+ .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+        }
+
+        form {
+          width: 80%;
+          max-width: 80%;
+          margin: 0 auto; /* Centraliza o formulário horizontalmente */
+          background-color: #e2478a;
+          padding: 50px; /* Reduz o espaço interno do formulário */
+          border-radius: 10px;
+        }
+
+        img {
+          max-width: 100%; /* Adapta a imagem à largura da tela */
+          height: auto;
+         
+          display: block; /* Remove margens laterais ao redimensionar */
+          transition: max-width 0.5s, opacity 0.5s; /* Adiciona transições suaves */
+          opacity: 1; /* Inicialmente, a imagem é visível */
+        }
+
+        h1{
+            color: white;
+        }
+
+        h4{
+            color: white;
+        }
+
+        @media (max-width: 900px) {
+          .container {
+            flex-direction: column;
+        }
+            img {
+              max-width: 0; /* Reduz gradualmente o tamanho da imagem */
+              opacity: 0; /* Torna a imagem gradualmente invisível */
+            }
+            
+        }
+
+        @media (min-width: 769px) {
+          img {
+            max-width: 100%; /* Reduz gradualmente o tamanho da imagem */
+            opacity: 1; /* Torna a imagem gradualmente visível */
+          }
+          form {
+            max-width: 80%; /* Restaura o tamanho original do formulário em telas maiores */
+            opacity: 1; /* Torna o formulário gradualmente visível */
+          }
+        }
+        label {
+          color: white;
+          text-align: left; 
+        }
+        #buttonDiv {
+          margin: 0 auto; /* Define margem esquerda e direita como "auto" para centralizar horizontalmente */
+          width: 265px;   /* Defina uma largura para o #buttonDiv (  227px ajuste conforme necessário) */
+          background-color: #ffffff; /* Adicione uma cor de fundo para visualização */
+          border-radius: 5px;
+      }
+      
+      input[type="text"], input[type="password"], input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        background-color: #ffffff;
+        border: none;
+        color: rgb(182, 23, 174);
+        padding: 18px 110px; /* Largura do botão */
+        font-size: 25px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 5px; /* Ajusta a altura do texto verticalmente */
+      }
+      
+      
+      
+      input[type="submit"]:hover {
+      background-color: rgb(250, 181, 221);
+      }
+      :-moz-ui-invalidinput[type="text"], input[type="password"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      }
+      

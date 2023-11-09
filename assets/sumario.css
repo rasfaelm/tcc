@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    color: #e11e72;
+    text-shadow: 2px 2px 4px rgba(133, 133, 133, 0.5);
+}
+h1{
+  text-align: center;
+}
+.mathematics-section {
+
+  display: flex;
+  flex-direction: column; /* Exibe os cards em uma coluna */
+  justify-content: center; /* Centralize horizontalmente os cards */
+  align-items: left; /* Centralize verticalmente os cards */
+  margin-left: 100px;
+}
+
+.mathematics-card {
+  width: 300px;
+  margin: 10px;
+  padding: 35px;
+  border: 1px #e11e72;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+  display: block; /* Adicione display: block; para os cartões ficarem em uma coluna */
+  text-align: center;
+}
+
+body.dark-mode .mathematics-card {
+    border: 1px #e64088;
+    background-color: #a1a1a1;
+  }
+.mathematics-card:hover{
+    background-color: #fcd3e5;
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+body.dark-mode .mathematics-card:hover {
+    border: 1px #e64088;
+    background-color: #c0bbbb;
+  }
+
+@media (max-width: 768px) {
+  .mathematics-section {
+    flex-direction: column;
+  }
+  .mathematics-card {
+    width: 100%;
+  }
+}
+
+    a {
+        text-decoration: none;
+    }
+    .container {
+      min-height: 100%;
+      position: relative;
+      padding-bottom: 100px; /* Ajuste conforme necessário para a altura do seu rodapé */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }

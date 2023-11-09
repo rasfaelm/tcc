@@ -24,18 +24,17 @@
       justify-content: space-around;
     }
     .mathematics-card {
-      width: calc(22.22% - 20px); /* Define a largura para caber 3 na mesma linha com margens */
-      margin: 5px; /* Espaço entre as dicas */
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-      display: inline-block;
-      text-align: center; /* Centraliza o conteúdo horizontalmente */
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px #e11e72;
+      border-radius: 10px;
+      background-color: #e6e6e6;
     }
     .mathematics-card:hover{
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        background-color: #fdcbe1;
+        transition: background-color 0.3s; /* Adiciona uma transição suave */
+
     }
     .mathematics-card h2 {
       font-size: 20px;
@@ -72,6 +71,23 @@
         }
         a {
             text-decoration: none;
+        }
+
+        footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
         }
     </style>
 </head>
@@ -177,23 +193,27 @@
           <h2>UNIDADE 2: Geometria Plana</h2>
           <p>A Geometria Espacial é nossa próxima parada, onde entraremos no mundo tridimensional, estudando sólidos, volumes e os espaços em que vivemos.</p>
         </div>
+  
         <div class="mathematics-card">
           <h2>UNIDADE 3:Números Complexos</h2>
           <p>Prepare-se para uma jornada fascinante no mundo dos números complexos, onde imaginários se tornam reais e abrimos portas para resolução de problemas mais complexos.</p>
         </div>
+        
         <div class="mathematics-card">
           <h2>UNIDADE 4: Progressões Aritmética e Geométrica</h2>
           <p>Progressões Aritméticas e Geométricas são as estrelas desta unidade, revelando padrões de crescimento e sequências matemáticas que estão por toda parte.</p>
         </div>
+      
         <div class="mathematics-card">
           <h2>UNIDADE 5: Matemática Financeira</h2>
           <p>Vamos adentrar o mundo da Matemática Financeira, onde aprenderemos como tomar decisões inteligentes sobre dinheiro, empréstimos e investimentos.</p>
         </div>
-      
+
       <div class="mathematics-card">
         <h2>UNIDADE 6: Matrizes</h2>
         <p>As matrizes estão à nossa frente na Unidade 6. Elas desempenham papéis essenciais na resolução de sistemas de equações e na transformação de dados.</p>
       </div>
+
       <div class="mathematics-card">
         <h2>UNIDADE 7:  Determinantes</h2>
         <p>Nossa próxima etapa é a exploração dos determinantes, ferramentas matemáticas poderosas usadas para entender transformações e sistemas lineares.</p>
@@ -203,12 +223,17 @@
         <p>Sistemas Lineares são o foco da Unidade 8, onde aprenderemos a resolver equações simultâneas e a aplicar esse conhecimento em diversos contextos.</p>
       </div>
       <div class="mathematics-card">
-        <h2>UNIDADE 8: Noções de Cálculo para o Ensino Médio</h2>
+        <h2>UNIDADE 9: Noções de Cálculo para o Ensino Médio</h2>
         <p>Finalizaremos nossa jornada com Noções de Cálculo para o Ensino Médio, abrindo portas para o mundo do cálculo e suas aplicações fascinantes.</p>
       </div>
-    </div>
+</div>
 
 </body>
+<footer>
+  <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+  <div style="align-items: right">
+  </div>
+</footer>
 <script>
     function increaseFontSize() {
       var element = document.body;

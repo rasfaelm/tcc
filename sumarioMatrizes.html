@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matrizes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./assets/cabecalho.css">
+    <style>
+    *{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        margin: 0;
+    }
+    h2{
+        color: #e11e72;
+        text-shadow: 2px 2px 4px rgba(133, 133, 133, 0.5);
+    }
+    h1{
+      text-align: center;
+    }
+    .mathematics-section {
+    
+      display: flex;
+      flex-direction: column; /* Exibe os cards em uma coluna */
+      justify-content: center; /* Centralize horizontalmente os cards */
+      align-items: left; /* Centralize verticalmente os cards */
+      margin-left: 100px;
+    }
+    
+    .mathematics-card {
+      width: 300px;
+      margin: 10px;
+      padding: 35px;
+      border: 1px #e11e72;
+      border-radius: 10px;
+      background-color: #e6e6e6;
+      display: block; /* Adicione display: block; para os cartões ficarem em uma coluna */
+      text-align: center;
+    }
+    .mathematics-card:hover{
+        background-color: #fdcbe1;
+        transition: background-color 0.3s; /* Adiciona uma transição suave */
+
+    }
+    .mathematics-card h2 {
+      font-size: 20px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .mathematics-card p {
+      font-size: 16px;
+      margin-top: 5px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .mathematics-section {
+        flex-direction: column;
+      }
+      .mathematics-card {
+        width: 100%;
+      }
+    }
+
+    hr {
+        background-color: rgb(83, 7, 64); /* Defina a cor desejada */
+        height: 1px; /* Ajuste a espessura da linha */
+        border: none; /* Remova a borda padrão */
+       
+        }
+        .tag-cloud {
+            align-items: center;
+            display: inline-block;
+            color: rgb(44, 43, 43);
+            padding: 8px 20px;
+            font-family: Arial;
+            border-radius: 25px;
+            background-color: #46dde2;
+            margin-top: 8px;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        footer{
+        width: 100%;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        position: absolute;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+        html, body{
+          height: 100%;
+          margin: 0;
+          padding: 0; 
+        }
+        .container {
+          min-height: 100%;
+          position: relative;
+          padding-bottom: 100px; 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="mainpage.html">
+          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
+        </a>
+      
+        <nav >
+          <a href="series.html">Series</a>
+          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="aumentar fonte">
+          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="diminuir fonte">
+          
+      
+          <a href="calculadora.html">
+            <img src="./images/cabecalho/calcular.png" alt="calculadora" title="calculadora">
+          </a>
+      
+          <a href="#">
+            <img src="./images/cabecalho/lista.png" alt="lista" title="lista de exercícios">
+          </a>
+      
+          <a href="noticias.html">
+            <img src="./images/cabecalho/noticias.png" alt="noticias" title="notícias de matemática">
+          </a>
+      
+          <a href="forum.html">
+            <img src="./images/cabecalho/forum.png" alt="forum" title="fórum"></a>
+         
+          <a href="perfil.html">
+            <img src="./images/cabecalho/perfil.png" alt="perfil" title="perfil">
+          </a>
+          <div id="main">
+            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+          </div>
+        </nav>
+      </header> 
+    
+      <h1>Matrizes </h1>
+
+      
+      <div class="mathematics-section">
+
+        <div class="mathematics-card">
+          <a href="definicaoMatriz.html"><h2> Definição de Matrizes </h2></a>
+        </div>
+
+        <div class="mathematics-card">
+          <a href="tiposMatrizes.html"><h2> Tipo de matrizes </h2></a>
+        </div>
+
+        <div class="mathematics-card">
+          <a href="sumarioOperacaoMatrizes.html"><h2> Operações de matrizes </h2></a>
+        </div>
+      
+        <div class="mathematics-card">
+          <a href="matrizInversa.html"><h2> Matriz Inversa</h2></a>
+        </div>
+
+      </div>  
+    
+
+    <script src="./js/+e-.js"></script>
+
+
+ <footer>
+  <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+</footer>
+
+</body>
+</html>

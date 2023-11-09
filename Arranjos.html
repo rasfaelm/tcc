@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Análise Combinatória</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+    }
+    footer{
+    width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    padding: 20px;
+    background-color:   #8fb3ff;
+    display: block;
+    text-align: center;
+    }
+    footer span{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #000000;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Arranjo</h1>
+
+<hr>
+  <p>Os arranjos são outro conceito importante na teoria de combinatória, eles levam em
+    consideração a ordem dos elementos. Um arranjo é uma seleção ordenada de elementos de um conjunto.
+    Existem dois tipos principais de arranjos: arranjos simples e arranjos com repetição.</p>
+   
+    <ul><li><b>Arranjos Simples: </b></li></ul>
+
+    <p>Em um arranjo simples, você seleciona um certo número de elementos de um
+        conjunto sem repetições e coloca esses elementos em uma ordem específica. A fórmula
+        para calcular o número de arranjos simples de "n" elementos escolhendo "k" elementos
+        (onde "k" é menor ou igual a "n") é dada por:</p>
+
+            <ul><b>A(n, k) = n! / (n - k)!</b></ul>
+
+    <p>Por exemplo, considere o conjunto {A, B, C}. Alguns arranjos simples de 2 elementos seriam: </p>
+        <ul><p>1. AB</p></ul>
+        <ul><p>2. AC</p></ul>
+        <ul><p>3. BA</p></ul>
+        <ul><p>4. BC</p></ul>
+        <ul><p>5. CA</p></ul>
+        <ul><p>6. CB</p></ul>
+<br>
+    <ul><li><b>Arranjos com Repetição:</b></li></ul>
+
+    <p>Em um arranjo com repetição, você seleciona um certo número de elementos de um
+        conjunto, permitindo que esses elementos se repitam. A fórmula para calcular o número de
+        arranjos com repetição de "n" elementos escolhendo "k" elementos é dada por:</p>
+                    <ul><b>A_rep(n, k) = nk  </b></ul>
+
+    <p>Por exemplo, considere o conjunto {A, B}. Alguns arranjos com repetição de 3 elementos seriam: </p>
+            <ul><p>1. AAA</p></ul>
+            <ul><p>2. AAB</p></ul>
+            <ul><p>3. ABA</p></ul>
+            <ul><p>4. ABB</p></ul>
+            <ul><p>5. BAA</p></ul>
+            <ul><p>6. BAB</p></ul>
+            <ul><p>7. BBA</p></ul>
+            <ul><p>8. BBB</p></ul>
+    <p>Desse modo, para calcularmos a quantidade de arranjos possíveis numa situação,
+        basta calcularmos o número de combinações possíveis e multiplicarmos pela quantidade de
+        permutações dos objetos escolhidos. Isso, essencialmente, é uma aplicação elementar do PFC.</p>
+    
+        <p>Em resumo, os arranjos são seleções ordenadas de elementos de um conjunto,
+            levando em conta a ordem, mas sem permitir repetições (nos arranjos simples) ou
+            permitindo repetições (nos arranjos com repetição).</p>
+    <img src="./images/exemploArranjo.jpg" alt="analiseCombinatoria" width="800">
+
+
+  </div>
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+        </div>
+      </footer>
+
+</body>
+</html>

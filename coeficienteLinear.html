@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Coeficiente Linear </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+        
+    }
+    footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+        <script>
+        // Carregue o cabeçalho
+        fetch('cabecalho.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('cabecalho').innerHTML = data;
+            });
+    </script>
+    <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+    </div>  
+    </div>
+      <div class="content">
+        <h1> Coeficiente Linear </h1>
+    
+    <hr>
+      <p>A função Linear é uma função f : ℝ → ℝ definida como f(x) = a . x, sendo a um número
+        real é diferente de zero. Esta função é um caso particular da função afim f(x) = a.x + b, quando b = 0.</p>
+
+      <p>O número a que acompanha o x da função, é chamado de coeficiente. Quando seu
+        valor for igual a 1, a função linear será também chamada de função identidade.</p>
+
+        <p><b>Exemplo: </b>Em uma loja são vendidos relógios, cujo preço de venda é igual a R$40,00.
+            O valor da receita total da venda desses relógios é obtido multiplicando-se o preço de cada
+            unidade pela quantidade vendida. Considerando x a quantidade vendida, determine:</p>
+        
+            <ul>
+                <p>a) uma função que represente a situação descrita.</p>
+                <p>b) o tipo de função encontrada.</p> 
+                <p>c) o valor da receita quando forem vendidos 350 relógios</p>
+            </ul>
+          
+        <p><b>Solução: </b></p>
+        <p>a) O valor da receita total em função da quantidade vendida pode ser representada por: f(x) = 40.x</p>
+        <p>b) A função encontrada é uma função do 1º grau, sendo o valor de b = 0. Desta forma, é uma função linear. </p> 
+        <p>c) Para encontrar a receita correspondente à venda de 350 relógios, basta substituir este valor na expressão encontrada. Assim: </p>
+                <ul>f(x) = 40 . 350 = 14.000</ul>
+        <p> Portanto, ao vender 350 relógios, a receita bruta da loja será igual a R$14.000,00.</p>
+        
+        <h2>Gráfico da função Linear</h2>
+        <p>O gráfico da função linear é uma reta, que passa pela origem, ou seja, pelo ponto (0,0).
+            O coeficiente a da função, corresponde à inclinação desta reta. </p>
+        <p>Abaixo, representamos a função f(x) = 1/2 x, g(x) = x (função identidade) e h(x) = 2x. 
+            Note que quanto maior o valor do a, maior é a inclinação da reta.</p>   
+       <img src="./images/graficoFuncaoLinear.jpg" alt="função quádrática " width="500">
+
+
+
+
+
+
+
+
+
+
+         
+    </div>
+    <footer>
+      <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+      <div style="align-items: right">
+      </div>
+    </footer>
+</body>
+</html>

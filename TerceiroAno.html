@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
     <link rel="stylesheet" href="./assets/cabecalho.css">
-    <link rel="stylesheet" href="./assets/calculadora.css">
     <style>
     *{
         margin-left: 0;
@@ -57,7 +56,7 @@
         background-color: rgb(83, 7, 64); /* Defina a cor desejada */
         height: 1px; /* Ajuste a espessura da linha */
         border: none; /* Remova a borda padrão */
-
+       
         }
         .tag-cloud {
             align-items: center;
@@ -72,6 +71,24 @@
         a {
             text-decoration: none;
         }
+
+        footer{
+        width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        padding: 20px;
+        background-color:   #8fb3ff;
+        display: block;
+        text-align: center;
+        }
+        footer span{
+        font-size: 20px;
+        font-family: Roboto;
+        color: #000000;
+        }
+
     </style>
 </head>
 <body>
@@ -81,92 +98,77 @@
         </a>
       
         <nav >
-          <a href="sumarioSerie.html">Series</a>
+          <a href="series.html">Series</a>
           <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="aumentar fonte">
           <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="diminuir fonte">
-
-          <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
           
-          <a href="#">
-          <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
+      
+          <a href="calculadora.html">
+            <img src="./images/cabecalho/calcular.png" alt="calculadora" title="calculadora">
           </a>
-
+      
+          <a href="#">
+            <img src="./images/cabecalho/lista.png" alt="lista" title="lista de exercícios">
+          </a>
+      
           <a href="noticias.html">
-          <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
+            <img src="./images/cabecalho/noticias.png" alt="noticias" title="notícias de matemática">
           </a>
-          <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-          <a href="">
-          <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-          </a>
-
-          <a href="video.html">
-          <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-          </a>
-
+      
           <a href="forum.html">
-          <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
+            <img src="./images/cabecalho/forum.png" alt="forum" title="fórum"></a>
+         
+          <a href="perfil.html">
+            <img src="./images/cabecalho/perfil.png" alt="perfil" title="perfil">
           </a>
-
-          <a href="#">
-          <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-          </a>
-
           <div id="main">
             <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
           </div>
         </nav>
-      </header>
-
-      <div class="calculator" id="calculator">
-        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
-        <input type="text" id="screen" maxlength="20">
-        <div class="calc-buttons">
-        <div class="functions-one">
-            <button class="button triggers">C</button>
-            <button class="button basic-stuff">(</button>
-            <button class="button basic-stuff">)</button>
-            <button class="button numbers">7</button>
-            <button class="button numbers">8</button>
-            <button class="button numbers">9</button>
-            <button class="button numbers">4</button>
-            <button class="button numbers">5</button>
-            <button class="button numbers">6</button>
-            <button class="button numbers">1</button>
-            <button class="button numbers">2</button>
-            <button class="button numbers">3</button>
-            <button class="button basic-stuff">±</button>
-            <button class="button numbers">0</button>
-            <button class="button basic-stuff">.</button>
-        </div>
-            <div class="functions-two">
-                <button class="button triggers">&#60;=</button>
-                <button class="button complex-stuff">%</button>
-                <button class="button complex-stuff">x !</button>
-                <button class="button complex-stuff">x^</button>
-                <button class="button basic-stuff">*</button>
-                <button class="button basic-stuff">/</button>
-                <button class="button complex-stuff">ln</button>
-                <button class="button complex-stuff">e</button>
-                <button class="button basic-stuff">+</button>
-                <button class="button complex-stuff">x ²</button>
-                <button class="button complex-stuff">log</button>
-                <button class="button complex-stuff">cos</button>
-                <button class="button basic-stuff">-</button>
-                <button class="button complex-stuff">√</button>
-                <button class="button complex-stuff">sin</button>
-                <button class="button complex-stuff">tan</button>
-                <button class="button triggers">=</button>
-                <button class="button complex-stuff">&#x003C0;</button>
-                <button class="button complex-stuff">∘</button>
-                <button class="button complex-stuff">rad</button>
-            </div>
-        </div>
-    </div>
+      </header> 
 
     <br> <hr><br>
-    <h1>TERCEIRO ANO ENTRA AQUI</h1>
+    <br><h1>Terceiro ano </h1><br>
+      <div class="mathematics-section">
+       
+        <div class="mathematics-card">
+          <strong><h2>UNIDADE 1: Geometria Analítica</h2></strong>
+          <p>Nossa jornada começa explorando o fascinante mundo dos conjuntos matemáticos, onde os números se organizam e interagem de maneiras surpreendentes.</p>
+        </div>
+        <div class="mathematics-card">
+          <a href="sumarioFuncao.html"><h2>UNIDADE 2: Análise Combinatória</h2></a>
+          <p>Nesta unidade, mergulharemos na teoria das funções, uma ferramenta fundamental da matemática que descreve como as coisas se relacionam e se transformam.</p>
+        </div>
+        <div class="mathematics-card">
+          <a href="funcaoAfim.html"><h2>UNIDADE 3: Binômio de Newton</h2></a>
+          <p>A função afim é nossa próxima parada, uma função simples, mas poderosa, que modela relacionamentos lineares entre variáveis. Vamos entender como usá-la e interpretá-la.</p>
+        </div>
+        <div class="mathematics-card">
+          <h2>UNIDADE 4: Probabilidade</h2>
+          <p>Prepare-se para uma curva suave! A unidade sobre funções quadráticas explora as parábolas e suas aplicações em várias áreas da matemática e da ciência.</p>
+        </div>
+
+        <div class="mathematics-card">
+          <h2>UNIDADE 5: Estatística</h2>
+          <p>A função modular é nossa próxima aventura, revelando padrões repetitivos e simetrias ocultas em números e equações. Vamos descobrir como ela funciona.</p>
+        </div>
+      
+      <div class="mathematics-card">
+        <h2>UNIDADE 6: Polinômios</h2>
+        <p>Nesta unidade, mergulharemos nas funções exponenciais, que descrevem crescimento e decadência explosivos em diversos contextos, desde o mundo natural até as finanças.</p>
+      </div>
+      <div class="mathematics-card">
+        <h2>UNIDADE 7: Equações Polinomiais</h2>
+        <p>As funções logarítmicas são nossas guias na próxima etapa. Elas desvendam os segredos da inversão das funções exponenciais e têm aplicações vitais em resolução de problemas.</p>
+      </div>
+     </div>
     <br> <hr><br>
+
+    <footer>
+      <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+      
+  </footer>
+
 </body>
 <script>
     function increaseFontSize() {
@@ -182,5 +184,4 @@
       element.style.fontSize = (size - 1) + 'px';
     }
   </script>
-  <script src="./js/calculadora.js"></script>
 </html>

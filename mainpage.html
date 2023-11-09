@@ -10,50 +10,11 @@
         <link rel="stylesheet" href="./assets/calculadora.css">
     </head>
 <body>
-    <header>
-        <a href="mainpage.html">
-        <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-        </a>
-    
-        <nav >
-        
-        <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte" >
-        <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="Diminuir fonte">
 
-        <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
-
-        <a href="#">
-        <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
-        </a>
-
-        <a href="noticias.html">
-        <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
-        </a>
-        <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-        <a href="">
-        <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-        </a>
-
-        <a href="video.html">
-        <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-        </a>
-
-        <a href="forum.html">
-        <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
-        </a>
-
-        <a href="#">
-        <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-        </a>
-        
-        <div id="main">
-            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
-        </div>
-        </nav>
-    </header>
-
-    <div class="calculator" id="calculator">
+  <script src="./JS/incluiCabecalho.js"></script>
+  <script src=".\JS\controladorDeFonte.js"></script>
+   
+  <div class="calculator" id="calculator">
         <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
         <input type="text" id="screen" maxlength="20">
         <div class="calc-buttons">
@@ -97,83 +58,81 @@
                 <button class="button complex-stuff">rad</button>
             </div>
         </div>
-      </div>
+  </div>
 
     <div class="row">
         <div class="side">
             <h2>Olá Fulano!</h2>
             <p>Vamos estudar Matemáticaa!!</p><br>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23D81B60&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showTabs=0&showPrint=0&showNav=1&hl=pt_BR&src=aGlsYXJ5bXVzdGFmYWJyYW5kYW9AZ21haWwuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=YWYxNzZlMTFiZmIxZjBkMzdhZWZmZGY5NWU0ZmYwMjgzNTdjNGJhOWI5MmE1ODJkOGU2Y2Q1MGI0NTdmZjZlYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%237CB342&color=%2333B679&color=%23D81B60&color=%2375afcc&color=%23c6cc54" style=" margin-left: 10%;border:solid 1px #777" width="300" height="300" frameborder="0" scrolling="no"></iframe>
-        
-            <h2>Escolha sua série:</h2> <br>
-            <div class="fakeimg" style="height:60px"><a href="PrimeiroANO.html" style="color: #111111"><b> 1 ANO</b></a></div><br>
-            <div class="fakeimg" style="height:60px;"><a href="SegundoANO.html" style="color: #111111"><b>2 ANO</b></a></div><br>
-            <div class="fakeimg" style="height:60px;"><a href="TerceiroAno.html" style="color: #111111"><b>3 ANO</b></a></div>
+            <iframe src="https://calendar.google.com/calendar/embed?height=350&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showNav=0&showTitle=0&showTz=0&src=Y2VmZXRtYXRjb250YWdlbUBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=NTQ1NDRmYTQxZjliYjMzNmVlZTgzMzkxMTFmYjhjODYwYzcxMjNiYzYyOGNjYTYzMjAzNGE1ZTgyOTIyMDNmN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=cHQtYnIuYnJhemlsaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%23D50000&color=%230B8043" style="border:solid 1px #777" width="350" height="350" frameborder="0" scrolling="no" display="flex"></iframe>
         </div>
-
-        <div class="main">
-        
-            <h2>Fórum</h2>
-            <div class="left-column"><img src="./images/noticias.png"></div>
-            <div>
-                <p>Obtenha ajuda, compartilhe seu conhecimento e participe de discussões matemáticas com outros estudantes.
-                Tente adivinhar as charadas ou tire suas dúvidas.
-            </p></div>
-            <span><a href="forum.html"><h1>Visite o Fórum</h1></a></span>
-    
+       <div class="main">
+        <h2>Fórum</h2>
+        <div class="container">
+            <div class="image-container">
+                <img src="./images/forum.png" alt="Imagem">
+            </div>
+            <div class="text-container">
+                <p>Obtenha ajuda, compartilhe seu conhecimento e participe de discussões matemáticas com outros estudantes. Tente adivinhar as charadas ou tire suas dúvidas.</p>
+            </div>
         </div>
-        
+        <h2>Escolha sua série:</h2> <br>
+        <div class="fakeimg" style="height:60px"><a href="PrimeiroANO.html" style="color: #111111"><b> 1 ANO</b></a></div><br>
+        <div class="fakeimg" style="height:60px;"><a href="SegundoANO.html" style="color: #111111"><b>2 ANO</b></a></div><br>
+        <div class="fakeimg" style="height:60px;"><a href="TerceiroAno.html" style="color: #111111"><b>3 ANO</b></a></div>
+       </div> 
     </div>
     
     <div>
-        <h2 >Notícias</h2><br>
-        <hr>
+        <h2 >Notícias</h2><br> <hr>
         <section class="news-section">
             <div class="news-card">
-                <img src="./images/enem.png" alt="A">
+                <a href=" https://radios.ebc.com.br/nacional-jovem/2023/10/curso-gratuito-ajuda-estudantes-se-preparem-para-prova-de-matematica-do-enem"><img src="./images/enem.png" alt="A"></a>
                 <h3>Curso gratuito ajuda estudantes a se preparem para a prova de Matemática do Enem</h3>
-                <small> 9 de out. de 2023</small>
+                <small>Publicado em: 9 de out. de 2023</small><br>
                 <p>A prova de Matemática do Enem costuma ser uma das mais desafiadoras,
                 muitas vezes por falta de experiência em resolver problemas complexos,...</p>
-                <a href=" https://radios.ebc.com.br/nacional-jovem/2023/10/curso-gratuito-ajuda-estudantes-se-preparem-para-prova-de-matematica-do-enem">Leia Mais</a>
+                <a href=" https://radios.ebc.com.br/nacional-jovem/2023/10/curso-gratuito-ajuda-estudantes-se-preparem-para-prova-de-matematica-do-enem"><b>Leia Mais</b></a>
             </div>
 
             <div class="news-card">
-                <img src="./images/mat.png" alt="Imagem da Notícia 2">
-                <h3>Brasileiros levam ouro, prata e bronze na maior olimpíada de matemática do mundo</h3>
-                <small>14 de jul. de 2023</small>
+                <a href="https://g1.globo.com/ce/ceara/educacao/noticia/2023/07/14/brasileiros-levam-ouro-prata-e-bronze-na-maior-olimpiada-de-matematica-do-mundo.ghtml"><img src="./images/mat.png" alt="Imagem da Notícia 2"></a>
+                
+                    <h3>Brasileiros levam ouro, prata e bronze na maior olimpíada de matemática do mundo</h3>
+                <small>Publicado em: 14 de jul. de 2023</small><br>
                 <p>Seis estudantes representaram o Brasil na competição internacional que aconteceu no Japão. Cearense Matheus Alencar, de 16 anos,...</p>
-                <a href="https://g1.globo.com/ce/ceara/educacao/noticia/2023/07/14/brasileiros-levam-ouro-prata-e-bronze-na-maior-olimpiada-de-matematica-do-mundo.ghtml"> Leia Mais</a>
+                <a href="https://g1.globo.com/ce/ceara/educacao/noticia/2023/07/14/brasileiros-levam-ouro-prata-e-bronze-na-maior-olimpiada-de-matematica-do-mundo.ghtml"><b>Leia Mais</b></a>
             </div>
             
             <div class="news-card">
-                <img src="./images/obmep.png" alt="Imagem da Notícia 1">
+                <a href="https://agenciabrasil.ebc.com.br/educacao/noticia/2023-07/olimpiada-tera-imersao-em-matematica-para-160-estudantes"><img src="./images/obmep.png" alt="Imagem da Notícia 1"></a>
                 <h3> 8ª edição do Encontro do Hotel de Hilbert vai reunir este ano, em Natal</h3>
-                <small>Publicado em:23 de jul. de 2023</small>
+                <small>Publicado em: 23 de jul. de 2023</small><br>
                 <p>160 estudantes de todo o Brasil para uma imersão no mundo da...</p>
-                <a href="https://agenciabrasil.ebc.com.br/educacao/noticia/2023-07/olimpiada-tera-imersao-em-matematica-para-160-estudantes">Leia Mais</a>
+                <a href="https://agenciabrasil.ebc.com.br/educacao/noticia/2023-07/olimpiada-tera-imersao-em-matematica-para-160-estudantes"><b>Leia Mais</b></a>
             </div>
         </section>
     </div>
 <hr>
 <!-- Área de Vídeos -->
-    <section class="video-section">
-        <h2><a href="#">Vídeos</a> sobre trigonometria</h2><br>
+
+    <section class="video-section" >
+        <h2>Sugestões de <a href="video.html">vídeos</a></h2><br>
         <div class="video" >
-            <iframe src="https://www.youtube.com/embed/CRg5jQRj1Hg" frameborder="0" allowfullscreen style="align-items: center;"></iframe>
-            <p>Razones Trigonométricas | Hallar un lado | Ejemplo 1</p>
+            <iframe src="https://www.youtube.com/embed/CRg5jQRj1Hg" frameborder="0" allowfullscreen style="align-items: center;"></iframe><br>
+            <p><b>Razones Trigonométricas</b> | Hallar un lado | Ejemplo 1</p>
         </div>
         <div class="video">
             <iframe src="https://www.youtube.com/embed/7rVOU1fQnVE" frameborder="0"  allowfullscreen ></iframe>
-            <p>TRIGONOMETRIA NO TRIANGULO RETÂNGULO | QUER QUE DESENHE | DESCOMPLICA</p>
+            <p><b>Trigonômetria no triangulo retângulo</b> | QUER QUE DESENHE | DESCOMPLICA</p>
         </div>
         <div class="video">
-            <iframe src="https://www.youtube.com/embed/7rVOU1fQnVE" frameborder="0" allowfullscreen></iframe>
-            <p>TRIGONOMETRIA NO TRIANGULO RETÂNGULO | QUER QUE DESENHE | DESCOMPLICA</p>
+            <iframe src="https://www.youtube.com/embed/7rVOU1fQnVE" frameborder="0"  allowfullscreen ></iframe>
+            <p><b>TRIGONOMETRIA NO TRIANGULO RETÂNGULO</b> | QUER QUE DESENHE | DESCOMPLICA</p>
         </div>
     </section>     <script src="./js/+e-.js"></script>
-    </div>
     
+   
   <script src="./js/calculadora.js"></script>
     <footer>
         <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>

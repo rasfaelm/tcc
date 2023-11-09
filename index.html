@@ -5,102 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>CefetMAT</title>
         <link rel="stylesheet" href="./assets/style.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="./assets/cabecalho.css">
         <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
-        <style>
-            .container-fluid {
-                width: 100%;
-                display: block;
-                }
-                .container:after {
-                content: "";
-                display: table;
-                clear: both;
-                }
-            .tip {
-                width: calc(22.22% - 20px); /* Define a largura para caber 3 na mesma linha com margens */
-                margin: 5px; /* Espaço entre as dicas */
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                transition: transform 0.2s, box-shadow 0.2s;
-                cursor: pointer;
-                display: inline-block;
-                text-align: center; /* Centraliza o conteúdo horizontalmente */
-            }
-    
-            ul,
-            ol {
-                list-style-type: none;
-            }
-    
-            .tip:hover {
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            }
-    
-            #study-tips {
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            }
-
-            @media (max-width: 860px) {
-                .tip {
-                    width: 100%; /* 100% de largura em telas menores */
-                    margin: 10px 0; /* Espaço acima e abaixo em telas menores */
-                }
-            }
-           
-            .tip p {
-                margin: 0;
-            }
-            .p {
-                color: #181717;
-                text-align: justify;
-                text-indent: 30px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/index.css">
     </head>
 <body>
     <header>
         <div class="logo">
-            <a href="paginaprincipal.html"><img src="./images/LogoSite3.png" class="logo"></a>
+            <a href="index.html"><img src="./images/logosozinha.png" class="logo"></a>
         </div>
         <div class="menu">
-            <a href="conteudoCompleto.html">Séries</a>
-            <a href="noticias.html">Notícias</a>
-            <a href="forum.html">Fórum</a>
-            <a href="sobrenos.html">Sobre nós</a>
+            <a href="conteudo.html"><b>Conteúdos</b></a>
+            <a href="noticias.html"><b>Notícias</b></a>
+            <a href="forum.html"><b>Fórum</b></a>
+            <a href="sobrenos.html"><b>Sobre nós</b></a>
         </div>
-        <div class="buttons">
-            <img src="./images/calculadoRosa.png" alt="calculadora" title="Faça login para acessar a calculadora" style="width: 50px">
+        <div class="right-column">
+            <img src="./images/calculadoRosa.png" alt="calculadora" style="width: 50px">
             <a href="Login.html"><button class="login-button">Login</button></a>
-            <a href="Cadastro.html"><button class="signup-button">Cadastro</button></a>
-        </div>
+            <a href="Cadastro.html"><button class="signup-button">Cadastro</button></a> 
+         </div>
     </header>
-    
-    <!--Puxa framework do W3school-->
     <div style="padding:128px 16px">
-        <!--<div class="w3-row-padding">-->
-            <div class="w3-col m6">
-                <h2><b>Venha conhecer o </b><span>CefetMAT</span><b>!</b></h2>
+        <div class="containerr">
+            <div class="text">
+                <h2>Venha conhecer o <span>CefetMAT</span></h2>
                 <p>Explore uma riqueza de recursos educacionais, desafios matemáticos interativos
                     e materiais de aprendizado de alta qualidade em nosso site. Nossa missão é tornar
                     a matemática acessível e divertida para todos, independentemente do seu nível de
                     conhecimento.</p>
-                    <p><a href="Login.html" style=" text-decoration: none"><button class="button" style="margin-left: 15%;" >Conhecer</button></a></p>       
             </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="./images/mainpage.svg" alt="Buildings" width="700" height="394">
+            <div class="image">
+                <img src="./images/mainpage.svg" alt="Professora dando aula">
             </div>
-      <!--</div>-->
+        </div>
     </div>
+    
+      
     <div class="container">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <h2>Diferenciais do site:</h2><br>
-        <div >
+        <div>
             <div class="tip">
                 <img src="./images/listas.png" alt="Listas" style="width: 100px">
                 <h3>Listas com resoluções</h3>
@@ -119,7 +62,7 @@
             <div class="tip">
                 <img src="./images/forum.png" alt="Listas" style="width: 100px">
                 <h3>Fórum</h3>
-                <p>Junte-se à nossa comunidade, cada pergunta é uma oportunidade para aprender e ajudar os colegas.</p>
+                <p>Junte-se à nossa comunidade, cada pergunta é uma oportunidade para aprender e ajudar.</p>
             </div>
             <div class="tip">
                 <img src="./images/noticia.png" style="width: 100px">
@@ -129,11 +72,11 @@
             <div class="tip">
                 <img src="./images/acessibilidade.png" style="width: 100px">
                 <h3>Acessibilidade</h3>
-                <p>Cada detalhe, desde a paleta de cores até as fontes, cuidadosamente pensado para uma experiência inclusiva.</p>
+                <p>Cada detalhe, desde a paleta de cores até as fontes,  pensado para uma experiência inclusiva.</p>
             </div>
         </div>
     </div>
-
+    <br>
     <footer>
         <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
     </footer>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matrizes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
+    <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #181717;
+      text-align: justify;
+      text-indent: 30px;
+    }
+
+    .topic {
+      cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #e1e1e1;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .topic:hover {
+      background-color: #d0d0d0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 20px;
+    }
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: #ccc;
+        position: fixed;
+    }
+
+    .progress-bar {
+        height: 8px;
+        background: #5c90fd;
+        width: 0%;
+        position: fixed;
+    }
+    li a{
+        color: black;
+        text-decoration: none
+    }
+    footer{
+    width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    padding: 20px;
+    background-color:   #8fb3ff;
+    display: block;
+    text-align: center;
+    }
+    footer span{
+    font-size: 20px;
+    font-family: Roboto;
+    color: #000000;
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Tipos de matrizes</h1>
+
+<hr>
+  <p>Para facilitar a comunicação e não ter que ficar descrevendo certas características
+    (tipo ou natureza de seus elementos), damos um nome a certos tipos de matrizes. Assim, a
+    seguir será definido o que é uma: </p>
+    <ul>
+        <li>Matriz Linha;</li>
+        <li>Matriz Coluna;</li>
+        <li>Matriz Nula;</li>
+        <li>Matriz Quadrada;</li>
+            <ul>
+                <li>Matriz Triangular;</li>
+                <li>Matriz Diagonal;</li>
+                <li>Matriz Identidade;</li>
+            </ul>
+    </ul>
+   
+    <p><b>Matriz Linha: </b>Também conhecida como vetor linha, a matriz linha é um caso especial de matriz
+        onde existe apenas uma linha e várias colunas. Ela é uma estrutura unidimensional que
+        organiza elementos em uma única linha retangular.</p>
+        <img src="./images/matrizLinha.jpeg" alt="Matriz linha" width="300">
+
+    <p><b>Matriz Coluna: </b>Uma matriz coluna, também conhecida como vetor coluna, é outro caso especial de
+        matriz onde existe apenas uma coluna e vários elementos ao longo dessa coluna. Ela é
+        uma estrutura unidimensional que organiza elementos em uma única coluna retangular.</p>
+        <img src="./images/matrizColuna.jpeg" alt="Matriz coluna" width="300">
+
+    <b>Tanto as matrizes linhas e matrizes colunas são frequentemente usadas para
+        representar dados unidimensionais, como valores de um vetor, onde cada elemento
+        corresponde a um componente específico do vetor.</b>
+
+        <p><b>Matriz Nula: </b>Uma matriz nula, também conhecida como matriz zero, é uma matriz em que todos
+            os seus elementos são iguais a zero. Em outras palavras, todos os elementos da matriz têm
+            o valor numérico zero.</p>
+        <p>A matriz nula é importante em álgebra linear e matrizes porque atua como o
+            elemento neutro para a adição de matrizes. Quando você adiciona uma matriz nula a
+            qualquer outra matriz, o resultado é a própria matriz original, sem alterações. Em símbolos,
+            se A é uma matriz qualquer e 0 é a matriz nula do mesmo tamanho que A: </p>
+            <ul><b>A + 0 = A.</b></ul>
+        <p>Além disso, a matriz nula desempenha um papel fundamental na definição de espaços vetoriais.</p>
+        <img src="./images/matrizNula.jpeg" alt="Matriz nula" width="300">
+
+        <p><b>Matriz Quadrada: </b>Uma matriz quadrada é uma matriz que tem o mesmo número de linhas e colunas.
+            Em outras palavras, é uma matriz em que o número de linhas é igual ao número de colunas.
+            Isso significa que ela tem uma dimensão única, como "n x n", onde "n" representa tanto o
+            número de linhas quanto o número de colunas.</p>
+            <img src="./images/matrizQuadrada.jpeg" alt="Matriz quadrada" width="300">
+
+            <ul><b>Matriz Triangular: </b>É um tipo específico de matriz quadrada que possui uma estrutura em que todos os
+                elementos acima ou abaixo da diagonal principal são iguais a zero. Dependendo da posição
+                dos elementos não nulos, as matrizes quadradas triangulares podem ser classificadas em
+                dois tipos: matriz triangular superior e matriz triangular inferior.
+                <p><b>Matriz Triangular Superior: </b>Nesse tipo de matriz, todos os elementos abaixo da diagonal
+                    principal (ou seja, os elementos com índices de linha maiores do que os índices de coluna)
+                    são zero. Os elementos acima da diagonal principal podem ser não nulos.</p>
+                    <img src="./images/matrizTriSuperior.jpeg" alt="Matriz triangular superior" width="300">
+
+                <p><b>Matriz Triangular Inferior: </b>Nesse tipo de matriz, todos os elementos acima da diagonal
+                    principal são zero, enquanto os elementos abaixo da diagonal principal podem ser não nulos.</p></ul>
+                    <img src="./images/matrizTriInferior.jpeg" alt="Matriz triangular inferior" width="300">
+
+            <ul><b>Matriz Diagonal: </b>Uma matriz quadrada diagonal é um tipo especial de matriz quadrada em que todos
+                os elementos fora da diagonal principal são iguais a zero. A diagonal principal é a sequência
+                de elementos que vai desde o canto superior esquerdo até o canto inferior direito da matriz.
+                Portanto, em uma matriz diagonal, todos os elementos que não pertencem à diagonal principal têm valor zero.</ul>
+                <img src="./images/matrizDiagonal.jpeg" alt="Matriz diagonal" width="300">
+
+            <ul><b>Matriz Identidade: </b>Uma matriz quadrada identidade é um tipo especial de matriz diagonal em que todos
+                os elementos da diagonal principal são iguais a 1 e todos os elementos fora da diagonal
+                principal são iguais a zero. A matriz identidade é denotada por "I" ou "In", onde "n"
+                representa a dimensão da matriz (número de linhas e colunas).</ul>
+                <img src="./images/matrizIdentidade.jpeg" alt="Matriz identidade" width="300">
+
+                <b>Lembre-se de que uma matriz pode ser representada usando parênteses ou
+                    colchetes, e que os elementos não precisam ser separados por vírgula ou ponto-e-vírgula.</b>
+
+
+  </div>
+      <footer>
+        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <div style="align-items: right">
+        </div>
+      </footer>
+
+</body>
+</html>
