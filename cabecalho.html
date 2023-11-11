@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/cabecalho.css">
-    <link rel="stylesheet" href="./assets/conteudo.css">
+    <link rel="stylesheet" href="./Css/cabecalho.css">
+    <link rel="stylesheet" href="./Css/conteudo.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
     <title>Cabeçalho</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
                     <li><img src="./images/cabecalho/aumentarFonte.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte"></li>
                     <li><img src="./images/cabecalho/autocontraste.png" id="autocontraste"  title="Dark Mode"></li>
                     <!-- mudar nome do arquivo--->
-                    <li class="nav-item"><a href="teste_calculadora.html"><img src="./images/cabecalho/calculadora.png" title="Calculadora"></a></li>
+                    <li class="nav-item"><img src="./images/cabecalho/calculadora.png" id="open-calculadora" title="Calculadora"></li>
                     <li class="nav-item"><a href="video.html"><img src="./images/cabecalho/videos.png" title="VideoAulas"></a></li>
                     <!-- pagina de todos exercicios-->
                     <li class="nav-item"><a href="#"><img src="./images/cabecalho/exercicios.png"  title="Exercícios"></a></li>
@@ -51,14 +52,60 @@
             </ul>
         </div>
     </header>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+    </div>
     
 
-aaaaaaaaaaaaaa
-<b><b><b><b>b</b></b></b></b>
+<b><b><b><b></b></b></b></b>
     <!-- Importando js de cada funcionalidade-->
-        <script src=".\JS\cabecalho.js"></script>
-       <script src=".\JS\controladorDeFonte.js"></script>
-       <script src=".\JS\autoContraste.js"></script>
+        <script src="./JS/cabecalho.js"></script>
+        <script src="./JS/controladorDeFonte.js"></script>
+        <script src="./JS/autoContraste.js"></script>
+        <script src="./JS/calculadora.js"></script>
     </body>
 </html>
 

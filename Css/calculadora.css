@@ -19,7 +19,7 @@ button#close-calculadora {
 
 .calculator {
     position: fixed;
-    top: 100px;
+    top: 90px;
     right: -800px;
     max-width: 530px;
     background-color: #fff;
@@ -80,4 +80,34 @@ button:hover {
 
 .button.complex-stuff {
     background-color: #fa97d9;
+}
+
+
+@media (max-width: 768px) {
+    .calculator {
+    top: 90px;
+    right: -800px;
+    max-width: 400px;
+    padding: 10px;
+    }
+
+    input[type="text"] {
+    width: 180px;
+    margin: 0 0px 10px 44px;
+    }
+
+    .calc-buttons .button {
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    margin: 1px;
+    }
+
+    .functions-one {
+    width: 140px;
+    }
+
+    .functions-two {
+    width: 180px;
+    }
 }
