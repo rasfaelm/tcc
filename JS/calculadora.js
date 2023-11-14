@@ -1,10 +1,11 @@
-document.getElementById('open-calculadora').addEventListener('click', function() {
-    document.getElementById('calculator').style.right = '0';
-});
+function open_calculadora(){
+    var element = document.getElementById('calculator');
+    element.style.right = "0px";
+}
 
-document.getElementById('close-calculadora').addEventListener('click', function() {
+function close_calculadora() {
     document.getElementById('calculator').style.right = '-800px';
-});
+}
 
 var display = document.getElementById("screen");
 var buttons = document.getElementsByClassName("button");
