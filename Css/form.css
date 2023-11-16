@@ -25,8 +25,11 @@
         img {
           max-width: 100%; /* Adapta a imagem à largura da tela */
           height: auto;
-         
-          display: block; /* Remove margens laterais ao redimensionar */
+          display: block;
+        }
+
+
+        .imgGif {
           transition: max-width 0.5s, opacity 0.5s; /* Adiciona transições suaves */
           opacity: 1; /* Inicialmente, a imagem é visível */
         }

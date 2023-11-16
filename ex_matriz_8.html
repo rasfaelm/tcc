@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./Css/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./Css/ex.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
+    <style>
+        .wrapper{
+            width:180px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./JS/incluiCabecalho.js"></script>
+    <script src="./JS/controladorDeFonte.js"></script>
+
+    <script src="./JS/calculadora.js"></script>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 1 UFSM</h1>
+                <p>Observe as afirmativas:</p>
+                <li>I - A matriz unitária é uma matriz quadrada que possui todos os elementos da diagonal principal iguais a 1 e os demais elementos iguais a 0.</li>
+                <li>II - Duas matrizes, A = [aij]mxn e B = [bij]nxm, são opostas se, e somente se, aij = bji.</li>
+                <li>III - Uma matriz é quadrada quando o número de linhas é igual ao número de colunas.</li>
+                <p>Esta correto a afirmativa:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span> I</span>
+                            </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span> II</span>
+                        </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span> III</span>
+                        </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span> nenhuma</span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span> III</span>
+                        </label>
+
+                        <p>A matriz é quadrada quando possui o mesmo número de linhas e colunas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./JS/ex.js"></script>
+</body>
+
+</html>

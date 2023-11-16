@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão UEL</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./Css/cabecalho.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/icone.ico">
+    <link rel="stylesheet" href="./Css/ex.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
+    <style>
+        .wrapper{
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./JS/incluiCabecalho.js"></script>
+    <script src="./JS/controladorDeFonte.js"></script>
+
+    <script src="./JS/calculadora.js"></script>
+
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div style="padding: 128px 16px;">
+        <div class="w3-row-padding">
+            <div id="study-tips">
+                <h1>Questão 4</h1>
+                <p>Uma matriz quadrada de ordem 2 possui lei de formação bij=2i+3i−5. Portanto, a matriz B é:</p>
+                <div class="wrapper">
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-3">
+                    <input type="radio" name="select" id="option-4">
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span>B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>0</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>5</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>3</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>1</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                            </span>
+                            </label>
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span>B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>0</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>3</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>2</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>5</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                            </span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span>B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>1</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>3</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>0</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>2</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                            </span>
+                        </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span>B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>1</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>3</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>0</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>2</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                            </span>
+                        </label>
+                    </div>
+                    <br>
+                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                    <div id="resposta-div" style="display: none;">
+
+                        <p>Resposta:</p>
+
+                        <label for="option-2" class="option option-2">
+                            <div class="dot"></div>
+                                <span>B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mfenced open="[" close="]">
+                                    <mtable>
+                                        <mtr>
+                                        <mtd>
+                                            <mn>0</mn>
+                                        </mtd>
+                                        <mtd>
+                                            <mn>3</mn>
+                                        </mtd>
+                                        </mtr>
+                                        <mtr>
+                                        <mtd>
+                                            <mn>2</mn>
+                                        </mtd>
+                                        <mtd>
+                                            <mn>5</mn>
+                                        </mtd>
+                                        </mtr>
+                                    </mtable>
+                                    </mfenced>
+                                </math>]
+                                </span>
+                        </label>
+
+                        <p>A matriz de ordem 2 possui 2 linhas e 2 colunas. Assim, de forma algébrica, a matriz B é:</p>
+
+                        <p>
+                            B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>b11</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>b12</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>b21</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>b22</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                        </p>
+
+                        <p>Calculando cada termo:</p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                <mi>b</mi>
+                                <mn>11</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>⋅</mo>
+                                <mn>1</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>⋅</mo>
+                                <mn>1</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mn>0</mn>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                <mi>b</mi>
+                                <mn>12</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>⋅</mo>
+                                <mn>1</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>⋅</mo>
+                                <mn>2</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>+</mo>
+                                <mn>6</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mn>3</mn>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                <mi>b</mi>
+                                <mn>21</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>⋅</mo>
+                                <mn>2</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>⋅</mo>
+                                <mn>1</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>4</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mn>2</mn>
+                            </math>
+                        </p>
+
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <msub>
+                                <mi>b</mi>
+                                <mn>22</mn>
+                                </msub>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>2</mn>
+                                <mo>⋅</mo>
+                                <mn>2</mn>
+                                <mo>+</mo>
+                                <mn>3</mn>
+                                <mo>⋅</mo>
+                                <mn>2</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mrow>
+                                <mn>4</mn>
+                                <mo>+</mo>
+                                <mn>6</mn>
+                                <mo>-</mo>
+                                <mn>5</mn>
+                                </mrow>
+                                <mo>=</mo>
+                                <mn>5</mn>
+                            </math>
+                        </p>
+
+                        <p>Então, a matriz B é:</p>
+
+                        <p>
+                            B = [<math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfenced open="[" close="]">
+                                <mtable>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>0</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>3</mn>
+                                    </mtd>
+                                    </mtr>
+                                    <mtr>
+                                    <mtd>
+                                        <mn>2</mn>
+                                    </mtd>
+                                    <mtd>
+                                        <mn>5</mn>
+                                    </mtd>
+                                    </mtr>
+                                </mtable>
+                                </mfenced>
+                            </math>]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - CefetMAT</span>
+    </footer>
+    <script src="./JS/ex.js"></script>
+</body>
+
+</html>

@@ -76,21 +76,7 @@ ul,ol {
     margin: 0; /* Remova as margens para eliminar o espaço entre eles */
 }
 
-/* Aplicar estilos quando a tela for menor que 768px (ajuste o valor conforme necessário) */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;/* Altera a direção da flexbox para empilhar os elementos */
-        z-index: 1;
-    }
 
-    .text{
-       
-        flex: auto; /* Restaura o comportamento padrão da flexbox */
-        padding: 0; /* Remova o preenchimento para eliminar o espaço entre eles */
-    }
-    
-}
-        
 
 
 .login-button, .signup-button {
@@ -104,21 +90,9 @@ ul,ol {
    
   }
   
-  @media (max-width: 668px) {
-    .login-button, .signup-button {
-      padding: 8px 16px; /* Ajuste o padding para tamanhos menores */
-      font-size: 16px; /* Ajuste o tamanho da fonte */
-    }
-  }
-  
-    
-      @media (max-width: 668px) {
-        .button{
-          padding: 18px 80px;
-        }
-      }
+
       .right-column {
-        width: 18%;
+        width: 22%;
         text-align: center;
         align-items: center;
         display: flex; /* Usar display flex para alinhar verticalmente */
@@ -130,4 +104,28 @@ ul,ol {
         padding: 1.5rem;
     }
 
+/* Aplicar estilos quando a tela for menor que 768px (ajuste o valor conforme necessário) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;/* Altera a direção da flexbox para empilhar os elementos */
+        z-index: 1;
+    }
+
+    .text{
+        flex: auto; /* Restaura o comportamento padrão da flexbox */
+        padding: 0; /* Remova o preenchimento para eliminar o espaço entre eles */
+    }
     
+    .login-button, .signup-button {
+        padding: 8px 16px; /* Ajuste o padding para tamanhos menores */
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .button{
+        padding: 18px 80px;
+    }
+    
+    .right-column {
+        width: 44%;
+        }
+}

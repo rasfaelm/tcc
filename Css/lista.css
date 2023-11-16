@@ -1,0 +1,61 @@
+.hidden-header {
+    display: none;
+}
+
+.videos-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.video {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px #e11e72;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    margin-right: 10px; /* Espaçamento entre os vídeos */
+}
+
+.video:hover{
+    background-color: #fdcbe1;
+    transition: background-color 0.3s;
+}
+
+.video h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.video p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.video img {
+    width: 320px;
+    height: 180px;
+}
+
+.video-category {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* Adicione isso para permitir rolagem horizontal se houver muitos vídeos */
+}
+
+.video-category div {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    /* Espaçamento entre os vídeos */
+}
+
+h2{
+    color: #e11e72;
+    text-shadow: 2px 2px 4px rgba(133, 133, 133, 0.5);
+}
+
+a {
+    text-decoration: none;
+}
