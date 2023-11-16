@@ -28,6 +28,7 @@ if (mysqli_num_rows($result) == 1) {
 } else {
     // Nome de usuário ou senha inválidos
     $aviso = "Nome de usuário ou senha inválidos.";
+    header("Location: /git/tcc/Login.html");
 }
 
 // Feche a conexão com o banco de dados

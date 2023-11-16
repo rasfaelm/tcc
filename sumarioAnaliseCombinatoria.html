@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
     <link rel="stylesheet" href="./Css/cabecalho.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
     <style>
     *{
         margin-left: 0;
@@ -115,41 +116,56 @@
     </style>
 </head>
 <body>
-    <header>
-        <a href="mainpage.html">
-          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-        </a>
-      
-        <nav >
-          <a href="conteudo.html">Series</a>
-          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="aumentar fonte">
-          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="diminuir fonte">
-          
-      
-          <a href="calculadora.html">
-            <img src="./images/cabecalho/calcular.png" alt="calculadora" title="calculadora">
-          </a>
-      
-          <a href="#">
-            <img src="./images/cabecalho/lista.png" alt="lista" title="lista de exercícios">
-          </a>
-      
-          <a href="noticias.html">
-            <img src="./images/cabecalho/noticias.png" alt="noticias" title="notícias de matemática">
-          </a>
-      
-          <a href="forum.html">
-            <img src="./images/cabecalho/forum.png" alt="forum" title="fórum"></a>
-         
-          <a href="perfil.html">
-            <img src="./images/cabecalho/perfil.png" alt="perfil" title="perfil">
-          </a>
-          <div id="main">
-            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
+  <script src="./JS/incluiCabecalho.js"></script>
+  <script src="./JS/controladorDeFonte.js"></script>
+
+  <script src="./JS/calculadora.js"></script>
+
+  <div class="calculator" id="calculator">
+      <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+      <input type="text" id="screen" maxlength="20">
+      <div class="calc-buttons">
+      <div class="functions-one">
+          <button class="button triggers">C</button>
+          <button class="button basic-stuff">(</button>
+          <button class="button basic-stuff">)</button>
+          <button class="button numbers">7</button>
+          <button class="button numbers">8</button>
+          <button class="button numbers">9</button>
+          <button class="button numbers">4</button>
+          <button class="button numbers">5</button>
+          <button class="button numbers">6</button>
+          <button class="button numbers">1</button>
+          <button class="button numbers">2</button>
+          <button class="button numbers">3</button>
+          <button class="button basic-stuff">±</button>
+          <button class="button numbers">0</button>
+          <button class="button basic-stuff">.</button>
+      </div>
+          <div class="functions-two">
+              <button class="button triggers">&#60;=</button>
+              <button class="button complex-stuff">%</button>
+              <button class="button complex-stuff">x !</button>
+              <button class="button complex-stuff">x^</button>
+              <button class="button basic-stuff">*</button>
+              <button class="button basic-stuff">/</button>
+              <button class="button complex-stuff">ln</button>
+              <button class="button complex-stuff">e</button>
+              <button class="button basic-stuff">+</button>
+              <button class="button complex-stuff">x ²</button>
+              <button class="button complex-stuff">log</button>
+              <button class="button complex-stuff">cos</button>
+              <button class="button basic-stuff">-</button>
+              <button class="button complex-stuff">√</button>
+              <button class="button complex-stuff">sin</button>
+              <button class="button complex-stuff">tan</button>
+              <button class="button triggers">=</button>
+              <button class="button complex-stuff">&#x003C0;</button>
+              <button class="button complex-stuff">∘</button>
+              <button class="button complex-stuff">rad</button>
           </div>
-        </nav>
-      </header> 
-    
+      </div>
+  </div>
       <h1>Análise Combinatória</h1>
 
       

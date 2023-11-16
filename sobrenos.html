@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>| Sobre Nós</title>
     <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+    <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/cabecalho.css">
     <style>
       *{
@@ -94,38 +95,56 @@
     </style>
 </head>
 <body>
-  <header>
-    <a href="mainpage.html">
-      <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-    </a>
-  
-    <nav >
-      <a href="conteudo.html">Séries</a>
-      
-      <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
-      <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
-      
-  
-      <a href="calculadora.html">
-        <img src="./images/cabecalho/calcular.png" alt="calculadora" title="Calculadora">
-      </a>
-  
-      <a href="#">
-        <img src="./images/cabecalho/lista.png" alt="lista" title="Lista de exercícios">
-      </a>
-  
-      <a href="noticias.html">
-        <img src="./images/cabecalho/noticias.png" alt="noticias" title="Notícias">
-      </a>
-  
-      <a href="forum.html">
-        <img src="./images/cabecalho/forum.png" alt="forum" title="Fórum"></a>
-     
-      <a href="#">
-        <img src="./images/cabecalho/perfil.png" alt="perfil" title="Perfil">
-      </a>
-    </nav>
-  </header>  
+  <script src="./JS/incluiCabecalho.js"></script>
+  <script src="./JS/controladorDeFonte.js"></script>
+
+  <script src="./JS/calculadora.js"></script>
+
+  <div class="calculator" id="calculator">
+      <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+      <input type="text" id="screen" maxlength="20">
+      <div class="calc-buttons">
+      <div class="functions-one">
+          <button class="button triggers">C</button>
+          <button class="button basic-stuff">(</button>
+          <button class="button basic-stuff">)</button>
+          <button class="button numbers">7</button>
+          <button class="button numbers">8</button>
+          <button class="button numbers">9</button>
+          <button class="button numbers">4</button>
+          <button class="button numbers">5</button>
+          <button class="button numbers">6</button>
+          <button class="button numbers">1</button>
+          <button class="button numbers">2</button>
+          <button class="button numbers">3</button>
+          <button class="button basic-stuff">±</button>
+          <button class="button numbers">0</button>
+          <button class="button basic-stuff">.</button>
+      </div>
+          <div class="functions-two">
+              <button class="button triggers">&#60;=</button>
+              <button class="button complex-stuff">%</button>
+              <button class="button complex-stuff">x !</button>
+              <button class="button complex-stuff">x^</button>
+              <button class="button basic-stuff">*</button>
+              <button class="button basic-stuff">/</button>
+              <button class="button complex-stuff">ln</button>
+              <button class="button complex-stuff">e</button>
+              <button class="button basic-stuff">+</button>
+              <button class="button complex-stuff">x ²</button>
+              <button class="button complex-stuff">log</button>
+              <button class="button complex-stuff">cos</button>
+              <button class="button basic-stuff">-</button>
+              <button class="button complex-stuff">√</button>
+              <button class="button complex-stuff">sin</button>
+              <button class="button complex-stuff">tan</button>
+              <button class="button triggers">=</button>
+              <button class="button complex-stuff">&#x003C0;</button>
+              <button class="button complex-stuff">∘</button>
+              <button class="button complex-stuff">rad</button>
+          </div>
+      </div>
+  </div>
 
   <div class="content">
     <h2>Sobre nós</h2>
@@ -140,11 +159,13 @@
     <div class="row">
       <div class="column">
         <div class="card">
-          <img src="./images/Emily.PNG" alt="Emily" style="width:40%">
+          <img src="./images/Emily.PNG" alt="Emily" style="width:50%; display: block; margin: 0 auto">
           <div class="container">
             <h2>Emily Soares</h2>
             <p class="title">Front-end</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <br>
+            <p>Meu nome é Emily, gosto de dormir...muito, ouvir música e assistir tudo que diz respeito ao Loki. Como quero cursar Direito, meu passatempo é ler sobre artigos penais.</p>
+            <br>
             <p>soaresemily003@gmail.com</p>
             <p><button class="button">Entrar em contato</button></p>
           </div>
@@ -153,11 +174,13 @@
 
       <div class="column">
         <div class="card">
-          <img src="./images/perfil.png" alt="Hilary" style="width:50%; display: block; margin: 0 auto">
+          <img src="./images/Hilary.jpeg" alt="Hilary" style="width:50%; display: block; margin: 0 auto">
           <div class="container">
             <h2>Hilary Mustafá</h2>
             <p class="title">Front & back-end</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <br>
+            <p>Meu nome é Hilary, gosto de ouvir música. Meu hobbie é jogar futebol, e também tenho interesse em programar em HTML e C++.</p>
+            <br>
             <p>hilarymustafabrandao@gmail.com</p>
             <p><button class="button">Entrar em contato</button></p>
           </div>
@@ -166,11 +189,13 @@
       
       <div class="column">
         <div class="card">
-          <img src="./images/perfil.png" alt="Rafael" style="width:50%">
+          <img src="./images/Rafael.jpeg" alt="Rafael" style="width:50%; display: block; margin: 0 auto">
           <div class="container">
             <h2>Rafael de Matos</h2>
             <p class="title">Back-end</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+            <br>
+            <p>Meu nome é Rafael, gosto muito de dormir e, como sou da área de exatas, aprecio matemática. Além disso, meu passatempo é programar em Java.</p>
+            <br>
             <p>rasfaelmatos@gmail.com</p>
             <p><button class="button">Entrar em contato</button></p>
           </div>

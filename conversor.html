@@ -14,51 +14,13 @@
   </head>
 
   <body>
-      <header>
-        <a href="mainpage.html">
-          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-        </a>
-      
-        <nav >
-          <a href="conteudo.html">Séries</a>
-          
-          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
-          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
-      
-    <img src="./images/cabecalho/calcular.png" id="open-calculadora" title="calculadora" alt="calculadora">
+    <script src="./JS/incluiCabecalho.js"></script>
+    <script src="./JS/controladorDeFonte.js"></script>
 
-    <a href="#">
-      <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
-    </a>
+    <script src="./JS/calculadora.js"></script>
 
-    <a href="noticias.html">
-      <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
-    </a>
-    <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-    <a href="">
-      <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-    </a>
-
-    <a href="video.html">
-      <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-    </a>
-
-    <a href="forum.html">
-      <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
-    </a>
-
-    <a href="#">
-      <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-    </a>
-          <div id="main">
-            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
-          </div>
-        </nav>
-      </header>
-
-      <div class="calculator" id="calculator">
-        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
         <input type="text" id="screen" maxlength="20">
         <div class="calc-buttons">
         <div class="functions-one">
@@ -101,7 +63,7 @@
                 <button class="button complex-stuff">rad</button>
             </div>
         </div>
-      </div>
+    </div>
 
       <div style="padding:128px 16px">
         <div class="w3-row-padding">
@@ -118,7 +80,7 @@
                   <option value="milhas">Milhas</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoComprimento">Resultado:</label>
                 <input type="number" id="resultadoComprimento" disabled />
@@ -128,7 +90,7 @@
                   <option value="milhas">Milhas</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterComprimento()">Converter</button>
 
@@ -146,7 +108,7 @@
                   <option value="libras">Libras</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoPeso">Resultado:</label>
                 <input type="number" id="resultadoPeso" disabled />
@@ -156,7 +118,7 @@
                   <option value="libras">Libras</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterPeso()">Converter</button>
 
@@ -174,7 +136,7 @@
                   <option value="milhasPorHora">Milhas por hora</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoVelocidade">Resultado:</label>
                 <input type="number" id="resultadoVelocidade" disabled />
@@ -184,7 +146,7 @@
                   <option value="milhasPorHora">Milhas por hora</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterVelocidade()">Converter</button>
 
@@ -204,7 +166,7 @@
                   <option value="acres">Acres</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoArea">Resultado:</label>
                 <input type="number" id="resultadoArea" disabled />
@@ -216,7 +178,7 @@
                   <option value="acres">Acres</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterArea()">Converter</button>
 
@@ -234,7 +196,7 @@
                   <option value="kelvin">Kelvin</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoTemperatura">Resultado:</label>
                 <input type="number" id="resultadoTemperatura" disabled />
@@ -244,7 +206,7 @@
                   <option value="kelvin">Kelvin</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" nclick="converterTemperatura()">Converter</button>
 
@@ -262,7 +224,7 @@
                   <option value="horas">Horas</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoTempo">Resultado:</label>
                 <input type="number" id="resultadoTempo" disabled />
@@ -272,7 +234,7 @@
                   <option value="horas">Horas</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterTempo()">Converter</button>
 
@@ -293,7 +255,7 @@
                   </option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoDensidade">Resultado:</label>
                 <input type="number" id="resultadoDensidade" disabled />
@@ -306,7 +268,7 @@
                   </option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterDensidade()">Converter</button>
 
@@ -324,7 +286,7 @@
                   <option value="quilowattshora">Quilowatts-hora</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <label for="resultadoEnergia">Resultado:</label>
                 <input type="number" id="resultadoEnergia" disabled />
@@ -334,7 +296,7 @@
                   <option value="quilowattshora">Quilowatts-hora</option>
                 </select>
 
-                <br>
+                <br><br>
 
                 <button class="convert-button" id="convert-button" onclick="converterEnergia()">Converter</button>
 

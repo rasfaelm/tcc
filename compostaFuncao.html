@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Aboreto' rel='stylesheet'>
   <link rel="shortcut icon" type="imagex/png" href="./images/icone.ico">
+  <link rel="stylesheet" href="./Css/calculadora.css">
+  <link rel="stylesheet" href="./Css/cabecalho.css">
   <style>
     body {
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -108,20 +110,56 @@
   </style>
 </head>
 <body>
+  <script src="./JS/incluiCabecalho.js"></script>
+  <script src="./JS/controladorDeFonte.js"></script>
 
-    <div class="header">
-        <script>
-        // Carregue o cabeçalho
-        fetch('cabecalho.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector('cabecalho').innerHTML = data;
-            });
-    </script>
-    <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
-        </div>
+  <script src="./JS/calculadora.js"></script>
+
+  <div class="calculator" id="calculator">
+      <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+      <input type="text" id="screen" maxlength="20">
+      <div class="calc-buttons">
+      <div class="functions-one">
+          <button class="button triggers">C</button>
+          <button class="button basic-stuff">(</button>
+          <button class="button basic-stuff">)</button>
+          <button class="button numbers">7</button>
+          <button class="button numbers">8</button>
+          <button class="button numbers">9</button>
+          <button class="button numbers">4</button>
+          <button class="button numbers">5</button>
+          <button class="button numbers">6</button>
+          <button class="button numbers">1</button>
+          <button class="button numbers">2</button>
+          <button class="button numbers">3</button>
+          <button class="button basic-stuff">±</button>
+          <button class="button numbers">0</button>
+          <button class="button basic-stuff">.</button>
       </div>
+          <div class="functions-two">
+              <button class="button triggers">&#60;=</button>
+              <button class="button complex-stuff">%</button>
+              <button class="button complex-stuff">x !</button>
+              <button class="button complex-stuff">x^</button>
+              <button class="button basic-stuff">*</button>
+              <button class="button basic-stuff">/</button>
+              <button class="button complex-stuff">ln</button>
+              <button class="button complex-stuff">e</button>
+              <button class="button basic-stuff">+</button>
+              <button class="button complex-stuff">x ²</button>
+              <button class="button complex-stuff">log</button>
+              <button class="button complex-stuff">cos</button>
+              <button class="button basic-stuff">-</button>
+              <button class="button complex-stuff">√</button>
+              <button class="button complex-stuff">sin</button>
+              <button class="button complex-stuff">tan</button>
+              <button class="button triggers">=</button>
+              <button class="button complex-stuff">&#x003C0;</button>
+              <button class="button complex-stuff">∘</button>
+              <button class="button complex-stuff">rad</button>
+          </div>
+      </div>
+  </div>
   <div class="content">
     <h1>Composta de Funções</h1>
 
@@ -153,10 +191,10 @@
         propriedades especiais que permitam a comutatividade.</p>
         <img src="./images/composta.png" alt="composta de funções " width="400">
   </div>
-      <footer>
-        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
-        <div style="align-items: right">
-        </div>
-      </footer>
+  <footer>
+      <span>&copy; Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+      <br>
+      <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
+  </footer>
 </body>
 </html>

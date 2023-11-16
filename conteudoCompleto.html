@@ -72,82 +72,56 @@
     </style>
 </head>
 <body>
-    <header>
-        <a href="mainpage.html">
-          <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-        </a>
+  <script src="./JS/incluiCabecalho.js"></script>
+  <script src="./JS/controladorDeFonte.js"></script>
 
-        <nav >
-          <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte" title="aumentar fonte">
-          <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte" title="diminuir fonte">
+  <script src="./JS/calculadora.js"></script>
 
-            <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
-
-          <a href="#">
-            <img src="./images/cabecalho/lista.png" alt="lista" title="lista de exercícios">
-          </a>
-
-          <a href="noticias.html">
-            <img src="./images/cabecalho/noticias.png" alt="noticias" title="notícias de matemática">
-          </a>
-
-          <a href="forum.html">
-            <img src="./images/cabecalho/forum.png" alt="forum" title="fórum"></a>
-
-          <a href="#">
-            <img src="./images/cabecalho/perfil.png" alt="perfil" title="perfil">
-          </a>
-          <div id="main">
-            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
-          </div>
-        </nav>
-      </header>
-
-      <div class="calculator" id="calculator">
-        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
-        <input type="text" id="screen" maxlength="20">
-        <div class="calc-buttons">
-        <div class="functions-one">
-            <button class="button triggers">C</button>
-            <button class="button basic-stuff">(</button>
-            <button class="button basic-stuff">)</button>
-            <button class="button numbers">7</button>
-            <button class="button numbers">8</button>
-            <button class="button numbers">9</button>
-            <button class="button numbers">4</button>
-            <button class="button numbers">5</button>
-            <button class="button numbers">6</button>
-            <button class="button numbers">1</button>
-            <button class="button numbers">2</button>
-            <button class="button numbers">3</button>
-            <button class="button basic-stuff">±</button>
-            <button class="button numbers">0</button>
-            <button class="button basic-stuff">.</button>
-        </div>
-            <div class="functions-two">
-                <button class="button triggers">&#60;=</button>
-                <button class="button complex-stuff">%</button>
-                <button class="button complex-stuff">x !</button>
-                <button class="button complex-stuff">x^</button>
-                <button class="button basic-stuff">*</button>
-                <button class="button basic-stuff">/</button>
-                <button class="button complex-stuff">ln</button>
-                <button class="button complex-stuff">e</button>
-                <button class="button basic-stuff">+</button>
-                <button class="button complex-stuff">x ²</button>
-                <button class="button complex-stuff">log</button>
-                <button class="button complex-stuff">cos</button>
-                <button class="button basic-stuff">-</button>
-                <button class="button complex-stuff">√</button>
-                <button class="button complex-stuff">sin</button>
-                <button class="button complex-stuff">tan</button>
-                <button class="button triggers">=</button>
-                <button class="button complex-stuff">&#x003C0;</button>
-                <button class="button complex-stuff">∘</button>
-                <button class="button complex-stuff">rad</button>
-            </div>
-        </div>
+  <div class="calculator" id="calculator">
+      <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+      <input type="text" id="screen" maxlength="20">
+      <div class="calc-buttons">
+      <div class="functions-one">
+          <button class="button triggers">C</button>
+          <button class="button basic-stuff">(</button>
+          <button class="button basic-stuff">)</button>
+          <button class="button numbers">7</button>
+          <button class="button numbers">8</button>
+          <button class="button numbers">9</button>
+          <button class="button numbers">4</button>
+          <button class="button numbers">5</button>
+          <button class="button numbers">6</button>
+          <button class="button numbers">1</button>
+          <button class="button numbers">2</button>
+          <button class="button numbers">3</button>
+          <button class="button basic-stuff">±</button>
+          <button class="button numbers">0</button>
+          <button class="button basic-stuff">.</button>
       </div>
+          <div class="functions-two">
+              <button class="button triggers">&#60;=</button>
+              <button class="button complex-stuff">%</button>
+              <button class="button complex-stuff">x !</button>
+              <button class="button complex-stuff">x^</button>
+              <button class="button basic-stuff">*</button>
+              <button class="button basic-stuff">/</button>
+              <button class="button complex-stuff">ln</button>
+              <button class="button complex-stuff">e</button>
+              <button class="button basic-stuff">+</button>
+              <button class="button complex-stuff">x ²</button>
+              <button class="button complex-stuff">log</button>
+              <button class="button complex-stuff">cos</button>
+              <button class="button basic-stuff">-</button>
+              <button class="button complex-stuff">√</button>
+              <button class="button complex-stuff">sin</button>
+              <button class="button complex-stuff">tan</button>
+              <button class="button triggers">=</button>
+              <button class="button complex-stuff">&#x003C0;</button>
+              <button class="button complex-stuff">∘</button>
+              <button class="button complex-stuff">rad</button>
+          </div>
+      </div>
+  </div>
 
 <br> <hr><br>
       <br><h1>Primeiro ano </h1><br>
@@ -231,21 +205,11 @@
         <p>Finalizaremos nossa jornada com Noções de Cálculo para o Ensino Médio, abrindo portas para o mundo do cálculo e suas aplicações fascinantes.</p>
       </div>
     </div>
+    <footer>
+        <span>&copy; Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <br>
+        <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
+    </footer>
 
 </body>
-<script>
-    function increaseFontSize() {
-      var element = document.body;
-      var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-      var size = parseFloat(style);
-      element.style.fontSize = (size + 1) + 'px';
-    }
-    function decreaseFontSize() {
-      var element = document.body;
-      var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
-      var size = parseFloat(style);
-      element.style.fontSize = (size - 1) + 'px';
-    }
-  </script>
-  <script src="./js/calculadora.js"></script>
 </html>
