@@ -82,7 +82,6 @@ button:hover {
     background-color: #fa97d9;
 }
 
-
 @media (max-width: 768px) {
     .calculator {
     top: 90px;

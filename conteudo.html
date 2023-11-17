@@ -8,11 +8,60 @@
     <link rel="stylesheet" href="./Css/cabecalho.css">
     <link rel="stylesheet" href="./Css/conteudo.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./Css/footer.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
 </head>
 <body>
-  <script src=".JS/cabecalho.js"></script>
   <script src="./JS/incluiCabecalho.js"></script>
-  <script src=".\JS\controladorDeFonte.js"></script>
+  <script src="./JS/controladorDeFonte.js"></script>
+
+  <script src="./JS/calculadora.js"></script>
+
+  <div class="calculator" id="calculator">
+      <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+      <input type="text" id="screen" maxlength="20">
+      <div class="calc-buttons">
+      <div class="functions-one">
+          <button class="button triggers">C</button>
+          <button class="button basic-stuff">(</button>
+          <button class="button basic-stuff">)</button>
+          <button class="button numbers">7</button>
+          <button class="button numbers">8</button>
+          <button class="button numbers">9</button>
+          <button class="button numbers">4</button>
+          <button class="button numbers">5</button>
+          <button class="button numbers">6</button>
+          <button class="button numbers">1</button>
+          <button class="button numbers">2</button>
+          <button class="button numbers">3</button>
+          <button class="button basic-stuff">±</button>
+          <button class="button numbers">0</button>
+          <button class="button basic-stuff">.</button>
+      </div>
+          <div class="functions-two">
+              <button class="button triggers">&#60;=</button>
+              <button class="button complex-stuff">%</button>
+              <button class="button complex-stuff">x !</button>
+              <button class="button complex-stuff">x^</button>
+              <button class="button basic-stuff">*</button>
+              <button class="button basic-stuff">/</button>
+              <button class="button complex-stuff">ln</button>
+              <button class="button complex-stuff">e</button>
+              <button class="button basic-stuff">+</button>
+              <button class="button complex-stuff">x ²</button>
+              <button class="button complex-stuff">log</button>
+              <button class="button complex-stuff">cos</button>
+              <button class="button basic-stuff">-</button>
+              <button class="button complex-stuff">√</button>
+              <button class="button complex-stuff">sin</button>
+              <button class="button complex-stuff">tan</button>
+              <button class="button triggers">=</button>
+              <button class="button complex-stuff">&#x003C0;</button>
+              <button class="button complex-stuff">∘</button>
+              <button class="button complex-stuff">rad</button>
+          </div>
+      </div>
+  </div>
   
       <br><h1>Primeiro ano </h1><br>
       <div class="mathematics-section">
@@ -131,10 +180,10 @@
       </div>
      </div>
      <footer>
-         <span>&copy; Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
-         <br>
-         <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
-     </footer>
+      <span>&copy; Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+      <br>
+      <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">Siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
+    </footer>
 </body>
 
 

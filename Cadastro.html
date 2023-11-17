@@ -34,5 +34,14 @@
       </form>
     </div>
   </div>
+  <script>
+    window.onload = function (){
+      const savedUsername = getCookie('username');
+
+      if (savedUsername && savedUsername !== '@usuario'){
+        window.location.href = 'mainpage.html';
+      }
+    };
+  </script>
   </body>
 </html>

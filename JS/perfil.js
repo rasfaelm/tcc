@@ -81,6 +81,17 @@ function getCookie(name) {
 window.onload = function () {
     const savedName = getCookie('name');
     const savedMessage = getCookie('message');
+    const savedUsername = getCookie('username');
+
+    // Se o cookie 'username' estiver vazio, define o valor como '@usuario'
+    if (!savedUsername) {
+        setCookie('username', '@usuario', 365); // Armazena o valor por 1 ano
+        savedUsername = getCookie('username');
+    }
+
+    if (savedUsername) {
+        document.getElementById('username').textContent = savedUsername;
+    }
 
     if (savedName) {
         document.getElementById('name').textContent = savedName;
@@ -102,5 +113,6 @@ function limitText(element, maxLength) {
 function logout(){
     document.cookie = "name; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     document.cookie = "message; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "username; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     window.location.href = "Login.html";
 }

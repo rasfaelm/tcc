@@ -64,55 +64,17 @@
         }
     </style>
     <link rel="stylesheet" href="./Css/perfil.css">
+    <link rel="stylesheet" href="./Css/footer.css">
 </head>
 
 <body>
-    <header>
-        <a href="mainpage.html">
-        <img src="./images/LogoSite3.png" class="logo" alt="CefetMAT">
-        </a>
-    
-        <nav >
-        <a href="conteudo.html">Séries</a>
-        
-        <img src="./images/cabecalho/adicionar.png" onclick="increaseFontSize()" alt="aumentarFonte">
-        <img src="./images/cabecalho/menos.png" onclick="decreaseFontSize()" alt="diminuirFonte">
+    <script src="./JS/incluiCabecalho.js"></script>
+    <script src="./JS/controladorDeFonte.js"></script>
 
-        <img src="./images/cabecalho/calcular.png" title="calculadora" id="open-calculadora" alt="calculadora">
-
-        <a href="#">
-        <img src="./images/cabecalho/lista.png" title="lista" alt="lista">
-        </a>
-
-        <a href="noticias.html">
-        <img src="./images/cabecalho/noticias.png" title="noticias" alt="noticias">
-        </a>
-        <img id="toggle-contrast" src="./images/cabecalho/autocontraste.png" title="auto Contraste" alt="AutoContraste">
-
-        <a href="">
-        <img src="./images/cabecalho/converter.png" title="conversor" alt="Converter">
-        </a>
-
-        <a href="video.html">
-        <img src="./images/cabecalho/botao_play.png" title="videos" alt="Video">
-        </a>
-
-        <a href="forum.html">
-        <img src="./images/cabecalho/forum.png" title="forum" alt="forum">
-        </a>
-
-        <a href="#">
-        <img src="./images/cabecalho/perfil.png" title="perfil" alt="perfil">
-        </a>
-        
-        <div id="main">
-            <span style="font-size:30px;cursor:pointer; color: #111111;" onclick="openNav()">&#9776;</span>
-        </div>
-        </nav>
-    </header>
+    <script src="./JS/calculadora.js"></script>
 
     <div class="calculator" id="calculator">
-        <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
+        <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
         <input type="text" id="screen" maxlength="20">
         <div class="calc-buttons">
         <div class="functions-one">
@@ -155,7 +117,7 @@
                 <button class="button complex-stuff">rad</button>
             </div>
         </div>
-      </div>
+    </div>
 
         <div class="profile-container">
         <div class="profile-background"></div>
@@ -175,10 +137,10 @@
         </div>
     </div>
     <footer>
-        <span>&copy;  Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
-    </footer>
+        <span>&copy; Copyright &copy; 2023 - <NAME> CefetMAT</NAME></span>
+        <br>
+        <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">Siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
+      </footer>
     <script src="./js/perfil.js"></script>
-    <script src="./js/+e-.js"></script>
-    <script src="./js/calculadora.js"></script>
     </body>
 </html>

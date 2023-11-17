@@ -79,22 +79,22 @@ function converterVelocidade() {
 
     if (unidadeEntrada === "metrosPorSegundo" && unidadeSaida === "quilometrosPorHora") {
         resultado = valorEntrada * 3.6;
-        explicacao = `${valorEntrada} metrosPorSegundo * 3.6 = ${resultado} quilometrosPorHora`;
+        explicacao = `${valorEntrada} Metros Por Segundo * 3.6 = ${resultado} Quilometros Por Hora`;
     } else if (unidadeEntrada === "metrosPorSegundo" && unidadeSaida === "milhasPorHora") {
         resultado = valorEntrada * 2.23694;
-        explicacao = `${valorEntrada} metrosPorSegundo * 2.23694 = ${resultado} milhasPorHora`;
+        explicacao = `${valorEntrada} Metros Por Segundo * 2.23694 = ${resultado} Milhas Por Hora`;
     } else if (unidadeEntrada === "quilometrosPorHora" && unidadeSaida === "metrosPorSegundo") {
         resultado = valorEntrada / 3.6;
-        explicacao = `${valorEntrada} quilometrosPorHora / 3.6 = ${resultado} metrosPorSegundo`;
+        explicacao = `${valorEntrada} Quilometros Por Hora / 3.6 = ${resultado} Metros Por Segundo`;
     } else if (unidadeEntrada === "quilometrosPorHora" && unidadeSaida === "milhasPorHora") {
         resultado = valorEntrada / 1.60934;
-        explicacao = `${valorEntrada} quilometrosPorHora / 1.60934 = ${resultado} milhasPorHora`;
+        explicacao = `${valorEntrada} Quilometros Por Hora / 1.60934 = ${resultado} Milhas Por Hora`;
     } else if (unidadeEntrada === "milhasPorHora" && unidadeSaida === "metrosPorSegundo") {
         resultado = valorEntrada / 2.23694;
-        explicacao = `${valorEntrada} milhasPorHora / 2.23694 = ${resultado} metrosPorSegundo`;
+        explicacao = `${valorEntrada} Milhas Por Hora / 2.23694 = ${resultado} Metros Por Segundo`;
     } else if (unidadeEntrada === "milhasPorHora" && unidadeSaida === "quilometrosPorHora") {
         resultado = valorEntrada * 1.60934;
-        explicacao = `${valorEntrada} milhasPorHora * 1.60934 = ${resultado} quilometrosPorHora`;
+        explicacao = `${valorEntrada} Milhas Por Hora * 1.60934 = ${resultado} Quilometros Por Hora`;
     } else {
         resultado = valorEntrada;
         explicacao = `${valorEntrada} (unidade de saída é igual à unidade de entrada)`;
@@ -114,34 +114,34 @@ function converterArea() {
 
     if (unidadeEntrada === "metrosQuadrados" && unidadeSaida === "quilometrosQuadrados") {
         resultado = valorEntrada * 0.000001;
-        explicacao = `${valorEntrada} metrosQuadrados * 0.000001 = ${resultado} quilometrosQuadrados`;
+        explicacao = `${valorEntrada} Metros Quadrados * 0.000001 = ${resultado} Quilometros Quadrados`;
     } else if (unidadeEntrada === "metrosQuadrados" && unidadeSaida === "acres") {
         resultado = valorEntrada * 0.000247;
-        explicacao = `${valorEntrada} metrosQuadrados * 0.000247 = ${resultado} acres`;
+        explicacao = `${valorEntrada} Metros Quadrados * 0.000247 = ${resultado} Acres`;
     } else if (unidadeEntrada === "acres" && unidadeSaida === "metrosQuadrados") {
         resultado = valorEntrada * 4046.86;
-        explicacao = `${valorEntrada} acres * 4046.86 = ${resultado} metrosQuadrados`;
+        explicacao = `${valorEntrada} Acres * 4046.86 = ${resultado} Metros Quadrados`;
     } else if (unidadeEntrada === "acres" && unidadeSaida === "quilometrosQuadrados") {
         resultado = valorEntrada * 0.00404686;
-        explicacao = `${valorEntrada} acres * 0.00404686 = ${resultado} quilometrosQuadrados`;
+        explicacao = `${valorEntrada} Acres * 0.00404686 = ${resultado} Quilometros Quadrados`;
     } else if (unidadeEntrada === "quilometrosQuadrados" && unidadeSaida === "metrosQuadrados") {
         resultado = valorEntrada * 1000000;
-        explicacao = `${valorEntrada} quilometrosQuadrados * 1000000 = ${resultado} metrosQuadrados`;
+        explicacao = `${valorEntrada} Quilometros Quadrados * 1000000 = ${resultado} Metros Quadrados`;
     } else if (unidadeEntrada === "quilometrosQuadrados" && unidadeSaida === "acres") {
         resultado = valorEntrada * 247.105;
-        explicacao = `${valorEntrada} quilometrosQuadrados * 247.105 = ${resultado} acres`;
+        explicacao = `${valorEntrada} Quilometros Quadrados * 247.105 = ${resultado} Acres`;
     } else if (unidadeEntrada === "quilometrosQuadrados" && unidadeSaida === "hectares") {
         resultado = valorEntrada * 100;
-        explicacao = `${valorEntrada} quilometrosQuadrados * 100 = ${resultado} hectares`;
+        explicacao = `${valorEntrada} Quilometros Quadrados * 100 = ${resultado} hectares`;
     } else if (unidadeEntrada === "hectares" && unidadeSaida === "metrosQuadrados") {
         resultado = valorEntrada * 10000;
-        explicacao = `${valorEntrada} hectares * 10000 = ${resultado} metrosQuadrados`;
+        explicacao = `${valorEntrada} hectares * 10000 = ${resultado} Metros Quadrados`;
     } else if (unidadeEntrada === "hectares" && unidadeSaida === "acres") {
         resultado = valorEntrada * 2.471;
-        explicacao = `${valorEntrada} hectares * 2.471 = ${resultado} acres`;
+        explicacao = `${valorEntrada} hectares * 2.471 = ${resultado} Acres`;
     } else if (unidadeEntrada === "hectares" && unidadeSaida === "quilometrosQuadrados") {
         resultado = valorEntrada * 0.01;
-        explicacao = `${valorEntrada} hectares * 0.01 = ${resultado} quilometrosQuadrados`;
+        explicacao = `${valorEntrada} hectares * 0.01 = ${resultado} Quilometros Quadrados`;
     } else {
         resultado = valorEntrada;
         explicacao = `${valorEntrada} (unidade de saída é igual à unidade de entrada)`;
@@ -232,10 +232,10 @@ function converterDensidade() {
 
     if (unidadeEntrada === "quilogramasPorMetroCubico" && unidadeSaida === "gramasPorCentimetroCubico") {
         resultado = valorEntrada * 1000;
-        explicacao = `${valorEntrada} quilogramasPorMetroCubico * 1000 = ${resultado} gramasPorCentimetroCubico`;
+        explicacao = `${valorEntrada} Quilogramas Por Metro Cubico * 1000 = ${resultado} Gramas Por Centimetro Cubico`;
     } else if (unidadeEntrada === "gramasPorCentimetroCubico" && unidadeSaida === "quilogramasPorMetroCubico") {
         resultado = valorEntrada / 1000;
-        explicacao = `${valorEntrada} gramasPorCentimetroCubico / 1000 = ${resultado} quilogramasPorMetroCubico`;
+        explicacao = `${valorEntrada} Gramas Por Centimetro Cubico / 1000 = ${resultado} Quilogramas Por Metro Cubico`;
     } else {
         resultado = valorEntrada;
         explicacao = `${valorEntrada} (unidade de saída é igual à unidade de entrada)`;
@@ -258,19 +258,19 @@ function converterEnergia() {
         explicacao = `${valorEntrada} joules * 0.239= ${resultado} calorias`;
     } else if (unidadeEntrada === "joules" && unidadeSaida === "quilowattshora") {
         resultado = valorEntrada * 0.00027778;
-        explicacao = `${valorEntrada} joules * 0.00027778 = ${resultado} quilowattshora`;
+        explicacao = `${valorEntrada} joules * 0.00027778 = ${resultado} quilowatts-hora`;
     } else if (unidadeEntrada === "calorias" && unidadeSaida === "joules") {
         resultado = valorEntrada / 0.239;
         explicacao = `${valorEntrada} calorias / 0.239 = ${resultado} joules`;
     } else if (unidadeEntrada === "calorias" && unidadeSaida === "quilowattshora") {
         resultado = valorEntrada * 0.000001162;
-        explicacao = `${valorEntrada} calorias * 0.000001162; = ${resultado} quilowattshora`;
+        explicacao = `${valorEntrada} calorias * 0.000001162; = ${resultado} quilowatts-hora`;
     } else if (unidadeEntrada === "quilowattshora" && unidadeSaida === "joules") {
         resultado = valorEntrada * 3600000;
-        explicacao = `${valorEntrada} quilowattshora * 3600000 = ${resultado} joules`;
+        explicacao = `${valorEntrada} quilowatts-hora * 3600000 = ${resultado} joules`;
     } else if (unidadeEntrada === "quilowattshora" && unidadeSaida === "calorias") {
         resultado = valorEntrada * 859845.23;
-        explicacao = `${valorEntrada} quilowattshora * 859845.23 = ${resultado} calorias`;
+        explicacao = `${valorEntrada} quilowatts-hora * 859845.23 = ${resultado} calorias`;
     } else {
         resultado = valorEntrada;
         explicacao = `${valorEntrada} (unidade de saída é igual à unidade de entrada)`;
