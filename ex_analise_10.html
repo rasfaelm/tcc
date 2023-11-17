@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
-    <style>
-        .wrapper{
-            width: 250px;
-        }
-    </style>
 </head>
 
 <body>
@@ -70,14 +65,11 @@
         </div>
     </div>
 
-<script src="./Js/calculadora.js"></script>
-
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 4 UNESP</h1>
-                <p>A expressão que define a função quadrática f(x), cujo gráfico está esboçado é:</p>
-                <img src="./images/ex4_Funcao.png" alt="grafico"><br>
+                <h1>Questão 10 UEL</h1>
+                <p>Se uma função f, do primeiro grau, é tal que f(1) = 190 e f(50) = 2052, então f(20) é igual a:</p>
                 <div class="wrapper">
                     <input type="radio" name="select" id="option-1" checked>
                     <input type="radio" name="select" id="option-2">
@@ -85,35 +77,34 @@
                     <input type="radio" name="select" id="option-4">
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span> f(x) = –2x² – 2x + 4</span>
+                            <span>901</span>
                             </label>
-                        <label for="option-4" class="option option-4">
+                        <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span> f(x) = x² + 2x - 4</span>
+                            <span>912</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span> f(x) = x² + x - 2</span>
+                            <span>937</span>
                         </label>
-                        <label for="option-2" class="option option-2">
+                        <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span> f(x) = 2x² + 2x - 4</span>
+                            <span>981</span>
                         </label>
                     </div>
                     <br>
                 <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_5.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span> f(x) = 2x² + 2x - 4</span>
+                                <span>912</span>
                         </label>
 
-                        <p>O lugar onde o gráfico atravessa a reta y é o c da equação</p>
-
+                        <p>Como foi dito que se trata de uma função do primeiro grau, ela pode ser descrita da seguinte forma:</p>
+    
                         <p>
                             <math xmlns="http://www.w3.org/1998/Math/MathML">
                                 <mi>f</mi>
@@ -123,146 +114,154 @@
                                 <mo>=</mo>
                                 <mi>a</mi>
                                 <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <msup>
                                 <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
                                 <mo>+</mo>
                                 <mi>b</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mi>c</mi>
                             </math>
                         </p>
-
-                        <p>Então, c = -4</p>
-
-                        <p>Os pontos onde o gráfico atravessa a reta x sao as raizes da equação, sendo assim, é só resolver as equações e ver qual tem como raiz 1 e -2</p>
-
+                        
+                        <p>Além disso, temos os valores de 2 pontos que resolvem a função: (1; 190) e (50; 2052). Com isso, podemos formar um sistema de equações:</p>
+                        
                         <p>
                             <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>+</mo>
-                                <mn>2</mn>
-                                <mi>x</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>=</mo>
-                                <mn>0</mn>
+                                <mrow>
+                                    <mo>{</mo>
+                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                                        <mtr>
+                                            <mtd>
+                                                <mn>190</mn>
+                                                <mo>=</mo>
+                                                <mi>a</mi>
+                                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                                <mn>1</mn>
+                                                <mo>+</mo>
+                                                <mi>b</mi>
+                                            </mtd>
+                                        </mtr>
+                                        <mtr>
+                                            <mtd>
+                                                <mn>2052</mn>
+                                                <mo>=</mo>
+                                                <mi>a</mi>
+                                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                                <mn>50</mn>
+                                                <mo>+</mo>
+                                                <mi>b</mi>
+                                            </mtd>
+                                        </mtr>
+                                    </mtable>
+                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
+                                </mrow>
                             </math>
                         </p>
-
+                        
+                        <p>Multiplicando a primeira equação por (-1), temos:</p>
+                        
                         <p>
                             <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
+                                <mrow>
+                                    <mo>{</mo>
+                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+                                        <mtr>
+                                            <mtd>
+                                                <mo>&#x2212;<!-- − --></mo>
+                                                <mn>190</mn>
+                                                <mo>=</mo>
+                                                <mo>&#x2212;<!-- − --></mo>
+                                                <mi>a</mi>
+                                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                                <mn>1</mn>
+                                                <mo>&#x2212;<!-- − --></mo>
+                                                <mi>b</mi>
+                                            </mtd>
+                                        </mtr>
+                                        <mtr>
+                                            <mtd>
+                                                <mn>2052</mn>
+                                                <mo>=</mo>
+                                                <mi>a</mi>
+                                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                                <mn>50</mn>
+                                                <mo>+</mo>
+                                                <mi>b</mi>
+                                            </mtd>
+                                        </mtr>
+                                    </mtable>
+                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
+                                </mrow>
+                            </math>
+                        </p>
+                        
+                        <p>Resolvendo o sistema, temos:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>1862</mn>
                                 <mo>=</mo>
-                                <msup>
-                                <mi>b</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
+                                <mn>49</mn>
                                 <mo>&#x22C5;<!-- ⋅ --></mo>
                                 <mi>a</mi>
+                            </math>
+                        </p>
+                        
+                        <p>Portanto, a = 38. Com isso, podemos agora descobrir o valor de b substituindo o valor em qualquer uma das duas equações iniciais. Utilizaremos a primeira:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>190</mn>
+                                <mo>=</mo>
+                                <mn>38</mn>
                                 <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>c</mi>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
-                                <mo>=</mo>
-                                <msup>
-                                <mn>2</mn>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
-                                <mo>=</mo>
-                                <mn>36</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>=</mo>
-                                <mfrac linethickness="0">
-                                <mrow>
-                                    <mo>&#x2212;</mo>
-                                    <mi>b</mi>
-                                    <mo>&#x00B1;</mo>
-                                    <msqrt>
-                                    <mi>&#x394;</mi>
-                                    </msqrt>
-                                </mrow>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mi>a</mi>
-                                </mrow>
-                                </mfrac>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>=</mo>
-                                <mfrac linethickness="0">
-                                <mrow>
-                                    <mo>&#x2212;</mo>
-                                    <mn>2</mn>
-                                    <mo>&#x00B1;</mo>
-                                    <msqrt>
-                                    <mn>36</mn>
-                                    </msqrt>
-                                </mrow>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mn>2</mn>
-                                </mrow>
-                                </mfrac>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>'</mo>
-                                <mo>=</mo>
                                 <mn>1</mn>
+                                <mo>+</mo>
+                                <mi>b</mi>
+                                <mo stretchy="false">&#x2192;<!-- → --></mo>
+                                <mi>b</mi>
+                                <mo>=</mo>
+                                <mn>152</mn>
                             </math>
                         </p>
-
+                        
+                        <p>Agora, temos a forma geral da equação:</p>
+                        
                         <p>
                             <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
                                 <mi>x</mi>
-                                <mo>''</mo>
+                                <mo stretchy="false">)</mo>
                                 <mo>=</mo>
-                                <mo>&#x2212;</mo>
-                                <mn>2</mn>
+                                <mn>38</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mi>x</mi>
+                                <mo>+</mo>
+                                <mn>152</mn>
                             </math>
                         </p>
-
-                        <p>Alternativa D</p>
+                        
+                        <p>Como a questão pede para resolvermos f(20), substituiremos x na equação geral:</p>
+                        
+                        <p>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>f</mi>
+                                <mo stretchy="false">(</mo>
+                                <mn>20</mn>
+                                <mo stretchy="false">)</mo>
+                                <mo>=</mo>
+                                <mn>38</mn>
+                                <mo>&#x22C5;<!-- ⋅ --></mo>
+                                <mn>20</mn>
+                                <mo>+</mo>
+                                <mn>152</mn>
+                                <mo>=</mo>
+                                <mn>760</mn>
+                                <mo>+</mo>
+                                <mn>152</mn>
+                                <mo>=</mo>
+                                <mn>912</mn>
+                            </math>
+                            </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -274,6 +273,9 @@
         <br>
         <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">Siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
       </footer>
+    
     <script src="./JS/ex.js"></script>
+    <script src="./JS/calculadora.js"></script>
 </body>
+
 </html>

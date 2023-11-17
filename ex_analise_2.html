@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
+    <style>
+        .wrapper{
+            width: 240px;
+        }
+    </style>
 </head>
 
 <body>
     <script src="./JS/incluiCabecalho.js"></script>
-    <script src="./JS/controladorDeFonte.js"></script>
+    <script src=".\JS\controladorDeFonte.js"></script>
 
     <div class="calculator" id="calculator">
         <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
@@ -65,16 +70,12 @@
         </div>
     </div>
 
-<script src="./Js/calculadora.js"></script>
-    
-
+    <script src="./JS/calculadora.js"></script>
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 6</h1>
-                <p>Analise a matriz A a seguir:</p>
-                <img src="./images/ex6_matriz.png">
-                <p>A diferença entre o produto dos elementos da diagonal principal e o produto dos elementos da diagonal secundária é:</p>
+                <h1>Questão 2 </h1>
+                <p>Um técnico de um time de voleibol possui a sua disposição 15 jogadores que podem jogar em qualquer posição. De quantas maneiras ele poderá escalar seu time de 6 jogadores?</p>
                 <div class="wrapper">
                     <input type="radio" name="select" id="option-1" checked>
                     <input type="radio" name="select" id="option-2">
@@ -82,63 +83,40 @@
                     <input type="radio" name="select" id="option-4">
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span> 15</span>
+                            <span> 4 450 maneiras</span>
                             </label>
                         <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span> 20</span>
+                            <span> 5 210 maneiras</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span> 35</span>
+                            <span> 4 500 maneiras</span>
                         </label>
                         <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span> 55</span>
+                            <span> 5 005 maneiras</span>
                         </label>
                     </div>
                     <br>
                 <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_matriz_7.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <a href="ex_analise_3.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span> 55</span>
+                                <span> 5 005 maneiras</span>
                         </label>
 
-                        <p>Calculando o produto da diagonal principal menos o produto da diagonal secundária:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                <mn>1</mn>
-                                <mo>⋅</mo>
-                                <mn>5</mn>
-                                <mo>⋅</mo>
-                                <mn>7</mn>
-                                <mo>-</mo>
-                                <mn>4</mn>
-                                <mo>⋅</mo>
-                                <mo>(</mo>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                <mo>)</mo>
-                                <mo>⋅</mo>
-                                <mn>5</mn>
-                                </mrow>
-                                <mo>=</mo>
-                                <mrow>
-                                <mn>35</mn>
-                                <mo>+</mo>
-                                <mn>20</mn>
-                                </mrow>
-                                <mo>=</mo>
-                                <mn>55</mn>
-                            </math>
-                        </p>
+                        <p>Nesta situação, devemos perceber que a ordem dos jogadores não faz diferença. Assim, usaremos a fórmula de combinação.</p>
+
+                        <p>Como uma equipe de voleibol compete com 6 jogadores, iremos combinar 6 elementos tirados de um conjunto de 15 elementos.</p>
+
+                        <br><br>
+
+                        <img src="./images/ex2_analise.png">
                     </div>
                 </div>
             </div>
@@ -152,5 +130,4 @@
       </footer>
     <script src="./JS/ex.js"></script>
 </body>
-
 </html>

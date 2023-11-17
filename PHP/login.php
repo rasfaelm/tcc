@@ -22,6 +22,8 @@ $sql = "SELECT * FROM usuarios WHERE email = '$username' AND senha = '$password'
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) == 1) {
+    // Obter o nome de usuário antes do caractere "@"
+    $username = strstr($email, '@', true);
 
     setcookie("username", $username, time() + (86400 * 30), "/");
     

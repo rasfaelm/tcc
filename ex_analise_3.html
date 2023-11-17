@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
+    <style>
+        .wrapper{
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body>
     <script src="./JS/incluiCabecalho.js"></script>
-    <script src="./JS/controladorDeFonte.js"></script>
+    <script src=".\JS\controladorDeFonte.js"></script>
 
     <div class="calculator" id="calculator">
         <img src="./images/X.png" width="20" height="20" id="close-calculadora" alt="Fechar Calculadora">
@@ -65,16 +70,13 @@
         </div>
     </div>
 
-<script src="./Js/calculadora.js"></script>
-    
+    <script src="./Js/calculadora.js"></script>
 
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 6</h1>
-                <p>Analise a matriz A a seguir:</p>
-                <img src="./images/ex6_matriz.png">
-                <p>A diferença entre o produto dos elementos da diagonal principal e o produto dos elementos da diagonal secundária é:</p>
+                <h1>Questão 3 </h1>
+                <p>De quantas maneiras diferentes, uma pessoa pode se vestir tendo 6 camisas e 4 calças?</p>
                 <div class="wrapper">
                     <input type="radio" name="select" id="option-1" checked>
                     <input type="radio" name="select" id="option-2">
@@ -82,63 +84,38 @@
                     <input type="radio" name="select" id="option-4">
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span> 15</span>
+                            <span> 10 maneiras</span>
                             </label>
-                        <label for="option-4" class="option option-4">
+                        <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span> 20</span>
+                            <span> 24 maneiras</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span> 35</span>
+                            <span> 32 maneiras</span>
                         </label>
-                        <label for="option-2" class="option option-2">
+                        <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span> 55</span>
+                            <span> 40 maneiras</span>
                         </label>
                     </div>
                     <br>
                 <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_matriz_7.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <a href="ex_analise_4.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span> 55</span>
+                                <span> 24 maneiras</span>
                         </label>
 
-                        <p>Calculando o produto da diagonal principal menos o produto da diagonal secundária:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                <mn>1</mn>
-                                <mo>⋅</mo>
-                                <mn>5</mn>
-                                <mo>⋅</mo>
-                                <mn>7</mn>
-                                <mo>-</mo>
-                                <mn>4</mn>
-                                <mo>⋅</mo>
-                                <mo>(</mo>
-                                <mo>-</mo>
-                                <mn>1</mn>
-                                <mo>)</mo>
-                                <mo>⋅</mo>
-                                <mn>5</mn>
-                                </mrow>
-                                <mo>=</mo>
-                                <mrow>
-                                <mn>35</mn>
-                                <mo>+</mo>
-                                <mn>20</mn>
-                                </mrow>
-                                <mo>=</mo>
-                                <mn>55</mn>
-                            </math>
-                        </p>
+                        <p>Para solucionar esta questão, devemos utilizar o princípio fundamental da contagem e multiplicar o número de opções entre as escolhas apresentadas. Temos:</p>
+
+                        <p>6.4 = 24 maneiras diferentes. </p>
+
+                        <p>Portanto, com 6 camisas e 4 calças uma pessoa pode se vestir de 24 maneiras diferentes.</p>
                     </div>
                 </div>
             </div>
