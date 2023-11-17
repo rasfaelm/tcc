@@ -2,8 +2,8 @@
     session_start();
     $db_username = 'root';
     $db_password = '';
-    $conn = new PDO( 'mysql:host=localhost;dbname=forum', $db_username, $db_password );
+    $conn = new PDO( 'mysql:host=localhost;dbname=cefetmat', $db_username, $db_password );
     if(!$conn){
-        die("Fatal Error: Connection Failed!");
-}
+      die("Falha na conexão!! Tente novamente");
+    }
 ?>
