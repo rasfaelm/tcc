@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./Css/footer.css">
     <style>
         .wrapper{
-            width: 400px;
+            width: 250px;
         }
     </style>
 </head>
@@ -75,162 +75,46 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 7 FAAP-SP</h1>
-                <p>Com relação ao gráfico da função f(x) = 2 (x – 1)² – 4 são feitas as seguintes afirmações:</p>
-                <li> É uma parábola com concavidade voltada para cima. </li>
-                <li> É uma parábola cujo vértice é o ponto (– 2, 4).</li>
-                <li> O ponto de intersecção com o eixo y é (0, – 2). </li>
-                <p>Nestas condições:</p>
+                <h1>Questão 7</h1>
+                <p>Quantas comissões de 4 elementos podemos formar com 20 alunos de uma turma?</p>
                 <div class="wrapper">
-                    <input type="radio" name="select" id="option-1" checked>
-                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-1">
+                    <input type="radio" name="select" id="option-2" checked>
                     <input type="radio" name="select" id="option-3">
                     <input type="radio" name="select" id="option-4">
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span> 4 845 comissões</span>
+                            </label>
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span>Somente a afirmação I é verdadeira.</span>
-                            </label>
-                        <label for="option-4" class="option option-4">
-                        <div class="dot"></div>
-                            <span>Somente a afirmação III é verdadeira</span>
+                            <span> 2 345 comissões</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span>As afirmações I, II e III são verdadeiras</span>
+                            <span> 3 485 comissões</span>
                         </label>
-                        <label for="option-2" class="option option-2">
+                        <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span>As afirmações I e III são verdadeiras.</span>
+                            <span> 4 325 comissões</span>
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_8.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
+                <a href="ex_analise_8.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span>As afirmações I e III são verdadeiras.</span>
+                                <span> 4 845 comissões</span>
                         </label>
 
-                        <p>Primeiramente, precisamos encontrar a forma padrão da função:</p>
+                        <p>Note que como para uma comissão a ordem não faz diferença, usaremos a fórmula de combinação para calcular:</p>
                         
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>f</mi>
-                            <mo stretchy="false">(</mo>
-                            <mi>x</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mn>2</mn>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mo stretchy="false">(</mo>
-                            <mi>x</mi>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mn>1</mn>
-                            <msup>
-                                <mo stretchy="false">)</mo>
-                                <mn>2</mn>
-                            </msup>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mn>4</mn>
-                            </math>
-                        </p>
-
-                        <p>Usando o produto notável:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>x</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mo stretchy="false">(</mo>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mn>1</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>=</mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mn>2</mn>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>=</mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>2</mn>
-                            </math>
-                        </p>
-                        
-                        <p>Como podemos observar o coeficiente a (valor que multiplica x²), concluímos que a concavidade da parábola é para cima. Portanto, a afirmação I é verdadeira. A afirmação III também é verdadeira, pois o coeficiente c é -2: f(0) = -2. Agora, para encontrar o valor do vértice, precisamos apenas substituir os valores:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                <mi>x</mi>
-                                <mi>v</mi>
-                                </msub>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                <mi>b</mi>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mi>a</mi>
-                                </mrow>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                <mrow>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>4</mn>
-                                </mrow>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mn>2</mn>
-                                </mrow>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mn>1</mn>
-                            </math>
-                        </p>
-                        <p>Assim sendo, a afirmação II é falsa.</p>
+                        <br><br>
+                        <img src="./images/ex7_analise.png">
                     </div>
                 </div>
             </div>
@@ -242,6 +126,6 @@
         <br>
         <a href="https://instagram.com/cefetmat?igshid=NzZlODBkYWE4Ng==" target="_blank" style="text-decoration: none;">Siga o CEFETMat! <img src="./images/instagram.png" style="height: 20px; width:auto;"></a>
       </footer>
-    <script src="./JS/"></script>
+    <script src="./js/ex.js"></script>
 </body>
 </html>

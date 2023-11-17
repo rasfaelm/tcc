@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
+    <style>
+        .wrapper{
+            width: 280px;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,278 +75,48 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 8 UFSM</h1>
-                <p>A figura mostra um retângulo com dois lados nos eixos cartesianos e um vértice na reta que passa pelos pontos A(0,12) e B(8,0).</p>
-                <img src="./images/ex8_Funcao.png" alt="grafico">
-                <p>As dimensões x e y do retângulo, para que sua área seja máxima, devem ser, respectivamente, iguais a</p>
+                <h1>Questão 8 </h1>
+                <p>Uma equipe de trabalho é formada por 6 mulheres e 5 homens. Eles pretendem se organizar em grupo de 6 pessoas, com 4 mulheres e 2 homens, para compor uma comissão. Quantas comissões podem ser formadas?</p>
                 <div class="wrapper">
-                    <input type="radio" name="select" id="option-1">
-                    <input type="radio" name="select" id="option-2" checked>
+                    <input type="radio" name="select" id="option-1" checked>
+                    <input type="radio" name="select" id="option-2">
                     <input type="radio" name="select" id="option-3">
                     <input type="radio" name="select" id="option-4">
-                        <label for="option-2" class="option option-2">
-                        <div class="dot"></div>
-                            <span>4 e 6</span>
-                            </label>
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span>5 e 9/2</span>
+                            <span> 100 comissões</span>
+                            </label>
+                        <label for="option-4" class="option option-4">
+                        <div class="dot"></div>
+                            <span> 250 comissões</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span>5 e 7</span>
+                            <span> 200 comissões</span>
                         </label>
-                        <label for="option-4" class="option option-4">
+                        <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span>4 e 7</span>
+                            <span> 150 comissões</span>
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_9.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
+                <a href="ex_analise_9.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span>4 e 6</span>
+                                <span> 150 comissões</span>
                         </label>
 
-                        <p>O vértice está sobre a reta, portanto, o valor de x e de y seguem a lei de formação da própria reta. Além disso, o valor de y nesse ponto representa a altura do retângulo, enquanto o valor de x representa a largura. Primeiramente, encontraremos a lei de formação dessa reta. Essa lei é uma função do primeiro grau (ou função afim) e, assim, sua forma padrão é:</p>
+                        <p>Para formar a comissão deve-se escolher 4 das 6 mulheres C6,4 e 2 dos 5 homens C5,2. Pelo princípio fundamental da contagem multiplicamos estes números:</p>
                         
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>f</mi>
-                            <mo stretchy="false">(</mo>
-                            <mi>x</mi>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mi>y</mi>
-                            <mo>=</mo>
-                            <mi>a</mi>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mi>x</mi>
-                            <mo>+</mo>
-                            <mi>b</mi>
-                            </math>
-                        </p>
+                        <br><br>
+                        <img src="./images/ex8_analise.png">
 
-                        <p>Agora, usando os dois pontos que temos, podemos facilmente encontrar os coeficientes dessa reta. Substituindo o primeiro ponto, A: (0; 12), temos:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>0</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>0</mn>
-                                <mo>+</mo>
-                                <mi>b</mi>
-                                <mo>=</mo>
-                                <mn>12</mn>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>b</mi>
-                                <mo>=</mo>
-                                <mn>12</mn>
-                            </math>
-                        </p>
-                        
-                        <p>Com isso, já temos o coeficiente b. Substituindo o outro ponto, B: (8, 0), teremos o valor do coeficiente a:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>8</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mn>0</mn>
-                                <mo>=</mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>8</mn>
-                                <mo>+</mo>
-                                <mn>12</mn>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>8</mn>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>12</mn>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>a</mi>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                    <mn>12</mn>
-                                    <mn>8</mn>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mn>2</mn>
-                                </mfrac>
-                            </math>
-                        </p>
-                        
-                        <p>Como agora temos a relação entre x e y, precisamos encontrar a área do retângulo que é   ‎
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>y</mi>
-                            </math>
-                        </p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>A</mi>
-                            <mo>=</mo>
-                            <mi>x</mi>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mi>y</mi>
-                            <mo>=</mo>
-                            <mi>x</mi>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mo stretchy="false">(</mo>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mfrac>
-                                <mn>3</mn>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mi>x</mi>
-                            <mo>+</mo>
-                            <mn>12</mn>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mfrac>
-                                <mn>3</mn>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                            </msup>
-                            <mo>+</mo>
-                            <mn>12</mn>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mi>x</mi>
-                            </math>
-                        </p>
-                        
-                        <p>Perceba que, pelo coeficiente a (valor que multiplica    ‎
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                            </msup>
-                            </math>
-                        )</p>
-                        <p> ser negativo, a concavidade da parábola é para baixo. Portanto, o vértice da parábola é o ponto máximo da área. Além disso, as abscissas dos pontos A e B são raízes da equação, pois nesses pontos uma das grandezas é 0 e, portanto, não temos um retângulo:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>A</mi>
-                            <mo stretchy="false">(</mo>
-                            <mn>0</mn>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mfrac>
-                                <mn>3</mn>
-                                <mn>2</mn>
-                            </mfrac>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <msup>
-                                <mn>0</mn>
-                                <mn>2</mn>
-                            </msup>
-                            <mo>+</mo>
-                            <mn>12</mn>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mn>0</mn>
-                            <mo>=</mo>
-                            <mn>0</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                            <mi>A</mi>
-                            <mo stretchy="false">(</mo>
-                            <mn>8</mn>
-                            <mo stretchy="false">)</mo>
-                            <mo>=</mo>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mfrac>
-                            <mn>3</mn>
-                            <mn>2</mn>
-                            </mfrac>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <msup>
-                            <mn>8</mn>
-                            <mn>2</mn>
-                            </msup>
-                            <mo>+</mo>
-                            <mn>12</mn>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mn>8</mn>
-                            <mo>=</mo>
-                            <mo>&#x2212;<!-- − --></mo>
-                            <mn>3</mn>
-                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                            <mn>32</mn>
-                            <mo>+</mo>
-                            <mn>96</mn>
-                            <mo>=</mo>
-                            <mn>0</mn>
-                            </math>
-                        </p>
-                        
-                        <p>Como é uma equação do segundo grau e temos ambas as raízes, o    ‎
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <msub>
-                                <mi>x</mi>
-                                <mi>v</mi>
-                                </msub>
-                            </math> </p>
-                            
-                        <p>está no meio entre essas raízes, ou seja, na abscissa x = 4. Agora, para encontrar o valor de y, basta substituir esse valor na função da reta:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>y</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>4</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mn>2</mn>
-                                </mfrac>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>4</mn>
-                                <mo>+</mo>
-                                <mn>12</mn>
-                                <mo>=</mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>6</mn>
-                                <mo>+</mo>
-                                <mn>12</mn>
-                                <mo>=</mo>
-                                <mn>6</mn>
-                            </math>
-                            </p>
-                        </p>
+                        <p>Assim, podem ser formadas 150 comissões com 6 pessoas e com, exatamente, 4 mulheres e 2 homens.</p>
                     </div>
                 </div>
             </div>

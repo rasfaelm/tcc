@@ -75,329 +75,68 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 9 UFSM</h1>
-                <p>A figura representa o gráfico de uma função do 1º grau que passa pelos pontos A e B, onde a <math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mo>&#x2260;<!-- ≠ --></mo>
-                </math> 2.</p>
-                <img src="./images/ex9_Funcao.png" alt="grafico">
-                <p>O ponto de interseção da reta "<math xmlns="http://www.w3.org/1998/Math/MathML">
-                    <mover>
-                    <mrow>
-                        <mi>A</mi>
-                        <mi>B</mi>
-                    </mrow>
-                    <mo accent="false">&#x00AF;<!-- ¯ --></mo>
-                    </mover>
-                </math>" com o eixo x tem abscissa igual a:</p>
+                <h1>Questão 9 </h1>
+                <p>O tênis é um esporte em que a estratégia de jogo a ser adotada depende, entre outros fatores, de o adversário ser canhoto ou destro. Um clube tem um grupo de 10 tenistas, sendo que 4 são canhotos e 6 são destros. O técnico do clube deseja realizar uma partida de exibição entre dois desses jogadores, porém, não poderão ser ambos canhotos. Qual o número de possibilidades de escolha dos tenistas para a partida de exibição?</p>
                 <div class="wrapper">
-                    <input type="radio" name="select" id="option-1" checked>
-                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-1">
+                    <input type="radio" name="select" id="option-2" checked>
                     <input type="radio" name="select" id="option-3">
                     <input type="radio" name="select" id="option-4">
+                        <label for="option-2" class="option option-2">
+                        <div class="dot"></div>
+                            <span><img src="./images/ex9_analiseA.png"></span>
+                            </label>
                         <label for="option-1" class="option option-1">
                         <div class="dot"></div>
-                            <span>1 - a</span>
-                            </label>
-                        <label for="option-4" class="option option-4">
-                        <div class="dot"></div>
-                            <span>a - 2</span>
+                            <span><img src="./images/ex9_analiseB.png"></span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span>(3a - 12)/(a - 2)</span>
+                            <span><img src="./images/ex9_analiseC.png"></span>
                         </label>
-                        <label for="option-2" class="option option-2">
+                        <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span>4a - a</span>
+                            <span><img src="./images/ex9_analiseD.png"></span>
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_10.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
+                <a href="ex_analise_10.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span>4a - a</span>
+                                <span><img src="./images/ex9_analiseA.png"></span>
                         </label>
 
-                        <p> Várias perguntas dos vestibulares são feitas para confundir o candidato. Para evitar confusão, os coeficientes da função serão dados em letras maiúsculas: não confundir com os nomes dados aos pontos. Portanto, teremos uma função da seguinte forma:</p>
+                        <p>Segundo o enunciado, temos os seguintes dados necessários para resolver a questão:</p>
+
+                        <br>
+                        <li>Existem 10 tenistas;</li>
+                        <li>Dos 10 tenistas, 4 são canhotos;</li>
+                        <li>Deseja-se realizar uma partida com 2 tenistas que não podem ser ambos canhotos;</li>
     
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <mo>{</mo>
-                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
-                                        <mtr>
-                                        <mtd>
-                                            <mn>3</mn>
-                                            <mo>=</mo>
-                                            <mi>A</mi>
-                                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                                            <mn>2</mn>
-                                            <mo>+</mo>
-                                            <mi>B</mi>
-                                        </mtd>
-                                        </mtr>
-                                        <mtr>
-                                        <mtd>
-                                            <mn>6</mn>
-                                            <mo>=</mo>
-                                            <mi>A</mi>
-                                            <mo>&#x22C5;<!-- ⋅ --></mo>
-                                            <mi>a</mi>
-                                            <mo>+</mo>
-                                            <mi>B</mi>
-                                        </mtd>
-                                        </mtr>
-                                    </mtable>
-                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
-                                    </mrow>
-                                </math>
-                        </p>
+                        <p>Podemos montar as combinações assim:</p>
+
+                        <br><br>
+                        <img src="./images/ex9_analise1.png">
                         
-                        <p>Multiplicando a primeira equação por (-1) e resolvendo o sistema, temos:</p>
+                        <p>Dos 10 tenistas, 2 deverão ser escolhidos. Portanto:</p>
+
+                        <br><br>
+                        <img src="./images/ex9_analise2.png">
                         
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>3</mn>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>a</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mi>A</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>2</mn>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mn>3</mn>
-                                <mo>=</mo>
-                                <mi>A</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>a</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>2</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>A</mi>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mn>3</mn>
-                                <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mrow>
-                                </mfrac>
-                            </math>
-                        </p>
+                        <p>Deste resultado devemos levar em consideração que dos 4 tenistas canhotos, 2 não poderão ser escolhidos simultaneamente para partida.</p>
+
+                        <br><br>
+                        <img src="./images/ex9_analise3.png">
                         
-                        <p>Como já temos o valor do coeficiente angular (A), agora podemos encontrar o valor de B apenas substituindo esse valor em qualquer uma das equações iniciais. Usaremos a primeira:</p>
+                        <p>Sendo assim, subtraindo do total de combinações as possíveis combinações com 2 canhotos, temos que o número de possibilidades de escolha dos tenistas para a partida de exibição é:</p>
                         
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>3</mn>
-                                <mo>=</mo>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>2</mn>
-                                <mo>+</mo>
-                                <mi>B</mi>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>B</mi>
-                                <mo>=</mo>
-                                <mn>3</mn>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mfrac>
-                                    <mn>6</mn>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                </math>
-                        </p>
-                        
-                        <p>Como o exercício pede o ponto de intersecção da reta com o eixo x, ele quer o valor da raiz.</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mfrac>
-                                <mrow>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mi>B</mi>
-                                </mrow>
-                                <mi>A</mi>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mrow>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mrow>
-                                    <mo>(</mo>
-                                    <mn>3</mn>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mfrac>
-                                        <mn>6</mn>
-                                        <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <mi>a</mi>
-                                        <mo>&#x2212;<!-- − --></mo>
-                                        <mn>2</mn>
-                                        <mo stretchy="false">)</mo>
-                                        </mrow>
-                                    </mfrac>
-                                    <mo>)</mo>
-                                    </mrow>
-                                </mrow>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mrow>
-                                    <mfrac>
-                                    <mn>6</mn>
-                                    <mrow>
-                                        <mo stretchy="false">(</mo>
-                                        <mi>a</mi>
-                                        <mo>&#x2212;<!-- − --></mo>
-                                        <mn>2</mn>
-                                        <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    </mfrac>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>3</mn>
-                                </mrow>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mfrac>
-                                    <mrow>
-                                    <mn>6</mn>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>3</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                <mfrac>
-                                    <mn>3</mn>
-                                    <mrow>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    </mrow>
-                                </mfrac>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mrow>
-                                    <mo stretchy="false">[</mo>
-                                    <mn>6</mn>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>3</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                    <mo stretchy="false">]</mo>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mrow>
-                                <mrow>
-                                    <mn>3</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mrow>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mfrac>
-                                <mrow>
-                                    <mn>6</mn>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>3</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mo stretchy="false">(</mo>
-                                    <mi>a</mi>
-                                    <mo>&#x2212;<!-- − --></mo>
-                                    <mn>2</mn>
-                                    <mo stretchy="false">)</mo>
-                                </mrow>
-                                <mn>3</mn>
-                                </mfrac>
-                                <mo>=</mo>
-                                <mn>2</mn>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mo stretchy="false">(</mo>
-                                <mi>a</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>2</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mn>4</mn>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mi>a</mi>
-                            </math>
-                        </p>
+                        <br><br>
+                        <img src="./images/ex9_analise4.png">
                     </div>
                 </div>
             </div>

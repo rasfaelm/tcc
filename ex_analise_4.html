@@ -75,9 +75,8 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 4 UNESP</h1>
+                <h1>Questão 4</h1>
                 <p>De quantas maneiras diferentes 6 amigos podem sentar em um banco para tirar uma foto?</p>
-                <img src="./images/ex4_Funcao.png" alt="grafico"><br>
                 <div class="wrapper">
                     <input type="radio" name="select" id="option-1" checked>
                     <input type="radio" name="select" id="option-2">
@@ -101,168 +100,24 @@
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_5.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
+                <a href="ex_analise_5.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span> f(x) = 2x² + 2x - 4</span>
+                                <span> 720 maneiras</span>
                         </label>
 
-                        <p>O lugar onde o gráfico atravessa a reta y é o c da equação</p>
+                        <p>Podemos usar a fórmula de permutação, pois todos os elementos farão parte da foto. Note que a ordem que faz diferença.</p>
 
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>x</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>+</mo>
-                                <mi>b</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mi>c</mi>
-                            </math>
-                        </p>
+                        <br><br>
 
-                        <p>Então, c = -4</p>
+                        <img src="./images/ex4_analise.png">
 
-                        <p>Os pontos onde o gráfico atravessa a reta x sao as raizes da equação, sendo assim, é só resolver as equações e ver qual tem como raiz 1 e -2</p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>2</mn>
-                                <msup>
-                                <mi>x</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>+</mo>
-                                <mn>2</mn>
-                                <mi>x</mi>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>=</mo>
-                                <mn>0</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
-                                <mo>=</mo>
-                                <msup>
-                                <mi>b</mi>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>c</mi>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
-                                <mo>=</mo>
-                                <msup>
-                                <mn>2</mn>
-                                <mn>2</mn>
-                                </msup>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>2</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mo>&#x2212;<!-- − --></mo>
-                                <mn>4</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>&#x394;<!-- Δ --></mi>
-                                <mo>=</mo>
-                                <mn>36</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>=</mo>
-                                <mfrac linethickness="0">
-                                <mrow>
-                                    <mo>&#x2212;</mo>
-                                    <mi>b</mi>
-                                    <mo>&#x00B1;</mo>
-                                    <msqrt>
-                                    <mi>&#x394;</mi>
-                                    </msqrt>
-                                </mrow>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mi>a</mi>
-                                </mrow>
-                                </mfrac>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>=</mo>
-                                <mfrac linethickness="0">
-                                <mrow>
-                                    <mo>&#x2212;</mo>
-                                    <mn>2</mn>
-                                    <mo>&#x00B1;</mo>
-                                    <msqrt>
-                                    <mn>36</mn>
-                                    </msqrt>
-                                </mrow>
-                                <mrow>
-                                    <mn>2</mn>
-                                    <mo>&#x22C5;<!-- ⋅ --></mo>
-                                    <mn>2</mn>
-                                </mrow>
-                                </mfrac>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>'</mo>
-                                <mo>=</mo>
-                                <mn>1</mn>
-                            </math>
-                        </p>
-
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>x</mi>
-                                <mo>''</mo>
-                                <mo>=</mo>
-                                <mo>&#x2212;</mo>
-                                <mn>2</mn>
-                            </math>
-                        </p>
-
-                        <p>Alternativa D</p>
+                        <p>Como o número de elementos é igual ao número de ajuntamentos, então existem 720 maneiras de 6 amigos sentarem para tirar uma foto.</p>
                     </div>
                 </div>
             </div>

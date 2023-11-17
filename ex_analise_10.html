@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
+    <style>
+        .wrapper{
+            width: 600px;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,200 +73,53 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 10 UEL</h1>
-                <p>Se uma função f, do primeiro grau, é tal que f(1) = 190 e f(50) = 2052, então f(20) é igual a:</p>
+                <h1>Questão 10 </h1>
+                <p>O diretor de uma escola convidou os 280 alunos de terceiro ano a participarem de uma brincadeira. Suponha que existem 5 objetos e 6 personagens numa casa de 9 cômodos; um dos personagens esconde um dos objetos em um dos cômodos da casa. O objetivo da brincadeira é adivinhar qual objeto foi escondido por qual personagem e em qual cômodo da casa o objeto foi escondido.</p>
+                <p>Todos os alunos decidiram participar. A cada vez um aluno é sorteado e dá a sua resposta. As respostas devem ser sempre distintas das anteriores, e um mesmo aluno não pode ser sorteado mais de uma vez. Se a resposta do aluno estiver correta, ele é declarado vencedor e a brincadeira é encerrada.</p>
+                <p>O diretor sabe que algum aluno acertará a resposta porque há</p>
                 <div class="wrapper">
-                    <input type="radio" name="select" id="option-1" checked>
-                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-1">
+                    <input type="radio" name="select" id="option-2" checked>
                     <input type="radio" name="select" id="option-3">
                     <input type="radio" name="select" id="option-4">
-                        <label for="option-1" class="option option-1">
-                        <div class="dot"></div>
-                            <span>901</span>
-                            </label>
                         <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span>912</span>
+                            <span> 10 alunos a mais do que possíveis respostas distintas.</span>
+                            </label>
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span> 20 alunos a mais do que possíveis respostas distintas.</span>
                         </label>
                         <label for="option-3" class="option option-3">
                         <div class="dot"></div>
-                            <span>937</span>
+                            <span> 119 alunos a mais do que possíveis respostas distintas.</span>
                         </label>
                         <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span>981</span>
+                            <span> 270 alunos a mais do que possíveis respostas distintas.</span>
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span>912</span>
+                                <span>10 alunos a mais do que possíveis respostas distintas.</span>
                         </label>
 
-                        <p>Como foi dito que se trata de uma função do primeiro grau, ela pode ser descrita da seguinte forma:</p>
+                        <p>De acordo com o enunciado, existem 5 objetos e 6 personagens numa casa de 9 cômodos. Para resolver a questão devemos utilizar o princípio fundamental da contagem, pois o evento é composto por n etapas sucessivas e independentes.</p>
     
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>x</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mi>a</mi>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mi>b</mi>
-                            </math>
-                        </p>
+                        <p>Portanto, devemos multiplicar as opções para encontrar o número de escolhas.</p>
                         
-                        <p>Além disso, temos os valores de 2 pontos que resolvem a função: (1; 190) e (50; 2052). Com isso, podemos formar um sistema de equações:</p>
+                        <br><br>
+                        <img src="./images/ex10_analise.png">
+
+                        <p>Sendo assim, há 270 possibilidades de um personagem escolher um objeto e esconder em um cômodo da casa.</p>
                         
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <mo>{</mo>
-                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
-                                        <mtr>
-                                            <mtd>
-                                                <mn>190</mn>
-                                                <mo>=</mo>
-                                                <mi>a</mi>
-                                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                                <mn>1</mn>
-                                                <mo>+</mo>
-                                                <mi>b</mi>
-                                            </mtd>
-                                        </mtr>
-                                        <mtr>
-                                            <mtd>
-                                                <mn>2052</mn>
-                                                <mo>=</mo>
-                                                <mi>a</mi>
-                                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                                <mn>50</mn>
-                                                <mo>+</mo>
-                                                <mi>b</mi>
-                                            </mtd>
-                                        </mtr>
-                                    </mtable>
-                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
-                                </mrow>
-                            </math>
-                        </p>
-                        
-                        <p>Multiplicando a primeira equação por (-1), temos:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mrow>
-                                    <mo>{</mo>
-                                    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
-                                        <mtr>
-                                            <mtd>
-                                                <mo>&#x2212;<!-- − --></mo>
-                                                <mn>190</mn>
-                                                <mo>=</mo>
-                                                <mo>&#x2212;<!-- − --></mo>
-                                                <mi>a</mi>
-                                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                                <mn>1</mn>
-                                                <mo>&#x2212;<!-- − --></mo>
-                                                <mi>b</mi>
-                                            </mtd>
-                                        </mtr>
-                                        <mtr>
-                                            <mtd>
-                                                <mn>2052</mn>
-                                                <mo>=</mo>
-                                                <mi>a</mi>
-                                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                                <mn>50</mn>
-                                                <mo>+</mo>
-                                                <mi>b</mi>
-                                            </mtd>
-                                        </mtr>
-                                    </mtable>
-                                    <mo fence="true" stretchy="true" symmetric="true"></mo>
-                                </mrow>
-                            </math>
-                        </p>
-                        
-                        <p>Resolvendo o sistema, temos:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>1862</mn>
-                                <mo>=</mo>
-                                <mn>49</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>a</mi>
-                            </math>
-                        </p>
-                        
-                        <p>Portanto, a = 38. Com isso, podemos agora descobrir o valor de b substituindo o valor em qualquer uma das duas equações iniciais. Utilizaremos a primeira:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mn>190</mn>
-                                <mo>=</mo>
-                                <mn>38</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>1</mn>
-                                <mo>+</mo>
-                                <mi>b</mi>
-                                <mo stretchy="false">&#x2192;<!-- → --></mo>
-                                <mi>b</mi>
-                                <mo>=</mo>
-                                <mn>152</mn>
-                            </math>
-                        </p>
-                        
-                        <p>Agora, temos a forma geral da equação:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mi>x</mi>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mn>38</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mi>x</mi>
-                                <mo>+</mo>
-                                <mn>152</mn>
-                            </math>
-                        </p>
-                        
-                        <p>Como a questão pede para resolvermos f(20), substituiremos x na equação geral:</p>
-                        
-                        <p>
-                            <math xmlns="http://www.w3.org/1998/Math/MathML">
-                                <mi>f</mi>
-                                <mo stretchy="false">(</mo>
-                                <mn>20</mn>
-                                <mo stretchy="false">)</mo>
-                                <mo>=</mo>
-                                <mn>38</mn>
-                                <mo>&#x22C5;<!-- ⋅ --></mo>
-                                <mn>20</mn>
-                                <mo>+</mo>
-                                <mn>152</mn>
-                                <mo>=</mo>
-                                <mn>760</mn>
-                                <mo>+</mo>
-                                <mn>152</mn>
-                                <mo>=</mo>
-                                <mn>912</mn>
-                            </math>
-                            </p>
-                        </p>
+                        <p>Como a resposta de cada aluno deve ser diferente dos demais, sabe-se que um dos alunos acertou, pois o número de alunos (280) é maior que o número de possibilidades (270), ou seja, há 10 alunos a mais do que possíveis respostas distintas.</p>
                     </div>
                 </div>
             </div>

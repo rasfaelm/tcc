@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="./Css/ex.css">
     <link rel="stylesheet" href="./Css/calculadora.css">
     <link rel="stylesheet" href="./Css/footer.css">
+    <style>
+        .wrapper{
+            width: 200px;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,46 +75,53 @@
     <div style="padding: 128px 16px;">
         <div class="w3-row-padding">
             <div id="study-tips">
-                <h1>Questão 5 Enem</h1>
-                <p>Uma cisterna de 6 000 L foi esvaziada em um período de 3 h. Na primeira hora foi utilizada apenas uma bomba, mas nas duas horas seguintes, a fim de reduzir o tempo de esvaziamento, outra bomba foi ligada com a primeira. O gráfico, formado por dois segmentos de reta, mostra o volume de água presente na cisterna, em função do tempo.</p>
-                <p>Qual é a vazão, em litro por hora, da bomba que foi ligada no início da segunda hora?</p>
+                <h1>Questão 5</h1>
+                <p>Em uma competição de xadrez existem 8 jogadores. De quantas formas diferentes poderá ser formado o pódio (primeiro, segundo e terceiro lugares)?</p>
                 <div class="wrapper">
-                    <input type="radio" name="select" id="option-1" checked>
-                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="select" id="option-1">
+                    <input type="radio" name="select" id="option-2" checked>
                     <input type="radio" name="select" id="option-3">
                     <input type="radio" name="select" id="option-4">
-                        <label for="option-1" class="option option-1">
-                        <div class="dot"></div>
-                            <span> 1 000</span>
-                            </label>
-                        <label for="option-3" class="option option-3">
-                        <div class="dot"></div>
-                            <span> 1 250</span>
-                        </label>
                         <label for="option-2" class="option option-2">
                         <div class="dot"></div>
-                            <span> 1 500</span>
+                            <span> 336 formas</span>
+                            </label>
+                        <label for="option-1" class="option option-1">
+                        <div class="dot"></div>
+                            <span> 222 formas</span>
+                        </label>
+                        <label for="option-3" class="option option-3">
+                        <div class="dot"></div>
+                            <span> 320 formas</span>
                         </label>
                         <label for="option-4" class="option option-4">
                         <div class="dot"></div>
-                            <span> 2 000</span>
+                            <span> 380 formas</span>
                         </label>
                     </div>
                     <br>
-                <button id="submit-button" onclick="submitAnswer()">Enviar Resposta</button>
-                <a href="ex_funcao_6.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
+                <button id="submit-button" onclick="submitAnswer()">Revelar Resposta</button>
+                <a href="ex_analise_6.html"><button id="submit-button" style="align-items:left">Proxima Questão</button></a>
                     <div id="resposta-div" style="display: none;">
 
                         <p>Resposta:</p>
 
                         <label for="option-2" class="option option-2">
                             <div class="dot"></div>
-                                <span> 1 500</span>
+                                <span> 336 formas</span>
                         </label>
 
-                        <p>No primeiro momento até a primeira hora, o volume vai de 6000 litros para 5000 litros, ou seja, ocorre uma diferença de 1000 litros, logo, a vazão da primeira bomba é de 1000 L/h. Agora, após ligar a segunda bomba, note que ela foi inteiramente esvaziada, ou seja, nas outras 2 horas, foi possível retirar 5000 L. Realizando a divisão 5000 : 2 = 2500, a soma das vazões das bombas foi de 2500 L/h.</p>
+                        <p>Como a ordem faz diferença, usaremos arranjo. Assim:</p>
                         
-                        <p>Sabemos que a primeira bomba tem vazão de 1000 L/h, então, para descobrir a vazão da segunda, temos que: 2500 – 1000 = 1500 L.</p>
+                        <br><br>
+                        <img src="./images/ex5_analise.png">
+
+                        <p>Substituindo os dados do enunciado na fórmula, temos:</p>
+
+                        <br><br>
+                        <img src="./images/ex5_analise1.png">
+
+                        <p>Portanto, é possível formar o pódio de 336 formas diferentes.</p>
                     </div>
                 </div>
             </div>
