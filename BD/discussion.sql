@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20/10/2023 às 03:17
+-- Tempo de geração: 17/11/2023 às 22:01
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `forum`
+-- Banco de dados: `cefetmat`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `discussion` (
   `id` int(11) NOT NULL,
   `parent_comment` varchar(500) NOT NULL,
-  `title` varchar(1000) NOT NULL,
+  `student` varchar(1000) NOT NULL,
   `post` varchar(1000) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
@@ -39,7 +39,7 @@ CREATE TABLE `discussion` (
 -- Despejando dados para a tabela `discussion`
 --
 
-INSERT INTO `discussion` (`id`, `parent_comment`, `title`, `post`, `date`) VALUES
+INSERT INTO `discussion` (`id`, `parent_comment`, `student`, `post`, `date`) VALUES
 (132, '130', 'Eng. Vince', 'So, kindly, hurry and sign up', '2021-08-05 10:27:43'),
 (131, '130', 'Eng. Vince', 'I will be teaching it here soon.', '2021-08-05 10:27:33'),
 (130, '0', 'Eng. Vince', 'Hello, anyone interested in learning cybersecurity ?', '2021-08-05 10:27:07'),
@@ -80,9 +80,9 @@ INSERT INTO `discussion` (`id`, `parent_comment`, `title`, `post`, `date`) VALUE
 (95, '0', 'Masila', 'Which is the best programming language?', '2021-07-05 19:52:22'),
 (94, '93', 'Mr Kyalo', 'It looks more attractive', '2021-07-05 19:43:18'),
 (93, '0', 'Mr Kyalo', 'What are some of the improved features of windows 11?', '2021-07-05 19:42:52'),
-(142, '0', 'calculo', 'como calcular a raiz quadrada de algo?', '2023-10-20 00:26:17'),
-(143, '142', 'Multipla por ele mesmo', '....', '2023-10-20 00:26:55'),
-(144, '0', 'teste', 'teste', '2023-10-20 00:38:54');
+(133, '0', '1 + 1 é quanto?', 'Teste teste, é 2', '2023-11-17 19:51:36'),
+(134, '133', 'Pense em laranjas', 'teste teste teste teste teste teste teste vteste teste teste teste teste teste teste teste teste testetesteteste', '2023-11-17 19:52:17'),
+(135, '0', 'Hilary', 'a', '2023-11-17 20:31:24');
 
 --
 -- Índices para tabelas despejadas
@@ -102,7 +102,7 @@ ALTER TABLE `discussion`
 -- AUTO_INCREMENT de tabela `discussion`
 --
 ALTER TABLE `discussion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
