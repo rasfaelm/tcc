@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./Css/style.css">
   <script src="forum.js"></script>
   <style>
-    .container {
+    .containerr {
             text-align: center;
             max-width: 800px;
             margin: 0 auto;
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="containerr">
             <h2>Bem vindo(a) ao Fórum!</h2>
             <img src="./images/cefetmat.png" style="display: block; margin: 0 auto; height: 400px; border-radius: 5px;">
                 <div>
