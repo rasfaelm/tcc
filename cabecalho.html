@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/cabecalho.css">
-    <link rel="stylesheet" href="./assets/conteudo.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/conteudo.css">
     <title>Cabeçalho</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <li><img src="./images/cabecalho/aumentarFonte.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte"></li>
                     <li><img src="./images/cabecalho/autocontraste.png" id="autocontraste"  title="Dark Mode"></li>
                     <!-- mudar nome do arquivo--->
-                    <li class="nav-item"><a href="teste_calculadora.html"><img src="./images/cabecalho/calculadora.png" title="Calculadora"></a></li>
+                    <li class="nav-item"><img src="./images/cabecalho/calculadora.png" onclick="open_calculadora()" title="Calculadora" ></li>
                     <li class="nav-item"><a href="video.html"><img src="./images/cabecalho/videos.png" title="VideoAulas"></a></li>
                     <!-- pagina de todos exercicios-->
                     <li class="nav-item"><a href="#"><img src="./images/cabecalho/exercicios.png"  title="Exercícios"></a></li>
@@ -41,7 +41,7 @@
         <div class="mobile-menu">
             <ul>
                 <li class="nav-item"><a href="conteudo.html" class="nav-link">Conteúdos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Calculadora</a></li>
+                <li class="nav-item"><a href="#" onclick="open_calculadora()" class="nav-link">Calculadora</a></li>
                 <div class="title" data-tooltip="Este é um tooltip personalizado"> </div>
                 <li class="nav-item"><a href="video.html" class="nav-link">Vídeos</a></li>
                 <li class="nav-item"><a href="Lista.html" class="nav-link">Listas</a></li>
@@ -52,13 +52,10 @@
         </div>
     </header>
     
-
-aaaaaaaaaaaaaa
-<b><b><b><b>b</b></b></b></b>
     <!-- Importando js de cada funcionalidade-->
         <script src=".\JS\cabecalho.js"></script>
        <script src=".\JS\controladorDeFonte.js"></script>
        <script src=".\JS\autoContraste.js"></script>
-    </body>
+</body>
 </html>
 
