@@ -111,12 +111,23 @@
           justify-content: center;
           align-items: center;
         }
-
-
+        .containerr {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura da tela */
+        }
+        .mathematics-section, .image {
+          flex: 1;
+          padding: 0; /* Remova o preenchimento para eliminar o espaço entre eles */
+          margin: 0; /* Remova as margens para eliminar o espaço entre eles */
+        }
     </style>
     <link rel="stylesheet" href="./Css/footer.css">
 </head>
-<body>
+
   <script src="./JS/incluiCabecalho.js"></script>
   <script src="./JS/controladorDeFonte.js"></script>
 
@@ -169,26 +180,31 @@
     
       <h1>Matrizes </h1>
 
-      
-      <div class="mathematics-section">
+      <div class="containerr">
+        <div class="mathematics-section">
 
-        <div class="mathematics-card">
-          <a href="definicaoMatriz.html"><h2> Definição de Matrizes </h2></a>
+          <div class="mathematics-card">
+            <a href="definicaoMatriz.html"><h2> Definição de Matrizes </h2></a>
+          </div>
+
+          <div class="mathematics-card">
+            <a href="tiposMatrizes.html"><h2> Tipo de matrizes </h2></a>
+          </div>
+
+          <div class="mathematics-card">
+            <a href="sumarioOperacaoMatrizes.html"><h2> Operações de matrizes </h2></a>
+          </div>
+        
+          <div class="mathematics-card">
+            <a href="matrizInversa.html"><h2> Matriz Inversa</h2></a>
+          </div>
+
         </div>
 
-        <div class="mathematics-card">
-          <a href="tiposMatrizes.html"><h2> Tipo de matrizes </h2></a>
+        <div class="image">
+          <img src="./images/sumarioMatrizes.png" width="700" height="auto" alt="Menina com foguete">
         </div>
-
-        <div class="mathematics-card">
-          <a href="sumarioOperacaoMatrizes.html"><h2> Operações de matrizes </h2></a>
-        </div>
-      
-        <div class="mathematics-card">
-          <a href="matrizInversa.html"><h2> Matriz Inversa</h2></a>
-        </div>
-
-      </div>  
+      </div>
     
 
     <script src="./js/+e-.js"></script>

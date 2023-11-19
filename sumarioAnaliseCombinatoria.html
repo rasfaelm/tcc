@@ -111,8 +111,19 @@
           justify-content: center;
           align-items: center;
         }
-
-
+        .containerr {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+          flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha quando não couberem na largura da tela */
+        }
+        .mathematics-section, .image {
+          flex: 1;
+          padding: 0; /* Remova o preenchimento para eliminar o espaço entre eles */
+          margin: 0; /* Remova as margens para eliminar o espaço entre eles */
+        }
     </style>
     <link rel="stylesheet" href="./Css/footer.css">
 </head>
@@ -168,30 +179,34 @@
   <script src="./JS/calculadora.js"></script>
       <h1>Análise Combinatória</h1>
 
-      
-      <div class="mathematics-section">
+      <div class = "containerr">
+        <div class="mathematics-section">
 
-        <div class="mathematics-card">
-          <a href="PrincipioFundamentalDaContagem.html"><h2> Principio Fundamental da Contagem </h2></a>
-        </div>
+          <div class="mathematics-card">
+            <a href="PrincipioFundamentalDaContagem.html"><h2> Principio Fundamental da Contagem </h2></a>
+          </div>
 
-        <div class="mathematics-card">
-          <a href="Permutacoes.html"><h2> Permutação</h2></a>
-        </div>
+          <div class="mathematics-card">
+            <a href="Permutacoes.html"><h2> Permutação</h2></a>
+          </div>
 
-        <div class="mathematics-card">
-          <a href="Combinacoes.html"><h2> Combinação</h2></a>
-        </div>
+          <div class="mathematics-card">
+            <a href="Combinacoes.html"><h2> Combinação</h2></a>
+          </div>
 
-        <div class="mathematics-card">
-          <a href="Arranjos.html"><h2> Arranjos</h2></a>
+          <div class="mathematics-card">
+            <a href="Arranjos.html"><h2> Arranjos</h2></a>
+          </div>
+        
+          <div class="mathematics-card">
+            <a href="BinomioNewton.html"><h2> Binômio de Newton</h2></a>
+          </div>
+
         </div>
-      
-      <div class="mathematics-card">
-        <a href="BinomioNewton.html"><h2> Binômio de Newton</h2></a>
+        <div class="image">
+          <img src="./images/sumarioAnaliseCombinatoria.png" width="800" height="auto" alt="Menina fazendo magica">
+        </div>
       </div>
-
-      </div>  
     
 
 <script src="./js/+e-.js"></script>
