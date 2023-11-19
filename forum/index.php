@@ -9,8 +9,58 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="main.js"></script>
+<link rel="stylesheet" href="../css/cabecalho.css">
+<link rel="stylesheet" href="../css/calculadora.css">
 </head>
+<body>
+<script src="../JS/incluiCabecalho.js"></script>
+    <script src="../JS/controladorDeFonte.js"></script>
 
+        <div class="calculator" id="calculator">
+            <img src="../images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+            <input type="text" id="screen" maxlength="20">
+            <div class="calc-buttons">
+            <div class="functions-one">
+                <button class="button triggers">C</button>
+                <button class="button basic-stuff">(</button>
+                <button class="button basic-stuff">)</button>
+                <button class="button numbers">7</button>
+                <button class="button numbers">8</button>
+                <button class="button numbers">9</button>
+                <button class="button numbers">4</button>
+                <button class="button numbers">5</button>
+                <button class="button numbers">6</button>
+                <button class="button numbers">1</button>
+                <button class="button numbers">2</button>
+                <button class="button numbers">3</button>
+                <button class="button basic-stuff">±</button>
+                <button class="button numbers">0</button>
+                <button class="button basic-stuff">.</button>
+            </div>
+                <div class="functions-two">
+                    <button class="button triggers">&#60;=</button>
+                    <button class="button complex-stuff">%</button>
+                    <button class="button complex-stuff">x !</button>
+                    <button class="button complex-stuff">x^</button>
+                    <button class="button basic-stuff">*</button>
+                    <button class="button basic-stuff">/</button>
+                    <button class="button complex-stuff">ln</button>
+                    <button class="button complex-stuff">e</button>
+                    <button class="button basic-stuff">+</button>
+                    <button class="button complex-stuff">x ²</button>
+                    <button class="button complex-stuff">log</button>
+                    <button class="button complex-stuff">cos</button>
+                    <button class="button basic-stuff">-</button>
+                    <button class="button complex-stuff">√</button>
+                    <button class="button complex-stuff">sin</button>
+                    <button class="button complex-stuff">tan</button>
+                    <button class="button triggers">=</button>
+                    <button class="button complex-stuff">&#x003C0;</button>
+                    <button class="button complex-stuff">∘</button>
+                    <button class="button complex-stuff">rad</button>
+                </div>
+            </div>
+        </div>
 <!-- Modal -->
 <div id="ReplyModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
