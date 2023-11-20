@@ -1,4 +1,3 @@
-
 .profile-container {
     display: flex;
     flex-direction: column;
@@ -9,8 +8,7 @@
 }
 
 body.dark-mode .profile-container {
-    background-color: #1f1f1f;
-    
+    background-color:#1f1f1f; 
 }
 .profile-background {
     background-size: cover;
@@ -44,12 +42,12 @@ body.dark-mode .profile-container {
 }
 
 .profile-text {
-    text-align: left; /* Alinha o texto à extremidade esquerda */
+    text-align: left; 
     margin-bottom: 10px;
-    word-wrap: break-word; /* Permite que o texto quebre para outra linha */
-    max-width: 100%; /* Limita o tamanho do texto à largura da caixa */
-    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-    text-overflow: ellipsis; /* Exibe "..." para o texto que ultrapassar a caixa */
+    word-wrap: break-word; 
+    max-width: 100%; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
 }
 
 .profile-message {
@@ -57,7 +55,7 @@ body.dark-mode .profile-container {
     color: #000000;
     margin-top: 10px;
     width: calc(40ch * 1ch); /* Largura baseada em 40 caracteres (1ch é aproximadamente o tamanho de um caractere) */
-    max-width: 100%; /* Limita a largura máxima à largura da caixa pai (profile-text) */
+    max-width: 100%; 
     white-space: nowrap; /* Impede que o texto quebre em várias linhas */
     overflow: hidden; /* Esconde o texto que ultrapassar a caixa */
     text-overflow: ellipsis; /* Exibe "..." para o texto que ultrapassar a caixa */
@@ -75,18 +73,27 @@ body.dark-mode .profile-container {
     margin-top: 10px; /* Adiciona espaço entre a foto e o nome de usuário */
 }
 
+body.dark-mode .profile-username {
+    color: #c9c9c9;
+}
 .profile-name {
     font-size: 24px;
     font-weight: bold;
     color: #000000;
 }
 
+body.dark-mode .profile-name  {
+    color: #cecece;
+}
 .profile-message {
     font-size: 16px;
     color: #000000;
     margin-top: 10px;
 }
 
+body.dark-mode .profile-username, .profile-message  {
+    color: #b6b6b6;
+}
 #save-button {
     display: none;
 }
