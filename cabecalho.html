@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
+    <title>Cabeçalho</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/conteudo.css">
-    <title>Cabeçalho</title>
+    <link rel="stylesheet" href="./Css/cabecalho.css">
+    <link rel="stylesheet" href="./Css/calculadora.css">
 </head>
 <body>
     <header id="cabecalho">
@@ -20,16 +20,13 @@
                     <li><img src="./images/cabecalho/diminuirFonte.png" onclick="decreaseFontSize()" alt="diminuifonte" title="Diminui fonte"></li>
                     <li><img src="./images/cabecalho/aumentarFonte.png" onclick="increaseFontSize()" alt="aumentarFonte" title="Aumentar fonte"></li>
                     <li><img src="./images/cabecalho/autocontraste.png" id="autocontraste"  title="Dark Mode"></li>
-                    <!-- mudar nome do arquivo--->
-                    <li class="nav-item"><img src="./images/cabecalho/calculadora.png" onclick="open_calculadora()" title="Calculadora" ></li>
+                    <li class="nav-item"><img src="./images/cabecalho/calcular.png" onclick="open_calculadora()" title="calculadora" alt="calculadora"></li>
                     <li class="nav-item"><a href="video.html"><img src="./images/cabecalho/videos.png" title="VideoAulas"></a></li>
-                    <!-- pagina de todos exercicios-->
-                    <li class="nav-item"><a href="#"><img src="./images/cabecalho/exercicios.png"  title="Exercícios"></a></li>
+                    <li class="nav-item"><a href="Lista.html"><img src="./images/cabecalho/exercicios.png"  title="Exercícios"></a></li>
                     <li class="nav-item"><a href="noticias.html"><img src="./images/cabecalho/noticias.png"  title="Notícias"></a></li>
                     <li class="nav-item"><a href="conversor.html"><img src="./images/cabecalho/converte.png" title="Conversor"></a></li>
-                    <li class="nav-item"><a href="forum.html"><img src="./images/cabecalho/forum.png" title="Fórum"></a></li>
+                    <li class="nav-item"><a href="PHP/index.php"><img src="./images/cabecalho/forum.png" title="Fórum"></a></li>
                     <li class="nav-item"><a href="perfil.html"><img src="./images/cabecalho/perfill.png" title="Perfil"></a></li>
-                    <li class="nav-item"><img src="./images/cabecalho/menu.png"  title="Menu"></li>
                 </ul>
             </div>
             <div class="mobile-menu-icon">
@@ -51,11 +48,57 @@
             </ul>
         </div>
     </header>
-    
-    <!-- Importando js de cada funcionalidade-->
-        <script src=".\JS\cabecalho.js"></script>
-       <script src=".\JS\controladorDeFonte.js"></script>
-       <script src=".\JS\autoContraste.js"></script>
-</body>
+
+     <!-- Importando js de cada funcionalidade-->
+     <script src="./JS/calculadora.js"></script>
+     <script src="./JS/controladorDeFonte.js"></script>
+
+     <!-- Calculadora -->
+    <div class="calculator" id="calculator">
+        <img src="./images/X.png" width="20" height="20" onclick="close_calculadora()" alt="Fechar Calculadora">
+        <input type="text" id="screen" maxlength="20">
+        <div class="calc-buttons">
+        <div class="functions-one">
+            <button class="button triggers">C</button>
+            <button class="button basic-stuff">(</button>
+            <button class="button basic-stuff">)</button>
+            <button class="button numbers">7</button>
+            <button class="button numbers">8</button>
+            <button class="button numbers">9</button>
+            <button class="button numbers">4</button>
+            <button class="button numbers">5</button>
+            <button class="button numbers">6</button>
+            <button class="button numbers">1</button>
+            <button class="button numbers">2</button>
+            <button class="button numbers">3</button>
+            <button class="button basic-stuff">±</button>
+            <button class="button numbers">0</button>
+            <button class="button basic-stuff">.</button>
+        </div>
+            <div class="functions-two">
+                <button class="button triggers">&#60;=</button>
+                <button class="button complex-stuff">%</button>
+                <button class="button complex-stuff">x !</button>
+                <button class="button complex-stuff">x^</button>
+                <button class="button basic-stuff">*</button>
+                <button class="button basic-stuff">/</button>
+                <button class="button complex-stuff">ln</button>
+                <button class="button complex-stuff">e</button>
+                <button class="button basic-stuff">+</button>
+                <button class="button complex-stuff">x ²</button>
+                <button class="button complex-stuff">log</button>
+                <button class="button complex-stuff">cos</button>
+                <button class="button basic-stuff">-</button>
+                <button class="button complex-stuff">√</button>
+                <button class="button complex-stuff">sin</button>
+                <button class="button complex-stuff">tan</button>
+                <button class="button triggers">=</button>
+                <button class="button complex-stuff">&#x003C0;</button>
+                <button class="button complex-stuff">∘</button>
+                <button class="button complex-stuff">rad</button>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
 
