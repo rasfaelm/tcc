@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+   
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    body.dark-mode {
+        background-color:#030303;
+        color: #e7e7e7;
+    }
+
+    .row {  
+        display: -ms-flexbox; 
+        display: flex;
+        -ms-flex-wrap: wrap; 
+        flex-wrap: wrap;
+    }
+
+    .side {
+        -ms-flex: 30%; 
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    .main {   
+        -ms-flex: 70%;
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+    }
+    body.dark-mode .main {   
+        background-color: rgb(12, 12, 12);
+    }
+
+    body.dark-mode .side {   
+        background-color: rgb(12, 12, 12);
+    }
+
+    body.dark-mode h2,  body.dark-mode a {   
+        color: rgb(173, 173, 173);
+    }
+
+    body.dark-mode .fakeimg {
+        background-color: #c93977;
+    }
+   
+    body.dark-mode small{
+       color: #cecece;
+    }
+    .fakeimg {
+        background-color: #fa3a8d;
+        width: 40%; 
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0 auto; 
+    }
+      
+    @media screen and (max-width: 700px) {
+        .row {   
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .navbar a {
+            float: none;
+            width: 100%;
+        }
+    }
+  
+    /* Estilos da Área de Vídeos */
+    .video-section {
+        margin-top: 20px;
+    }
+
+    .video {
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+    .video iframe {
+        width: 100%; /* Ocupar toda a largura do contêiner pai */
+        max-width: 800px; /* Limitar a largura máxima do vídeo */
+        height: 450px; 
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .left-column {
+        float: left;
+        width: 100%; /* Defina a largura para 100% em telas menores */
+    }
+
+    .right-column {
+        float: right;
+        width: 100%; 
+    }
+
+    /*Noticias*/
+    .news-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .news-card {
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 7px;
+    }
+    .news-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+    }  
+    .news-card h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .news-section {
+            flex-direction: column;
+        }
+        .news-card {
+            width: 100%;
+        }
+        .video iframe {
+            width: 100%; 
+            max-width: 600px; 
+            height: 450px; 
+        }
+    }
+
+    h2{
+        margin-left: 30px;
+    }
+       
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  flex: 1;
+  padding: 10px;
+  max-width: 50%;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 40%;
+}
+
+.text-container {
+  flex: 1;
+  padding: 10px;
+  text-align: right;
+}
+
+/* Estilos para tornar a página responsiva */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-container {
+    text-align: left;
+  }
+}
